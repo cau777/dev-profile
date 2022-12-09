@@ -1,6 +1,7 @@
 import {Component, For} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {INSTITUTIONS} from "~/components/education/Institutions";
+import {t} from "~/i18n/i18n-config";
 
 function formatDate(date: Date) {
     // TODO: locale
@@ -15,10 +16,9 @@ export const EducationSection: Component = () => {
                 <For each={INSTITUTIONS}>{(institution) => (
                     <li class={"list-disc"}>
                         <h4>
-                            <span>{institution.degree}</span> -
-                            {institution.name}
+                            <span>{t(institution.degree)}</span> - {institution.name}
                         </h4>
-                        <div>{formatDate(institution.start)} - {institution.end ? formatDate(institution.end) : "presentTime"}</div>
+                        <div>{formatDate(institution.start)} - {institution.end ? formatDate(institution.end) : t("presentTime")}</div>
                     </li>
                 )}
                 </For>

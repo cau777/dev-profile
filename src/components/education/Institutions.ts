@@ -19,7 +19,7 @@ export const INSTITUTIONS: Institution[] = [
         end: new Date(2022, 12),
     },
     {
-        degree: "english",
+        degree: "englishCourse",
         name: "Fisk Sarandi",
         start: new Date(2014, 3),
         end: new Date(2022, 7),
