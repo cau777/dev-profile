@@ -1,6 +1,6 @@
 import {Component} from "solid-js";
 import {t} from "~/i18n/i18n-config";
-import {AnimatedUnderline} from "~/components/AnimatedUnderline";
+import {AnimatedUnderline} from "~/components/animated/AnimatedUnderline";
 
 // TODO: pattern to occupy space
 

@@ -15,6 +15,31 @@
     .animate-underline.visible {
         background-size: 0 0.1em, 100% 0.1em;
     }
+
+    .animate-section-title {
+        opacity: 0;
+        transition-duration: 0.5s;
+        transition-property:  opacity;
+        transition-timing-function: ease-in-out;
+    }
+
+    .animate-section-title.visible {
+        opacity: 1;
+    }
+
+    .animate-section {
+        opacity: 0;
+        transition-duration: 0.8s;
+        animation-delay: 0.3s;
+        transition-property: transform, opacity;
+        transition-timing-function: ease-out;
+        transform: translateX(-30%);
+    }
+
+    .animate-section.visible {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 
