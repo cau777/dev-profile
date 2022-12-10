@@ -1,0 +1,20 @@
+
+/*noinspection CssReplaceWithShorthandSafely*/
+@layer utilities {
+    .animated-underline {
+        text-decoration: none;
+        background: linear-gradient(to right, transparent, transparent),
+        linear-gradient(to right, theme("colors.secondary.400"), theme("colors.secondary.600"));
+        background-size: 100% 0.1em, 0 0.1em;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition-delay: 500ms;
+        transition: background-size 1.2s ease-out;
+    }
+
+    .animated-underline.visible {
+        background-size: 0 0.1em, 100% 0.1em;
+    }
+}
+
+

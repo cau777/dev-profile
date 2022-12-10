@@ -11,4 +11,7 @@ export default {
     "englishCourse": "Curso de Inglês",
     "softwareEngineering": "Engenharia de Software",
     "presentTime": "Presente",
+    
+    "aboutMe": "Sobre mim",
+    "education": "Educação",
 }

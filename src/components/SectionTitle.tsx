@@ -6,6 +6,6 @@ type Props = {
 
 export const SectionTitle: Component<Props> = (props) => {
     return (
-        <h3 class={"text-center capitalize font-semibold text-2xl text-gray-100"}>{props.title}</h3>
+        <h3 class={"text-center capitalize font-semibold text-2xl text-gray-100 mt-24 mb-4"}>{props.title}</h3>
     )
 }

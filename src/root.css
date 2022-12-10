@@ -1,5 +1,6 @@
 /*noinspection CssUnknownTarget*/
 @import url("https://fonts.googleapis.com/css?family=Alexandria");
+@import "animations.css";
 
 @tailwind base;
 @tailwind components;
@@ -13,5 +14,21 @@
 
     body {
         @apply bg-gray-900;
+    }
+}
+
+@layer components {
+    .nav-grid {
+        display: grid;
+        grid-template-rows: 3rem auto;
+        grid-template-columns: 5rem auto;
+    }
+}
+
+@layer utilities {
+    .grid-center {
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
 }

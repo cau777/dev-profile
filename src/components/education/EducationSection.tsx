@@ -14,11 +14,15 @@ export const EducationSection: Component = () => {
             <SectionTitle title={"Education"}></SectionTitle>
             <ul>
                 <For each={INSTITUTIONS}>{(institution) => (
-                    <li class={"list-disc"}>
+                    <li class={"rounded-sm mb-4 border-l-2 pl-3 border-primary-500"}>
                         <h4>
-                            <span>{t(institution.degree)}</span> - {institution.name}
+                            {/*<span class={"text-gray-100"}>{t(institution.degree)}</span> - <span class={"text-gray-75"}>{institution.name}</span>*/}
+                            <span class={"text-primary-200"}>{institution.name}</span>
                         </h4>
-                        <div>{formatDate(institution.start)} - {institution.end ? formatDate(institution.end) : t("presentTime")}</div>
+                        <h5 class={"text-gray-100"}>
+                            {t(institution.degree)}
+                        </h5>
+                        <div class={"text-sm text-gray-200"}>{formatDate(institution.start)} - {institution.end ? formatDate(institution.end) : t("presentTime")}</div>
                     </li>
                 )}
                 </For>
