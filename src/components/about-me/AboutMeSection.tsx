@@ -1,13 +1,13 @@
 import {Component} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {t} from "~/i18n/i18n-config";
-import {AnimatedSection} from "~/components/animated/AnimatedSection";
+import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
 
 export const AboutMeSection: Component = () => {
     return (
         <section class={"mb-32"}>
             <SectionTitle title={"aboutMe"}></SectionTitle>
-            <AnimatedSection>
+            <AnimatedSlide>
                 <div class={"grid-center"}>
                     <p class={"text-center text-gray-100 max-w-3xl"}>
                         {t("aboutMe_1")}
@@ -19,7 +19,7 @@ export const AboutMeSection: Component = () => {
                         {t("aboutMe_4")}
                     </p>
                 </div>
-            </AnimatedSection>
+            </AnimatedSlide>
         </section>
     )
 }
