@@ -1,4 +1,5 @@
 import {Component} from "solid-js";
+import {t} from "~/i18n/i18n-config";
 
 type Props = {
     title: string;
@@ -6,6 +7,6 @@ type Props = {
 
 export const SectionTitle: Component<Props> = (props) => {
     return (
-        <h3 class={"text-center capitalize font-semibold text-2xl text-gray-100 mt-24 mb-4"}>{props.title}</h3>
+        <h3 id={props.title} class={"text-center capitalize font-semibold text-2xl text-primary-300 mb-4"}>{t(props.title)}</h3>
     )
 }

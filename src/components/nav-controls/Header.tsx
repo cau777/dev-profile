@@ -8,7 +8,7 @@ const SECTIONS = ["aboutMe", "education"];
 export const Header: Component = () => {
     return (
         <div class={"overflow-hidden"}>
-            <div class={"container lg:px-32 mt-5"}>
+            <div class={"container mt-5"}>
                 <div class={"flex align-middle relative"}>
                     {/*<div class={"text-primary-200 font-bold text-lg"}>Cauã Rinaldi</div>*/}
                     
@@ -32,7 +32,7 @@ export const Header: Component = () => {
                     <span class={"mx-1"}>|</span>
                     <button class={"text-sm text-gray-100"} onClick={() => changeLanguage("en")}>EN</button>
                     
-                    <div class={"absolute -right-6 translate-x-full translate-y-3"}>
+                    <div class={"absolute -right-6 translate-x-full translate-y-3 hidden md:block"}>
                         <div class={"border-primary-500 border-[2px] rounded-l h-[4px] w-[100rem]"}></div>
                     </div>
                 </div>

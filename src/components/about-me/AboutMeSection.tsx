@@ -1,26 +1,20 @@
 import {Component} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
+import {t} from "~/i18n/i18n-config";
 
 export const AboutMeSection: Component = () => {
     return (
-        <section>
-            <SectionTitle title={"About me"}></SectionTitle>
+        <section class={"mb-32"}>
+            <SectionTitle title={"aboutMe"}></SectionTitle>
             <div class={"grid-center"}>
-                <p class={"text-center text-sm text-gray-200 max-w-2xl"}>
-                    I'm almost 18 and if there's <b>one</b> thing I know is that I love finding creative solutions for
-                    problems.
+                <p class={"text-center text-gray-100 max-w-3xl"}>
+                    {t("aboutMe_1")}
                     <br/>
-                    Also, I enjoy designing small and big applications, while working in the frontend and/or backend.
+                    {t("aboutMe_2")}
                     <br/>
-                    I'm from Brazil and Portuguese is my native language, but I'm also fluent in English (C1).
+                    {t("aboutMe_3")}
                     <br/>
-                    I started programming in 2017 as a hobby, but began learning seriously in the start of 2021.
-                    <br/>
-                    In this time, I took various courses and made a lot of open-source projects in my GitHub account,
-                    exploring
-                    different technologies.
-                    <br/>
-                    I'll be studying Software Engineering in Unijuí from 2023 to 2028.
+                    {t("aboutMe_4")}
                 </p>
             </div>
         </section>

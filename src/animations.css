@@ -1,7 +1,7 @@
 
 /*noinspection CssReplaceWithShorthandSafely*/
 @layer utilities {
-    .animated-underline {
+    .animate-underline {
         text-decoration: none;
         background: linear-gradient(to right, transparent, transparent),
         linear-gradient(to right, theme("colors.secondary.400"), theme("colors.secondary.600"));
@@ -12,7 +12,7 @@
         transition: background-size 1.2s ease-out;
     }
 
-    .animated-underline.visible {
+    .animate-underline.visible {
         background-size: 0 0.1em, 100% 0.1em;
     }
 }

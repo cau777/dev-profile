@@ -4,7 +4,7 @@ import {LinksSocial} from "./LinksSocial";
 
 export const NavControls: Component<ParentProps> =(props) => {
     return (
-        <div class={"nav-grid "}>
+        <div class={"nav-grid mobile-nav-grid md:desktop-nav-grid"}>
             {/*TODO: logo*/}
             <div>Cauã Rinaldi</div>
             <Header></Header>

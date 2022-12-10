@@ -6,7 +6,7 @@ import {NavControls} from "~/components/nav-controls/NavControls";
 export default function Home() {
     return (
         <NavControls>
-            <main class="mx-auto py-5 container lg:px-32">
+            <main class="mx-auto py-5 container">
                 <BioSection></BioSection>
                 <AboutMeSection></AboutMeSection>
                 <EducationSection></EducationSection>

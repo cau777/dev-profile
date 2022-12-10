@@ -4,11 +4,9 @@ import {LinkedInIcon0} from "~/components/icons/LinkedInIcon0";
 import {CodersRankIcon} from "~/components/icons/CodersRankIcon";
 
 export const LinksSocial: Component = () => {
-    console.log("a");
-    
     return (
         <div class={""}>
-            <div class={"hidden lg:block fixed bottom-0 w-[5rem]"}>
+            <div class={"hidden md:block fixed bottom-0 w-[5rem]"}>
                 <div class={"grid-center text-primary-300 gap-1"}>
                     <a class={"cursor-pointer"} href={"https://github.com/cau777"} target={"_blank"}>
                         <GitHubIcon width={"1.4rem"}></GitHubIcon>

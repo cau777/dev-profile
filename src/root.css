@@ -18,7 +18,13 @@
 }
 
 @layer components {
-    .nav-grid {
+    .mobile-nav-grid {
+        display: grid;
+        grid-template-rows: 3rem auto;
+        grid-template-columns: 0 auto;
+    }
+
+    .desktop-nav-grid {
         display: grid;
         grid-template-rows: 3rem auto;
         grid-template-columns: 5rem auto;

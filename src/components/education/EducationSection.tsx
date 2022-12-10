@@ -11,7 +11,7 @@ function formatDate(date: Date) {
 export const EducationSection: Component = () => {
     return (
         <section>
-            <SectionTitle title={"Education"}></SectionTitle>
+            <SectionTitle title={"education"}></SectionTitle>
             <ul>
                 <For each={INSTITUTIONS}>{(institution) => (
                     <li class={"rounded-sm mb-4 border-l-2 pl-3 border-primary-500"}>
