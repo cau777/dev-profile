@@ -3,7 +3,7 @@ import {SectionTitle} from "~/components/SectionTitle";
 import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
 import {COURSES} from "~/components/courses/Courses";
 import {globalLang} from "~/i18n/i18n-config";
-// TODO: anim link
+
 export const CoursesSection: Component = () => {
     const fDate = (date: Date) => date.toLocaleString(globalLang(), {month: "short", year: "numeric"});
     
