@@ -6,6 +6,8 @@ import {useObserver} from "~/utils/intersection";
 import {sleep} from "~/utils/promises";
 
 // TODO: translate
+// TODO: arrow buttons (fixed)
+// TODO: auto next
 export const ProjectsSection: Component = () => {
     let [projects] = createResource(fetchProjects);
     let {ref, visible} = useObserver(0.3);

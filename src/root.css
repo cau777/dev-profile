@@ -1,6 +1,7 @@
 /*noinspection CssUnknownTarget*/
 @import url("https://fonts.googleapis.com/css?family=Alexandria");
 @import "animations.css";
+@import "web-components.css";
 
 @tailwind base;
 @tailwind components;

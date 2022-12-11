@@ -1,0 +1,14 @@
+@layer components {
+    codersrank-skills-chart {
+        --font-family: inherit;
+        --chart-bg-color: #21262e;
+        /*--branding-text-color: #ffff;*/
+        --chart-border-radius: 0.2rem;
+        @apply p-2;
+    }
+
+    codersrank-skills-chart {
+        /*--legend-text-color: red;*/
+        /*--legend-font-size: 12px;*/
+    }
+}

@@ -4,6 +4,7 @@ import {EducationSection} from "~/components/education/EducationSection";
 import {NavControls} from "~/components/nav-controls/NavControls";
 import {CoursesSection} from "~/components/courses/CoursesSection";
 import {ProjectsSection} from "~/components/projects/ProjectsSection";
+import {LanguagesSection} from "~/components/languages/LanguagesSection";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
                 <EducationSection></EducationSection>
                 <CoursesSection></CoursesSection>
                 <ProjectsSection></ProjectsSection>
+                <LanguagesSection></LanguagesSection>
             </main>
         </NavControls>
     );
