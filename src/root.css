@@ -33,6 +33,31 @@
         grid-template-rows: 3rem auto;
         grid-template-columns: 5rem auto;
     }
+
+    /* https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders */
+    .border-box {
+        --b: 4px;   /* thickness of the border */
+        --w: 40px;  /* width of border */
+        padding: var(--b); /* space for the border */
+        position:relative;
+    }
+
+    .border-box::before {
+        @apply bg-secondary-500;
+
+        content :"";
+        position: absolute;
+        inset: 0;
+        --_g: #0000 90deg,#000 0;
+        --_p: var(--w) var(--w) no-repeat;
+        --mask:
+                conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+                conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+                conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+                conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+    }
 }
 
 @layer utilities {

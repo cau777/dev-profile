@@ -23,4 +23,6 @@ export default {
   
   "aboutMe": "About Me",
   "education": "Education",
+  "courses": "Courses",
+  "projects": "Projects",
 }

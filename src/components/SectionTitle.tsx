@@ -10,6 +10,6 @@ export const SectionTitle: Component<Props> = (props) => {
     let {ref, visible} = useObserver(0.7);
     
     return (
-        <h3 id={props.title} class={"text-center capitalize font-semibold text-2xl text-primary-300 mb-4 animate-section-title"} ref={ref} classList={{visible: visible()}}>{t(props.title)}</h3>
+        <h3 id={props.title} class={"text-center capitalize font-semibold text-2xl text-primary-300 mb-4 animate-fade"} ref={ref} classList={{visible: visible()}}>{t(props.title)}</h3>
     )
 }

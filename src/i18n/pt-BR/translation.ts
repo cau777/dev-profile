@@ -23,4 +23,6 @@ export default {
     
     "aboutMe": "Sobre mim",
     "education": "Educação",
+    "courses": "Cursos",
+    "projects": "Projetos",
 }

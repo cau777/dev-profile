@@ -3,6 +3,7 @@ import {AboutMeSection} from "~/components/about-me/AboutMeSection";
 import {EducationSection} from "~/components/education/EducationSection";
 import {NavControls} from "~/components/nav-controls/NavControls";
 import {CoursesSection} from "~/components/courses/CoursesSection";
+import {ProjectsSection} from "~/components/projects/ProjectsSection";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <AboutMeSection></AboutMeSection>
                 <EducationSection></EducationSection>
                 <CoursesSection></CoursesSection>
+                <ProjectsSection></ProjectsSection>
             </main>
         </NavControls>
     );

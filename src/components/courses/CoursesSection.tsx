@@ -9,7 +9,7 @@ export const CoursesSection: Component = () => {
     
     return (
         <section class={"mb-32"}>
-            <SectionTitle title={"Courses"}></SectionTitle>
+            <SectionTitle title={"courses"}></SectionTitle>
             <AnimatedSlide>
                 <div class={"flex flex-wrap gap-4"}>
                     

@@ -1,10 +1,9 @@
 import {Component, For} from "solid-js";
 import {changeLanguage, t} from "~/i18n/i18n-config";
 
-const SECTIONS = ["aboutMe", "education"];
+const SECTIONS = ["aboutMe", "education", "courses", "projects"];
 
 // TODO: one of the most rewarding things is to see people using my creations
-// TODO: mobile
 export const Header: Component = () => {
     return (
         <div class={"overflow-hidden"}>
