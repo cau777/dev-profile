@@ -1,8 +1,25 @@
 import {Component, For, Show} from "solid-js";
 import {Project} from "~/components/projects/projects-fetching";
+import {t} from "~/i18n/i18n-config";
 
 // TODO: base href
-//  TODO: links
+
+function nameToTranslationId(name: string) {
+    let result = "";
+    let upper = false;
+    for (const char of name.toLowerCase()) {
+        if (char === " " || char === "-") {
+            upper = true;
+        } else if (upper) {
+            result += char.toUpperCase();
+            upper = false;
+        } else {
+            result += char;
+        }
+    }
+    return result;
+}
+
 export const ProjectDisplay: Component<Project> = (props) => {
     return (
         <article class={"flex flex-col xl:flex-row gap-2 min-h-[30rem]"}>
@@ -15,7 +32,7 @@ export const ProjectDisplay: Component<Project> = (props) => {
             </div>
             <div>
                 <h3 class={"text-xl text-primary-300 font-semibold"}>{props.project_title}</h3>
-                <p class={"text-gray-100"}>{props.description}</p>
+                <p class={"text-gray-100"}>{t(nameToTranslationId(props.project_title) + "Description")}</p>
                 <div class={"flex gap-2 flex-wrap mt-2"}>
                     <For each={props.highlighted_technologies}>{o => (
                         <div class={"rounded-xl border-2 border-gray-600 bg-gray-700 px-2 text-secondary-300"}>{o}</div>
@@ -31,14 +48,14 @@ export const ProjectDisplay: Component<Project> = (props) => {
                     <Show when={props.link_to_project !== undefined} keyed={false}>
                         <div>
                             <a class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
-                               href={props.link_to_project}>Check Demo</a>
+                               href={props.link_to_project}>{t("checkDemo")}</a>
                         </div>
                     </Show>
                     
                     <Show when={props.link_to_source_code !== undefined} keyed={false}>
                         <div>
                             <a class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
-                               href={props.link_to_source_code}>Check Source</a>
+                               href={props.link_to_source_code}>{t("checkSource")}</a>
                         </div>
                     </Show>
                 </div>

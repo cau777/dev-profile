@@ -21,8 +21,27 @@ export default {
     "softwareEngineering": "Engenharia de Software",
     "presentTime": "Presente",
     
+    "viewCertificate": "Ver Certificado",
+    
+    "checkDemo": "Ver Demo",
+    "checkSource": "Ver Código",
+    
     "aboutMe": "Sobre mim",
     "education": "Educação",
     "courses": "Cursos",
     "projects": "Projetos",
+    "languages": "Linguagens",
+    
+    "sudokuSolverDescription": "Um algoritmo feito para solucionar jogos de Sudoku de tamanhos diferentes eficientemente. " +
+        "Ele é implementado em Rust e roda no navegador usando Web Assembly. " +
+        "O projeto inclui uma interface simples feita com React para visualizar o algoritmo passo a passo.",
+    
+    "handwrittenDigitsRecognitionDescription": "Uma biblioteca de Deep Learning acelerada por GPU, feita em Rust praticamente do zero. " +
+        "Além de um playground online para usá-la para reconhecer dígitos escritos manualmente (dataset MNIST).",
+    
+    "graphicalRegexDesignerDescription": "Um site feito com Angular que permite criar Regex usando blocos coloridos. " +
+        "Também suporta variáveis e testes, e produz a expressão no formato do JavaScript.",
+    
+    "codeShareDescription": "Uma rede social que permite usuários escrever e postar snippets de código em diferentes linguaguens com um editor de código, " +
+        "e interagir com perfis e publicações de outros usuários. Usa Supabase como a base de dados e inclui 2 microserviços containerizados.",
 }

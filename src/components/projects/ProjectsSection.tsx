@@ -7,8 +7,6 @@ import {ArrowLeftIcon} from "~/components/icons/ArrowLeftIcon";
 import {ArrowRightIcon} from "~/components/icons/ArrowRightIcon";
 import {FullCircleIcon} from "~/components/icons/FullCircleIcon";
 
-// TODO: translate
-// TODO: auto next
 export const ProjectsSection: Component = () => {
     let [projects] = createResource(fetchProjects);
     let {ref, visible} = useObserver(0.3);

@@ -3,7 +3,6 @@ import {SectionTitle} from "~/components/SectionTitle";
 import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
 import {SkillChart} from "~/components/languages/SkillChart";
 
-// TODO: translate
 async function registerChart() {
     // @ts-ignore
     let mod = await import("@codersrank/skills-chart");
