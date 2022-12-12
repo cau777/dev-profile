@@ -1,7 +1,7 @@
 import {Component, For} from "solid-js";
 import {changeLanguage, t} from "~/i18n/i18n-config";
 
-const SECTIONS = ["aboutMe", "education", "courses", "projects"];
+const SECTIONS = ["aboutMe", "education", "courses", "projects", "languages"];
 
 // TODO: one of the most rewarding things is to see people using my creations
 export const Header: Component = () => {

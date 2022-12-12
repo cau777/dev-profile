@@ -1,52 +1,57 @@
-import {batch, Component, createEffect, createResource, createSignal, For, Show} from "solid-js";
+import {batch, Component, createResource, createSignal, For, Index, Show} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {fetchProjects} from "~/components/projects/projects-fetching";
 import {ProjectDisplay} from "~/components/projects/ProjectDisplay";
 import {useObserver} from "~/utils/intersection";
-import {sleep} from "~/utils/promises";
+import {ArrowLeftIcon} from "~/components/icons/ArrowLeftIcon";
+import {ArrowRightIcon} from "~/components/icons/ArrowRightIcon";
+import {FullCircleIcon} from "~/components/icons/FullCircleIcon";
 
 // TODO: translate
-// TODO: arrow buttons (fixed)
 // TODO: auto next
 export const ProjectsSection: Component = () => {
     let [projects] = createResource(fetchProjects);
     let {ref, visible} = useObserver(0.3);
-    let [offset, setOffset] = createSignal(0);
-    let [changed, setChanged] = createSignal(false);
-    
-    const offsetProjects = () => {
-        let arr = projects();
-        if (arr === undefined) return undefined;
-        let off = offset();
-        return [...arr.slice(off), ...arr.slice(0, off)];
-    }
+    let [prev, setPrev] = createSignal<number>();
+    let [current, setCurrent] = createSignal(0);
     
     function addOffset(val: number) {
         let p = projects();
         if (p === undefined) return;
-        batch(() => {
-            setChanged(false);
-            setOffset((offset() + p!.length + val) % p!.length);
-        });
+        setCurrentAndPrev((current() + p!.length + val) % p!.length);
     }
     
-    createEffect(() => {
-        let _ = offset(); // Just creates offset as a dependency
-        sleep(50).then(() => setChanged(true)); // Small delay to ensure the browser updates the change
-    });
+    function setCurrentAndPrev(newVal: number) {
+        batch(() => {
+            let c = current();
+            if (c !== newVal)
+                setPrev(c);
+            setCurrent(newVal);
+        });
+    }
     
     return (
         <section class={"mb-32"}>
             <SectionTitle title={"projects"}></SectionTitle>
             <Show when={!projects.loading} keyed={false}>
-                <div ref={ref} classList={{visible: visible()}} class={"animate-fade carousel"}>
-                    <button onClick={() => addOffset(-1)}>Prev</button>
-                    <div class={"carousel-items"} classList={{changed: changed()}}>
-                        <For each={offsetProjects()}>{o => (
-                            <ProjectDisplay {...o}></ProjectDisplay>
+                <div ref={ref} classList={{visible: visible()}} class={"animate-fade"}>
+                    <div class={"carousel-items"}>
+                        <For each={projects()}>{(o, i) => (
+                            <div classList={{current: i() === current(), prev: i() === prev()}}>
+                                <ProjectDisplay {...o}></ProjectDisplay>
+                            </div>
                         )}</For>
                     </div>
-                    <button onClick={() => addOffset(1)}>Next</button>
+                    
+                    <div class={"flex justify-center gap-1"}>
+                        <button onClick={() => addOffset(-1)}><ArrowLeftIcon width={"1.5rem"}></ArrowLeftIcon></button>
+                        <Index each={projects()}>{(_, i) => (
+                            <button onClick={() => setCurrentAndPrev(i)}>
+                                <FullCircleIcon classList={{"text-secondary-600": i === current()}}
+                                                width={"0.5rem"}></FullCircleIcon></button>
+                        )}</Index>
+                        <button onClick={() => addOffset(1)}><ArrowRightIcon width={"1.5rem"}></ArrowRightIcon></button>
+                    </div>
                 </div>
             </Show>
         </section>
