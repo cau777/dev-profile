@@ -6,6 +6,7 @@ import {CoursesSection} from "~/components/courses/CoursesSection";
 import {ProjectsSection} from "~/components/projects/ProjectsSection";
 import {LanguagesSection} from "~/components/languages/LanguagesSection";
 
+// TODO: Replace <a> with <A>
 export default function Home() {
     return (
         <NavControls>

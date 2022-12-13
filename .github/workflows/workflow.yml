@@ -18,6 +18,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Add route for gh pages base path
+        run: mkdir ./src/routes/dev-profile && cp ./src/routes/index.tsx ./src/routes/dev-profile
+
       - name: Build page
         run: npm install && npm run gh-pages
 
