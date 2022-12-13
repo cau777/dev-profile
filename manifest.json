@@ -1,0 +1,42 @@
+{
+  ".solid/index.html": {
+    "file": "assets/index.6fe67b42.js",
+    "src": ".solid/index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/[...404].tsx",
+      "src/routes/index.tsx"
+    ],
+    "css": [
+      "assets/index.f149d51c.css"
+    ]
+  },
+  "src/routes/[...404].tsx": {
+    "file": "assets/_...404_.247db0b9.js",
+    "src": "src/routes/[...404].tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      ".solid/index.html"
+    ]
+  },
+  "src/routes/index.tsx": {
+    "file": "assets/index.3395affc.js",
+    "src": "src/routes/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      ".solid/index.html"
+    ],
+    "dynamicImports": [
+      "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js"
+    ]
+  },
+  "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js": {
+    "file": "assets/codersrank-skills-chart.337df5d2.js",
+    "src": "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js",
+    "isDynamicEntry": true
+  },
+  ".solid/index.css": {
+    "file": "assets/index.f149d51c.css",
+    "src": ".solid/index.css"
+  }
+}
