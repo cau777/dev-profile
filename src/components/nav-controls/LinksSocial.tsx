@@ -7,8 +7,8 @@ import {A} from "solid-start";
 // TODO: link labels
 export const LinksSocial: Component = () => {
     return (
-        <div class={""}>
-            <div class={"hidden md:block fixed bottom-0 w-[5rem]"}>
+        <div class={"hidden md:block"}>
+            <div class={"fixed bottom-0 w-[5rem]"}>
                 <div class={"grid-center text-primary-300 gap-1"}>
                     <A class={"cursor-pointer"} href={"https://github.com/cau777"} target={"_blank"} title={"My GitHub account"}>
                         <GitHubIcon width={"1.4rem"}></GitHubIcon>

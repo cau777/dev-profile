@@ -6,16 +6,10 @@ const SECTIONS = ["aboutMe", "education", "courses", "projects", "languages"];
 
 export const Header: Component = () => {
     return (
-        <div class={"overflow-hidden"}>
+        <div class={"md:overflow-hidden"}>
             <div class={"container mt-5"}>
-                <div class={"flex align-middle relative"}>
-                    {/*<div class={"text-primary-200 font-bold text-lg"}>Cauã Rinaldi</div>*/}
-                    
-                    <div class={"ml-auto"}></div>
-                    
-                    {/*<div class={"grow grid-center"}>*/}
-                    {/*    <div class={"border-primary-500 border-[2px] rounded-l h-[4px] w-full"}></div>*/}
-                    {/*</div>*/}
+                <div class={"flex align-middle relative flex-wrap"}>
+                    <div class={"md:ml-auto"}></div>
                     
                     <For each={SECTIONS}>{(o) => {
                         return (
