@@ -6,7 +6,7 @@ export const NavControls: Component<ParentProps> =(props) => {
     return (
         <div class={"nav-grid mobile-nav-grid md:desktop-nav-grid"}>
             {/*TODO: logo*/}
-            <div>Cauã Rinaldi</div>
+            <div></div>
             <Header></Header>
             <LinksSocial></LinksSocial>
             <div class={"w-full"}>
