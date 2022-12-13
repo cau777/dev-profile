@@ -2,62 +2,62 @@
   "/*404": [
     {
       "type": "script",
-      "href": "/dev-profile/assets/_...404_.85e40cff.js"
+      "href": "/dev-profile/assets/_...404_.f6ce69a7.js"
     },
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.40e8ee20.js"
+      "href": "/dev-profile/assets/index.ebeb8a86.js"
     },
     {
       "type": "style",
-      "href": "/dev-profile/assets/index.f149d51c.css"
+      "href": "/dev-profile/assets/index.6976fbad.css"
     }
   ],
   "/": [
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.a8426385.js"
+      "href": "/dev-profile/assets/index.444c4ff6.js"
     },
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.40e8ee20.js"
+      "href": "/dev-profile/assets/index.ebeb8a86.js"
     },
     {
       "type": "style",
-      "href": "/dev-profile/assets/index.f149d51c.css"
+      "href": "/dev-profile/assets/index.6976fbad.css"
     },
     {
       "type": "script",
-      "href": "/dev-profile/assets/LanguagesSection.694a212e.js"
+      "href": "/dev-profile/assets/LanguagesSection.0ddd66a7.js"
     }
   ],
   "/dev-profile/": [
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.119fd0f7.js"
+      "href": "/dev-profile/assets/index.e946ecd6.js"
     },
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.40e8ee20.js"
+      "href": "/dev-profile/assets/index.ebeb8a86.js"
     },
     {
       "type": "style",
-      "href": "/dev-profile/assets/index.f149d51c.css"
+      "href": "/dev-profile/assets/index.6976fbad.css"
     },
     {
       "type": "script",
-      "href": "/dev-profile/assets/LanguagesSection.694a212e.js"
+      "href": "/dev-profile/assets/LanguagesSection.0ddd66a7.js"
     }
   ],
   "entry-client": [],
   "index.html": [
     {
       "type": "script",
-      "href": "/dev-profile/assets/index.40e8ee20.js"
+      "href": "/dev-profile/assets/index.ebeb8a86.js"
     },
     {
       "type": "style",
-      "href": "/dev-profile/assets/index.f149d51c.css"
+      "href": "/dev-profile/assets/index.6976fbad.css"
     }
   ]
 }
