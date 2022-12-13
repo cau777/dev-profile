@@ -1,1 +1,0 @@
-import{i as e,c as n,A as a,t as o}from"./index.6fe67b42.js";const r=o('<main class="text-center mx-auto text-gray-700 p-4"><h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Not Found</h1></main>');function c(){return(()=>{const t=r.cloneNode(!0);return t.firstChild,e(t,n(a,{href:"/",children:"Back"}),null),t})()}export{c as default};
