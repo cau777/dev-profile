@@ -26,6 +26,7 @@ export default function Root() {
                 <Meta name={"description"}
                       content={"A personal portfolio website for Cauã Rinaldi, highlighting education, courses, programming languages, and projects."}></Meta>
                 <Link rel={"preconnect"} href={"https://fonts.gstatic.com"}></Link>
+                <Link rel={"preconnect"} href={"https://fonts.googleapis.com"}></Link>
             </Head>
             <Body>
                 <Suspense>

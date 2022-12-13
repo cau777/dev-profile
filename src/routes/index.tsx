@@ -5,8 +5,8 @@ import {NavControls} from "~/components/nav-controls/NavControls";
 import {CoursesSection} from "~/components/courses/CoursesSection";
 import {ProjectsSection} from "~/components/projects/ProjectsSection";
 import {LanguagesSection} from "~/components/languages/LanguagesSection";
+import {Suspense, SuspenseList} from "solid-js";
 
-// TODO: Replace <a> with <A>
 export default function Home() {
     return (
         <NavControls>
@@ -15,8 +15,14 @@ export default function Home() {
                 <AboutMeSection></AboutMeSection>
                 <EducationSection></EducationSection>
                 <CoursesSection></CoursesSection>
-                <ProjectsSection></ProjectsSection>
-                <LanguagesSection></LanguagesSection>
+                <SuspenseList revealOrder={"forwards"}>
+                    <Suspense>
+                        <ProjectsSection></ProjectsSection>
+                    </Suspense>
+                    <Suspense>
+                        <LanguagesSection></LanguagesSection>
+                    </Suspense>
+                </SuspenseList>
             </main>
         </NavControls>
     );
