@@ -1,5 +1,6 @@
 import {Component, For} from "solid-js";
 import {changeLanguage, t} from "~/i18n/i18n-config";
+import {A} from "solid-start";
 
 const SECTIONS = ["aboutMe", "education", "courses", "projects", "languages"];
 
@@ -19,9 +20,9 @@ export const Header: Component = () => {
                     <For each={SECTIONS}>{(o) => {
                         return (
                             <div class={"grid-center text-gray-100 mr-4"}>
-                                <a href={"#" + o}>
+                                <A href={"#" + o}>
                                     {t(o)}
-                                </a>
+                                </A>
                             </div>
                         );
                     }}</For>

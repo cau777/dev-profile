@@ -25,6 +25,8 @@ export default {
     
     "checkDemo": "Ver Demo",
     "checkSource": "Ver Código",
+    "prev": "Anterior",
+    "next": "Próximo",
     
     "aboutMe": "Sobre mim",
     "education": "Educação",

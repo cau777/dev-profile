@@ -15,6 +15,7 @@ import "./root.css";
 import {LanguageLoader} from "~/components/LanguageLoader";
 import {globalLang} from "~/i18n/i18n-config";
 
+// TODO: meta description
 export default function Root() {
     const lang = () => globalLang() ?? "en";
     return (

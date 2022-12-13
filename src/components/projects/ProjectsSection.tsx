@@ -6,6 +6,7 @@ import {useObserver} from "~/utils/intersection";
 import {ArrowLeftIcon} from "~/components/icons/ArrowLeftIcon";
 import {ArrowRightIcon} from "~/components/icons/ArrowRightIcon";
 import {FullCircleIcon} from "~/components/icons/FullCircleIcon";
+import {t} from "~/i18n/i18n-config";
 
 export const ProjectsSection: Component = () => {
     let [projects] = createResource(fetchProjects);
@@ -42,13 +43,19 @@ export const ProjectsSection: Component = () => {
                     </div>
                     
                     <div class={"flex justify-center gap-1"}>
-                        <button onClick={() => addOffset(-1)}><ArrowLeftIcon width={"1.5rem"}></ArrowLeftIcon></button>
+                        <button onClick={() => addOffset(-1)} title={t("prev") as string}>
+                            <ArrowLeftIcon width={"1.5rem"}></ArrowLeftIcon>
+                        </button>
+                        
                         <Index each={projects()}>{(_, i) => (
-                            <button onClick={() => setCurrentAndPrev(i)}>
+                            <button onClick={() => setCurrentAndPrev(i)} aria-label={"Project " + i}>
                                 <FullCircleIcon classList={{"text-secondary-600": i === current()}}
                                                 width={"0.5rem"}></FullCircleIcon></button>
                         )}</Index>
-                        <button onClick={() => addOffset(1)}><ArrowRightIcon width={"1.5rem"}></ArrowRightIcon></button>
+                        
+                        <button onClick={() => addOffset(1)} title={t("next") as string}>
+                            <ArrowRightIcon width={"1.5rem"} ></ArrowRightIcon>
+                        </button>
                     </div>
                 </div>
             </Show>

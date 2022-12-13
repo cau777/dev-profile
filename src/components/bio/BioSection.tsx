@@ -2,7 +2,8 @@ import {Component} from "solid-js";
 import {t} from "~/i18n/i18n-config";
 import {AnimatedUnderline} from "~/components/animated/AnimatedUnderline";
 
-// TODO: pattern to occupy space
+// TODO: pattern to occupy space???
+// TODO: my picture
 
 export const BioSection: Component = () => {
     return (

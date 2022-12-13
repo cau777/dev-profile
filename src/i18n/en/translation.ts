@@ -25,6 +25,8 @@ export default {
     
     "checkDemo": "Check Demo",
     "checkSource": "Check Code",
+    "prev": "Previous",
+    "next": "Next",
     
     "aboutMe": "About Me",
     "education": "Education",

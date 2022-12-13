@@ -11,19 +11,22 @@ export const EducationSection: Component = () => {
             <SectionTitle title={"education"}></SectionTitle>
             <ul>
                 <For each={INSTITUTIONS}>{(institution) => (
-                    <AnimatedSlide>
-                        <li class={"rounded-sm mb-4 border-l-2 pl-3 border-primary-500"}>
-                            <h4>
-                                {/*<span class={"text-gray-100"}>{t(institution.degree)}</span> - <span class={"text-gray-75"}>{institution.name}</span>*/}
-                                <span class={"text-primary-200"}>{institution.name}</span>
-                            </h4>
-                            <h5 class={"text-gray-100"}>
-                                {t(institution.degree)}
-                            </h5>
-                            <div
-                                class={"text-sm text-gray-200"}>{fDate(institution.start)} - {institution.end ? fDate(institution.end) : t("presentTime")}</div>
-                        </li>
-                    </AnimatedSlide>
+                    <li>
+                        <AnimatedSlide>
+                            <div class={"rounded-sm mb-4 border-l-2 pl-3 border-primary-500"}>
+                                <h4>
+                                    {/*<span class={"text-gray-100"}>{t(institution.degree)}</span> - <span class={"text-gray-75"}>{institution.name}</span>*/}
+                                    <span class={"text-primary-200"}>{institution.name}</span>
+                                </h4>
+                                <h5 class={"text-gray-100"}>
+                                    {t(institution.degree)}
+                                </h5>
+                                <div
+                                    class={"text-sm text-gray-200"}>{fDate(institution.start)} - {institution.end ? fDate(institution.end) : t("presentTime")}</div>
+                            </div>
+                        </AnimatedSlide>
+                    </li>
+                
                 )}
                 </For>
             </ul>

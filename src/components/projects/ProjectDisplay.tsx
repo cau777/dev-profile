@@ -1,8 +1,7 @@
 import {Component, For, Show} from "solid-js";
 import {Project} from "~/components/projects/projects-fetching";
 import {t} from "~/i18n/i18n-config";
-
-// TODO: base href
+import {A} from "solid-start";
 
 function nameToTranslationId(name: string) {
     let result = "";
@@ -47,15 +46,15 @@ export const ProjectDisplay: Component<Project> = (props) => {
                 <div class={"text-primary-300 mt-5 flex flex-wrap gap-2"}>
                     <Show when={props.link_to_project !== undefined} keyed={false}>
                         <div>
-                            <a class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
-                               href={props.link_to_project}>{t("checkDemo")}</a>
+                            <A class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
+                               href={props.link_to_project!}>{t("checkDemo")}</A>
                         </div>
                     </Show>
                     
                     <Show when={props.link_to_source_code !== undefined} keyed={false}>
                         <div>
-                            <a class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
-                               href={props.link_to_source_code}>{t("checkSource")}</a>
+                            <A class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
+                               href={props.link_to_source_code!}>{t("checkSource")}</A>
                         </div>
                     </Show>
                 </div>
