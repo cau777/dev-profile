@@ -9,7 +9,7 @@
       "src/routes/dev-profile/index.tsx"
     ],
     "css": [
-      "assets/index.6976fbad.css"
+      "assets/index.7135506b.css"
     ]
   },
   "src/routes/[...404].tsx": {
@@ -53,7 +53,7 @@
     "isDynamicEntry": true
   },
   ".solid/index.css": {
-    "file": "assets/index.6976fbad.css",
+    "file": "assets/index.7135506b.css",
     "src": ".solid/index.css"
   }
 }
