@@ -4,6 +4,7 @@ import {AnimatedUnderline} from "~/components/animated/AnimatedUnderline";
 
 // TODO: pattern to occupy space???
 // TODO: my picture
+// TODO: reduce layout shift
 
 export const BioSection: Component = () => {
     return (

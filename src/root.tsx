@@ -27,6 +27,8 @@ export default function Root() {
                       content={"A personal portfolio website for Cauã Rinaldi, highlighting education, courses, programming languages, and projects."}></Meta>
                 <Link rel={"preconnect"} href={"https://fonts.gstatic.com"}></Link>
                 <Link rel={"preconnect"} href={"https://fonts.googleapis.com"}></Link>
+                <Link rel="shortcut icon" href={import.meta.env.BASE_URL + "favicon.ico"} type="image/x-icon"></Link>
+                <Link rel="icon" href={import.meta.env.BASE_URL + "favicon.ico"} type="image/x-icon"></Link>
             </Head>
             <Body>
                 <Suspense>
