@@ -45,7 +45,7 @@ export const COURSES: Course[] = [
         name: "Modern CSS with Tailwind",
         organization: "Educative",
         date: new Date(2022, 7),
-        // TODO: url
+        url: "https://www.educative.io/verify-certificate/WnDG1YSPLv2yPrOZ0tBWkJkm792Vsk",
     },
     {
         name: "The Ultimate Guide to Rust Programming",
