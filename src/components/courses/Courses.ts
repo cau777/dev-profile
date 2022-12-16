@@ -63,5 +63,11 @@ export const COURSES: Course[] = [
         organization: "Educative",
         date: new Date(2022, 3),
         url: "https://www.educative.io/verify-certificate/GwjxmvLOZOXs2oOr4D3GQxiWRDPDkq8MVfm",
+    },
+    {
+        name: "Practical Security: Simple Practices for Defending Your Systems",
+        organization: "Educative",
+        date: new Date(2022, 11),
+        url: "https://www.educative.io/verify-certificate/X6EJPZiGZk4yOV88vFQwKLKmYyG3TL",
     }
 ]

@@ -12,8 +12,7 @@ export const CoursesSection: Component = () => {
         <section class={"mb-32"}>
             <SectionTitle title={"courses"}></SectionTitle>
             <AnimatedSlide>
-                <div class={"flex flex-wrap gap-4"}>
-                    
+                <div class={"flex flex-wrap gap-4 justify-center"}>
                     <For each={COURSES}>{o => (
                         <div class={"rounded-lg bg-gray-800 border-2 p-3 border-gray-700 w-52"}>
                             <h5 class={"text-primary-300 mb-1"}>{o.name}</h5>
@@ -21,7 +20,8 @@ export const CoursesSection: Component = () => {
                             <div class={"text-xs text-gray-100"}>{fDate(o.date)}</div>
                             <Show when={o.url !== undefined} keyed={false}>
                                 <div class={"mt-3"}>
-                                    <A class={"text-xs text-gray-200"} href={o.url!} target={"_blank"}>{t("viewCertificate")}</A>
+                                    <A class={"text-xs text-gray-200"} href={o.url!}
+                                       target={"_blank"}>{t("viewCertificate")}</A>
                                 </div>
                             </Show>
                         </div>
