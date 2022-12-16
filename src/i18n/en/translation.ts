@@ -4,7 +4,7 @@ export default {
     "description_2": "proactive",
     "description_3": "and",
     "description_4": "studious",
-    "description_5": "Full-Stack Developer",
+    "description_5": "Web Developer",
     "subtitle_1": "I'm almost 18 and if there's",
     "subtitle_2": "one",
     "subtitle_3": "thing I know is that I love finding creative solutions for problems.",

@@ -1,6 +1,6 @@
 export default {
     "greeting": "Olá, Eu sou Cauã Rinaldi!",
-    "description_1": "Um Desenvolvedor Full-Stack",
+    "description_1": "Um Desenvolvedor Web",
     "description_2": "proativo",
     "description_3": "e",
     "description_4": "estudioso",
