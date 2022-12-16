@@ -1,6 +1,6 @@
 {
   ".solid/index.html": {
-    "file": "assets/index.95b1108c.js",
+    "file": "assets/index.9f88377e.js",
     "src": ".solid/index.html",
     "isEntry": true,
     "dynamicImports": [
@@ -13,7 +13,7 @@
     ]
   },
   "src/routes/[...404].tsx": {
-    "file": "assets/_...404_.5b535725.js",
+    "file": "assets/_...404_.d5fadda5.js",
     "src": "src/routes/[...404].tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -21,16 +21,16 @@
     ]
   },
   "src/routes/index.tsx": {
-    "file": "assets/index.2b9d3077.js",
+    "file": "assets/index.1f2e38b5.js",
     "src": "src/routes/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       ".solid/index.html",
-      "_LanguagesSection.355a2e1d.js"
+      "_LanguagesSection.0897d581.js"
     ]
   },
-  "_LanguagesSection.355a2e1d.js": {
-    "file": "assets/LanguagesSection.355a2e1d.js",
+  "_LanguagesSection.0897d581.js": {
+    "file": "assets/LanguagesSection.0897d581.js",
     "imports": [
       ".solid/index.html"
     ],
@@ -39,12 +39,12 @@
     ]
   },
   "src/routes/dev-profile/index.tsx": {
-    "file": "assets/index.c69c505a.js",
+    "file": "assets/index.ceec1da8.js",
     "src": "src/routes/dev-profile/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       ".solid/index.html",
-      "_LanguagesSection.355a2e1d.js"
+      "_LanguagesSection.0897d581.js"
     ]
   },
   "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js": {
