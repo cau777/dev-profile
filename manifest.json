@@ -1,6 +1,10 @@
 {
+  "img/MyPicture.jpeg": {
+    "file": "assets/MyPicture.513b83cd.jpeg",
+    "src": "img/MyPicture.jpeg"
+  },
   ".solid/index.html": {
-    "file": "assets/index.be372fa8.js",
+    "file": "assets/index.54d21f68.js",
     "src": ".solid/index.html",
     "isEntry": true,
     "dynamicImports": [
@@ -9,11 +13,11 @@
       "src/routes/dev-profile/index.tsx"
     ],
     "css": [
-      "assets/index.7135506b.css"
+      "assets/index.e9c1c020.css"
     ]
   },
   "src/routes/[...404].tsx": {
-    "file": "assets/_...404_.bf33ffdb.js",
+    "file": "assets/_...404_.ba9eb40e.js",
     "src": "src/routes/[...404].tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -21,30 +25,33 @@
     ]
   },
   "src/routes/index.tsx": {
-    "file": "assets/index.6f541f61.js",
+    "file": "assets/index.0e8f2d89.js",
     "src": "src/routes/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       ".solid/index.html",
-      "_LanguagesSection.edc4c7bb.js"
+      "_LanguagesSection.dbd090fc.js"
     ]
   },
-  "_LanguagesSection.edc4c7bb.js": {
-    "file": "assets/LanguagesSection.edc4c7bb.js",
+  "_LanguagesSection.dbd090fc.js": {
+    "file": "assets/LanguagesSection.dbd090fc.js",
     "imports": [
       ".solid/index.html"
     ],
     "dynamicImports": [
       "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js"
+    ],
+    "assets": [
+      "assets/MyPicture.513b83cd.jpeg"
     ]
   },
   "src/routes/dev-profile/index.tsx": {
-    "file": "assets/index.f8ebe80e.js",
+    "file": "assets/index.63cd6391.js",
     "src": "src/routes/dev-profile/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       ".solid/index.html",
-      "_LanguagesSection.edc4c7bb.js"
+      "_LanguagesSection.dbd090fc.js"
     ]
   },
   "node_modules/@codersrank/skills-chart/esm/codersrank-skills-chart.js": {
@@ -53,7 +60,7 @@
     "isDynamicEntry": true
   },
   ".solid/index.css": {
-    "file": "assets/index.7135506b.css",
+    "file": "assets/index.e9c1c020.css",
     "src": ".solid/index.css"
   }
 }
