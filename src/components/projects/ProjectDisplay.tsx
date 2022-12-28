@@ -24,14 +24,14 @@ export const ProjectDisplay: Component<Project> = (props) => {
     
     return (
         <article class={"flex flex-col xl:flex-row gap-2 min-h-[30rem]"}>
-            <div>
-                <div class={"xl:mr-8 flex"}>
-                    <div class={"border-box p-2 max-w-md"}>
+            <div class={"xl:mr-8 xl:w-[30rem] xl:grow-0 xl:shrink-0"}>
+                <div class={"flex xl:w-full"}>
+                    <div class={"border-box p-2 max-w-md xl:max-w-max xl:w-full"}>
                         <img src={props.image} alt={"Project screenshot"} width={"100%"}/>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class={"min-w-0"}>
                 <h3 class={"text-xl text-primary-300 font-semibold"}>{props.project_title}</h3>
                 <p class={"text-gray-100"}>
                     {/* @ts-ignore */}

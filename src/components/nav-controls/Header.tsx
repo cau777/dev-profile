@@ -14,12 +14,13 @@ export const Header: Component = () => {
                     <div class={"md:ml-auto"}></div>
                     
                     <For each={SECTIONS}>{(o) => {
+                        // @ts-ignore
+                        let name = t[o];
                         return (
-                            <div class={"grid-center text-gray-100 mr-4"}>
-                                <A href={"#" + o}>
-                                    {/* @ts-ignore */}
-                                    {t[o]}
-                                </A>
+                            <div class={"grid-center text-gray-100 mr-4 cursor-pointer"}>
+                                <a title={name} onClick={() => document.getElementById(o)?.scrollIntoView({behavior: "smooth"})}>
+                                    {name}
+                                </a>
                             </div>
                         );
                     }}</For>
