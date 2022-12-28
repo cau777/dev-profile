@@ -6,13 +6,14 @@ import {useObserver} from "~/utils/intersection";
 import {ArrowLeftIcon} from "~/components/icons/ArrowLeftIcon";
 import {ArrowRightIcon} from "~/components/icons/ArrowRightIcon";
 import {FullCircleIcon} from "~/components/icons/FullCircleIcon";
-import {t} from "~/i18n/i18n-config";
+import {useT} from "~/components/LanguagesContext";
 
 export const ProjectsSection: Component = () => {
     let [projects] = createResource(fetchProjects);
     let {ref, visible} = useObserver(0.3);
     let [prev, setPrev] = createSignal<number>();
     let [current, setCurrent] = createSignal(0);
+    let t = useT();
     
     function addOffset(val: number) {
         let p = projects();
@@ -43,7 +44,7 @@ export const ProjectsSection: Component = () => {
                     </div>
                     
                     <div class={"flex justify-center gap-2"}>
-                        <button onClick={() => addOffset(-1)} title={t("prev") as string}>
+                        <button onClick={() => addOffset(-1)} title={t.prev}>
                             <ArrowLeftIcon width={"1.8rem"}></ArrowLeftIcon>
                         </button>
                         
@@ -53,7 +54,7 @@ export const ProjectsSection: Component = () => {
                                                 width={"0.8rem"}></FullCircleIcon></button>
                         )}</Index>
                         
-                        <button onClick={() => addOffset(1)} title={t("next") as string}>
+                        <button onClick={() => addOffset(1)} title={t.next}>
                             <ArrowRightIcon width={"1.8rem"} ></ArrowRightIcon>
                         </button>
                     </div>

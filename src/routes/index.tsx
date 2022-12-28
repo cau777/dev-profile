@@ -1,29 +1,25 @@
-import {BioSection} from "~/components/bio/BioSection";
-import {AboutMeSection} from "~/components/about-me/AboutMeSection";
-import {EducationSection} from "~/components/education/EducationSection";
-import {NavControls} from "~/components/nav-controls/NavControls";
-import {CoursesSection} from "~/components/courses/CoursesSection";
-import {ProjectsSection} from "~/components/projects/ProjectsSection";
-import {LanguagesSection} from "~/components/languages/LanguagesSection";
-import {Suspense, SuspenseList} from "solid-js";
+// import {useNavigate} from "@solidjs/router";
+//
+// const SUPPORTED_LANGS = ["pt", "en"];
 
 export default function Home() {
+    // let cachedLang = localStorage.getItem("preferredLang");
+    // if (cachedLang === null) {
+    //     console.log(navigator.languages);
+    //     for (let language of navigator.languages ?? [navigator.language]) {
+    //         let [lang, other] = language.split("-");
+    //         if (SUPPORTED_LANGS.includes(lang)) {
+    //             cachedLang = lang;
+    //             localStorage.setItem("preferredLang", cachedLang);
+    //             break;
+    //         }
+    //     }
+    // }
+    //
+    // let navigate = useNavigate();
+    // navigate("/" + (cachedLang ?? "en"));
+    
     return (
-        <NavControls>
-            <main class="mx-auto py-5 container">
-                <BioSection></BioSection>
-                <AboutMeSection></AboutMeSection>
-                <EducationSection></EducationSection>
-                <CoursesSection></CoursesSection>
-                <SuspenseList revealOrder={"forwards"}>
-                    <Suspense>
-                        <ProjectsSection></ProjectsSection>
-                    </Suspense>
-                    <Suspense>
-                        <LanguagesSection></LanguagesSection>
-                    </Suspense>
-                </SuspenseList>
-            </main>
-        </NavControls>
+        <div></div>
     );
 }

@@ -1,11 +1,12 @@
 import {Component, For} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {INSTITUTIONS} from "~/components/education/Institutions";
-import {globalLang, t} from "~/i18n/i18n-config";
 import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
+import {useLang, useT} from "~/components/LanguagesContext";
 
 export const EducationSection: Component = () => {
-    const fDate = (date: Date) => date.toLocaleString(globalLang(), {month: "short", year: "numeric"});
+    let t = useT();
+    const fDate = (date: Date) => date.toLocaleString(useLang(), {month: "short", year: "numeric"});
     return (
         <section class={"mb-32"}>
             <SectionTitle title={"education"}></SectionTitle>
@@ -19,14 +20,14 @@ export const EducationSection: Component = () => {
                                     <span class={"text-primary-200"}>{institution.name}</span>
                                 </h4>
                                 <h5 class={"text-gray-100"}>
-                                    {t(institution.degree)}
+                                    {/* @ts-ignore */}
+                                    {t[institution.degree]}
                                 </h5>
                                 <div
-                                    class={"text-sm text-gray-200"}>{fDate(institution.start)} - {institution.end ? fDate(institution.end) : t("presentTime")}</div>
+                                    class={"text-sm text-gray-200"}>{fDate(institution.start)} - {institution.end ? fDate(institution.end) : t.presentTime}</div>
                             </div>
                         </AnimatedSlide>
                     </li>
-                
                 )}
                 </For>
             </ul>

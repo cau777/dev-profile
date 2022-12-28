@@ -1,10 +1,12 @@
 import {Component, For} from "solid-js";
-import {changeLanguage, t} from "~/i18n/i18n-config";
 import {A} from "solid-start";
+import {useT} from "~/components/LanguagesContext";
 
 const SECTIONS = ["aboutMe", "education", "courses", "projects", "languages"];
 
 export const Header: Component = () => {
+    let t = useT();
+    
     return (
         <div class={"md:overflow-hidden"}>
             <div class={"container mt-5"}>
@@ -15,15 +17,16 @@ export const Header: Component = () => {
                         return (
                             <div class={"grid-center text-gray-100 mr-4"}>
                                 <A href={"#" + o}>
-                                    {t(o)}
+                                    {/* @ts-ignore */}
+                                    {t[o]}
                                 </A>
                             </div>
                         );
                     }}</For>
                     
-                    <button class={"text-sm text-gray-100"} onClick={() => changeLanguage("pt-BR")}>PT</button>
+                    <A class={"text-sm text-gray-100"} href={"/pt"}>PT</A>
                     <span class={"mx-1"}>|</span>
-                    <button class={"text-sm text-gray-100"} onClick={() => changeLanguage("en")}>EN</button>
+                    <A class={"text-sm text-gray-100"} href={"/en"}>EN</A>
                     
                     <div class={"absolute -right-6 translate-x-full translate-y-3 hidden md:block"}>
                         <div class={"border-primary-500 border-[2px] rounded-l h-[4px] w-[100rem]"}></div>

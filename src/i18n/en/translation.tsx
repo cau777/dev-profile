@@ -1,19 +1,22 @@
+import type {Component} from "solid-js";
+import {Dynamic} from "solid-js/web";
+
 export default {
     "greeting": "Hi, I'm Cauã Rinaldi!",
-    "description_1": "A",
-    "description_2": "proactive",
-    "description_3": "and",
-    "description_4": "studious",
-    "description_5": "Web Developer",
-    "subtitle_1": "I'm almost 18 and if there's",
-    "subtitle_2": "one",
-    "subtitle_3": "thing I know is that I love finding creative solutions for problems.",
-    "subtitle_4": "Also, I enjoy designing small and big applications, while working in the frontend and/or backend.",
-    
-    "aboutMe_1": "I'm from Brazil and Portuguese is my native language, but I'm also fluent in English (C1).",
-    "aboutMe_2": "I started programming in 2017 as a hobby, but began learning seriously in the start of 2021.",
-    "aboutMe_3": "In this time, I took various courses and made a lot of open-source projects in my GitHub account, exploring different technologies.",
-    "aboutMe_4": "Now, I'll be studying Software Engineering in Unijuí from 2023 to 2028.",
+    description: (adj1Tag: Component<any>, adj2Tag: Component<any>) => <>
+        A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>studious</Dynamic> Web Developer
+    </>,
+    subtitle: (tag: Component<any>) => <>
+        I'm almost 18 and if there's <Dynamic component={tag}>one</Dynamic> thing I know is that I love finding creative solutions for problems.
+        <br/>
+        Also, I enjoy designing small and big applications, while working in the frontend and/or backend.
+    </>,
+    aboutMeText: () => <>
+        I'm from Brazil and Portuguese is my native language, but I'm also fluent in English (C1). <br/>
+        I started programming in 2017 as a hobby, but began learning seriously in the start of 2021. <br/>
+        In this time, I took various courses and made a lot of open-source projects in my GitHub account, exploring different technologies. <br/>
+        Now, I'll be studying Software Engineering in Unijuí from 2023 to 2028. <br/>
+    </>,
     
     "elementarySchool": "Elementary School",
     "highSchool": "High School",

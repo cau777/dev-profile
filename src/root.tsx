@@ -12,13 +12,10 @@ import {
     Title,
 } from "solid-start";
 import "./root.css";
-import {LanguageLoader} from "~/components/LanguageLoader";
-import {globalLang} from "~/i18n/i18n-config";
 
 export default function Root() {
-    const lang = () => globalLang() ?? "en";
     return (
-        <Html lang={lang()}>
+        <Html lang={"en"}>
             <Head>
                 <Title>Cauã Rinaldi</Title>
                 <Meta charset="utf-8"/>
@@ -32,13 +29,11 @@ export default function Root() {
             </Head>
             <Body>
                 <Suspense>
-                    <LanguageLoader>
-                        <ErrorBoundary>
-                            <Routes>
-                                <FileRoutes/>
-                            </Routes>
-                        </ErrorBoundary>
-                    </LanguageLoader>
+                    <ErrorBoundary>
+                        <Routes>
+                            <FileRoutes/>
+                        </Routes>
+                    </ErrorBoundary>
                 </Suspense>
                 <Scripts/>
             </Body>

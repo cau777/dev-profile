@@ -2,11 +2,12 @@ import {Component, For, Show} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
 import {COURSES} from "~/components/courses/Courses";
-import {globalLang, t} from "~/i18n/i18n-config";
 import {A} from "solid-start";
+import {useLang, useT} from "~/components/LanguagesContext";
 
 export const CoursesSection: Component = () => {
-    const fDate = (date: Date) => date.toLocaleString(globalLang(), {month: "short", year: "numeric"});
+    let t = useT();
+    const fDate = (date: Date) => date.toLocaleString(useLang(), {month: "short", year: "numeric"});
     
     return (
         <section class={"mb-32"}>
@@ -21,7 +22,7 @@ export const CoursesSection: Component = () => {
                             <Show when={o.url !== undefined} keyed={false}>
                                 <div class={"mt-3"}>
                                     <A class={"text-xs text-gray-200"} href={o.url!}
-                                       target={"_blank"}>{t("viewCertificate")}</A>
+                                       target={"_blank"}>{t.viewCertificate}</A>
                                 </div>
                             </Show>
                         </div>
