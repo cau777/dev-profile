@@ -27,7 +27,7 @@ export const BioSection: Component = () => {
     return (
         <section class={"flex mt-10 flex-col md:flex-row min-h-screen"}>
             <div class={"mr-10"}>
-                <img class={"h-auto border-2"} src={picture} width={256} height={170}
+                <img class={"h-auto border-2"} src={picture} width={256} height={384}
                      alt={"A picture of me with my arms crossed"}/>
             </div>
             

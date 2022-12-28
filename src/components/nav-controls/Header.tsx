@@ -24,9 +24,9 @@ export const Header: Component = () => {
                         );
                     }}</For>
                     
-                    <A class={"text-sm text-gray-100"} href={"/pt"}>PT</A>
+                    <A class={"text-sm text-gray-100"} href={import.meta.env.BASE_URL + "pt"}>PT</A>
                     <span class={"mx-1"}>|</span>
-                    <A class={"text-sm text-gray-100"} href={"/en"}>EN</A>
+                    <A class={"text-sm text-gray-100"} href={import.meta.env.BASE_URL + "en"}>EN</A>
                     
                     <div class={"absolute -right-6 translate-x-full translate-y-3 hidden md:block"}>
                         <div class={"border-primary-500 border-[2px] rounded-l h-[4px] w-[100rem]"}></div>
