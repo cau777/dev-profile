@@ -1,5 +1,5 @@
 {
-  "name": "dev-profile",
+  "name": "sl",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
@@ -21,9 +21,8 @@
     "@codersrank/skills-chart": "0.9.21",
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.6.0",
-    "axios": "^1.2.1",
     "solid-js": "^1.6.2",
-    "solid-start": "0.2.9",
+    "solid-start": "^0.2.0",
     "solid-start-static": "^0.2.9",
     "undici": "^5.11.0"
   },

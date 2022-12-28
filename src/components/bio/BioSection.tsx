@@ -1,4 +1,4 @@
-import {Component, createSignal} from "solid-js";
+import {Component, createSignal, onCleanup, onMount} from "solid-js";
 import {AnimatedUnderline} from "~/components/animated/AnimatedUnderline";
 import picture from "../../../img/MyPicture.jpeg";
 import {ChevronDownIcon} from "~/components/icons/ChevronDownIcon";
@@ -7,14 +7,22 @@ import {useT} from "~/components/LanguagesContext";
 // TODO: pattern to occupy space???
 
 export const BioSection: Component = () => {
-    let [chevronVisible, setVisible] = createSignal(window.innerWidth > 600);
+    let [chevronVisible, setVisible] = createSignal(false);
     let t = useT();
     
+    onMount(() => {
+        if (window === undefined) return;
+        window.addEventListener("scroll", onScroll);
+        setVisible(window.innerWidth > 600);
+    });
+    onCleanup(() => {
+        window?.removeEventListener("scroll", onScroll);
+    });
+
     const onScroll = () => {
         setVisible(false);
         window.removeEventListener("scroll", onScroll);
     };
-    window.addEventListener("scroll", onScroll);
     
     return (
         <section class={"flex mt-10 flex-col md:flex-row min-h-screen"}>
@@ -36,7 +44,7 @@ export const BioSection: Component = () => {
             </header>
             
             <button class={"fixed text-gray-50 left-1/2 bottom-5 cursor-pointer transition-all opacity-0 duration-150"}
-                    classList={{"opacity-100": chevronVisible()}}
+                    classList={{"opacity-100": chevronVisible()}} title={t.scrollDown}
                     onClick={() => window.scrollBy({top: 350, behavior: "smooth"})}>
                 <ChevronDownIcon width={"2rem"}></ChevronDownIcon>
             </button>

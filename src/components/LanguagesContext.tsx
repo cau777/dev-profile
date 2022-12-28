@@ -1,4 +1,4 @@
-import {createContext, ParentComponent, useContext} from "solid-js";
+import {createContext, createEffect, ParentComponent, useContext} from "solid-js";
 import EN_TRANSLATION from "~/i18n/en/translation";
 import PT_BR_TRANSLATION from "~/i18n/pt-BR/translation";
 
@@ -31,7 +31,10 @@ export const LanguagesProvider: ParentComponent<Props> = (props) => {
             translation = EN_TRANSLATION;
             break;
     }
-    document.documentElement.lang = props.lang;
+    
+    createEffect(() => {
+        document.documentElement.lang = props.lang;
+    });
     
     return (
         <LanguagesContext.Provider value={{lang: props.lang, t: translation}}>

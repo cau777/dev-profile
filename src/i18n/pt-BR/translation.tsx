@@ -30,12 +30,14 @@ export default {
     "checkSource": "Ver Código",
     "prev": "Anterior",
     "next": "Próximo",
+    "scrollDown": "Ir para baixo",
     
     "aboutMe": "Sobre mim",
     "education": "Educação",
     "courses": "Cursos",
     "projects": "Projetos",
     "languages": "Linguagens",
+    "languagesDescription": "Minha experiência com diferentes linguagens ao longo do tempo, medida por CodersRank com base na minha atividade no GitHub",
     
     "sudokuSolverDescription": "Um algoritmo feito para solucionar jogos de Sudoku de tamanhos diferentes eficientemente. " +
         "Ele é implementado em Rust e roda no navegador usando Web Assembly. " +

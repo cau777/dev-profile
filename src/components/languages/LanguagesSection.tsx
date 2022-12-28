@@ -1,7 +1,8 @@
-import {Component, createResource, Show} from "solid-js";
+import {Component, createEffect, createSignal, Show} from "solid-js";
 import {SectionTitle} from "~/components/SectionTitle";
 import {AnimatedSlide} from "~/components/animated/AnimatedSlide";
 import {SkillChart} from "~/components/languages/SkillChart";
+import {useT} from "~/components/LanguagesContext";
 
 async function registerChart() {
     // @ts-ignore
@@ -12,12 +13,18 @@ async function registerChart() {
 }
 
 export const LanguagesSection: Component = () => {
-    let [registered] = createResource(registerChart);
+    let [ready, setReady] = createSignal(false);
+    let t = useT();
+    
+    createEffect(() => {
+        registerChart().then(() => setReady(true));
+    });
     
     return (
         <section class={"mb-12"}>
             <SectionTitle title={"languages"}></SectionTitle>
-            <Show when={registered()} keyed={false}>
+            <p class={"text-center text-gray-100"}>{t.languagesDescription}</p>
+            <Show when={ready()} keyed={false}>
                 <AnimatedSlide>
                     <SkillChart></SkillChart>
                 </AnimatedSlide>
