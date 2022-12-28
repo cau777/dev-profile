@@ -21,280 +21,280 @@
   "node_modules/solid-start/entry-client/StartClient.tsx": [],
   "src/entry-client.tsx": [],
   "src/routes/[...404].tsx": [
-    "/dev-profile/assets/_...404_.fee13174.js"
+    "/dev-profile/assets/_...404_.9ec0fd62.js"
   ],
   "src/routes/index.tsx": [
-    "/dev-profile/assets/index.818b3300.js"
+    "/dev-profile/assets/index.a6bc5d2a.js"
   ],
   "src/routes/dev-profile/[...404].tsx": [
-    "/dev-profile/assets/_...404_.066f4b57.js"
+    "/dev-profile/assets/_...404_.e6c4f3da.js"
   ],
   "src/routes/dev-profile/index.tsx": [
-    "/dev-profile/assets/index.9ebb8824.js"
+    "/dev-profile/assets/index.8962d4e0.js"
   ],
   "src/routes/en/index.tsx": [
-    "/dev-profile/assets/index.9c3b7f85.js"
+    "/dev-profile/assets/index.7151f7dd.js"
   ],
   "src/i18n/en/translation.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/i18n/pt-BR/translation.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/LanguagesContext.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/nav-controls/Header.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/GitHubIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/LinkedInIcon0.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/CodersRankIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/nav-controls/LinksSocial.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/LogoIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/nav-controls/NavControls.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/utils/intersection.ts": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/animated/AnimatedUnderline.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "img/MyPicture.jpeg": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ChevronDownIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/bio/BioSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/SectionTitle.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/animated/AnimatedSlide.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/about-me/AboutMeSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/education/Institutions.ts": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/education/EducationSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/courses/Courses.ts": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/courses/CoursesSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000commonjsHelpers.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000/home/runner/work/dev-profile/dev-profile/node_modules/axios/index.js?commonjs-module": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000/home/runner/work/dev-profile/dev-profile/node_modules/axios/lib/axios.js?commonjs-module": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/bind.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/utils.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/buildURL.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/InterceptorManager.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/normalizeHeaderName.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/enhanceError.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/createError.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/settle.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/cookies.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/combineURLs.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/buildFullPath.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/parseHeaders.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/Cancel.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/adapters/xhr.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/defaults.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/transformData.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/isCancel.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/dispatchRequest.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/mergeConfig.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/env/data.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/validator.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/Axios.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/CancelToken.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/spread.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isAxiosError.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/axios.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/index.js": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/projects-fetching.ts": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/ProjectDisplay.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ArrowLeftIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ArrowRightIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/FullCircleIcon.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/ProjectsSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/languages/SkillChart.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/languages/LanguagesSection.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/Main.tsx": [
-    "/dev-profile/assets/Main.4338b1a2.js",
+    "/dev-profile/assets/Main.6106f4c4.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/routes/pt/index.tsx": [
-    "/dev-profile/assets/index.b115fe09.js"
+    "/dev-profile/assets/index.27edce34.js"
   ],
   "src/routes/dev-profile/en/index.tsx": [
-    "/dev-profile/assets/index.6373544a.js"
+    "/dev-profile/assets/index.55215111.js"
   ],
   "src/routes/dev-profile/pt/index.tsx": [
-    "/dev-profile/assets/index.e060e53c.js"
+    "/dev-profile/assets/index.8bade4ae.js"
   ],
   "node_modules/@codersrank/skills-chart/esm/shared/fetch-data.js": [
     "/dev-profile/assets/codersrank-skills-chart.337df5d2.js"
