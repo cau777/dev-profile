@@ -9,24 +9,24 @@ export const INSTITUTIONS: Institution[] = [
     {
         degree: "elementarySchool",
         name: "Escola Municipal de Ensino Fundamental Santos Anjos",
-        start: new Date(2005, 2),
-        end: new Date(2019, 12),
+        start: new Date(2005, 1),
+        end: new Date(2019, 11),
     },
     {
         degree: "highSchool",
         name: "Escola Estadual de Ensino Médio Anthonio Mathias Anschau",
-        start: new Date(2020, 2),
-        end: new Date(2022, 12),
+        start: new Date(2020, 1),
+        end: new Date(2022, 11),
     },
     {
         degree: "englishCourse",
         name: "Fisk Sarandi",
-        start: new Date(2014, 3),
-        end: new Date(2022, 7),
+        start: new Date(2014, 2),
+        end: new Date(2022, 6),
     },
     {
         degree: "softwareEngineering",
         name: "Unijuí",
-        start: new Date(2023, 2),
+        start: new Date(2023, 1),
     }
 ];

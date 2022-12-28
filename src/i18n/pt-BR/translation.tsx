@@ -13,7 +13,7 @@ export default {
     </>,
     aboutMeText: () => <>
         Eu sou brasileiro e Português é minha língua nativa, mas eu também sou fluente em inglês (C1). <br/>
-        Eu comecei a programar em 2017 como um hobby, mas começei a aprender serialmente em 2021. <br/>
+        Eu comecei a programar em 2017 como um hobby, mas começei a aprender seriamente em 2021. <br/>
         Nesse tempo, eu fiz vários cursos e criei vários projetos open-source no meu GitHub, explorando tecnologias diversas. <br/>
         Agora, eu estarei estudando Engenharia de Software na Unijuí de 2023 a 2028. <br/>
     </>,

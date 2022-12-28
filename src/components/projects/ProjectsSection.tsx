@@ -43,7 +43,7 @@ export const ProjectsSection: Component = () => {
                         )}</For>
                     </div>
                     
-                    <div class={"flex justify-center gap-2"}>
+                    <div class={"flex justify-center gap-2 mt-5"}>
                         <button onClick={() => addOffset(-1)} title={t.prev}>
                             <ArrowLeftIcon width={"1.8rem"}></ArrowLeftIcon>
                         </button>

@@ -7,7 +7,7 @@ export const NavControls: Component<ParentProps> =(props) => {
     return (
         <div class={"nav-grid desktop-nav-grid"}>
             <div class={"text-primary-400 pt-[0.3rem] pl-4"}>
-                <LogoIcon width={"3rem"}></LogoIcon>
+                <LogoIcon width={"3.5rem"}></LogoIcon>
             </div>
             <Header></Header>
             <LinksSocial></LinksSocial>

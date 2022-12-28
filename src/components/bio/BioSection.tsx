@@ -25,7 +25,7 @@ export const BioSection: Component = () => {
     };
     
     return (
-        <section class={"flex mt-10 flex-col md:flex-row min-h-screen"}>
+        <section class={"flex mt-10 mb-12 md:mb-0 flex-col md:flex-row min-h-screen"}>
             <div class={"mr-10"}>
                 <img class={"h-auto border-2"} src={picture} width={256} height={384}
                      alt={"A picture of me with my arms crossed"}/>
@@ -35,7 +35,7 @@ export const BioSection: Component = () => {
                 <h1 class={"text-primary-300 font-semibold text-xl mb-1 mt-3"}>
                     {t.greeting}
                 </h1>
-                <div class={"text-5xl font-bold max-w-lg leading-snug"}>
+                <div class={"text-3xl md:text-5xl font-bold max-w-lg leading-snug"}>
                     {t.description(AnimatedUnderline, AnimatedUnderline)}
                 </div>
                 <p class={"mt-12 text-gray-100 max-w-lg"}>

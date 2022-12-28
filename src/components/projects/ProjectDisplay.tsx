@@ -26,8 +26,8 @@ export const ProjectDisplay: Component<Project> = (props) => {
         <article class={"flex flex-col xl:flex-row gap-2 min-h-[30rem]"}>
             <div>
                 <div class={"xl:mr-8 flex"}>
-                    <div class={"border-box p-2"}>
-                        <img src={props.image} alt={"Project screenshot"} class={"max-w-md"}/>
+                    <div class={"border-box p-2 max-w-md"}>
+                        <img src={props.image} alt={"Project screenshot"} width={"100%"}/>
                     </div>
                 </div>
             </div>
