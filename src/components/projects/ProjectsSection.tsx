@@ -42,19 +42,19 @@ export const ProjectsSection: Component = () => {
                         )}</For>
                     </div>
                     
-                    <div class={"flex justify-center gap-1"}>
+                    <div class={"flex justify-center gap-2"}>
                         <button onClick={() => addOffset(-1)} title={t("prev") as string}>
-                            <ArrowLeftIcon width={"1.5rem"}></ArrowLeftIcon>
+                            <ArrowLeftIcon width={"1.8rem"}></ArrowLeftIcon>
                         </button>
                         
                         <Index each={projects()}>{(_, i) => (
                             <button onClick={() => setCurrentAndPrev(i)} aria-label={"Project " + i}>
                                 <FullCircleIcon classList={{"text-secondary-600": i === current()}}
-                                                width={"0.5rem"}></FullCircleIcon></button>
+                                                width={"0.8rem"}></FullCircleIcon></button>
                         )}</Index>
                         
                         <button onClick={() => addOffset(1)} title={t("next") as string}>
-                            <ArrowRightIcon width={"1.5rem"} ></ArrowRightIcon>
+                            <ArrowRightIcon width={"1.8rem"} ></ArrowRightIcon>
                         </button>
                     </div>
                 </div>
