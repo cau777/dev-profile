@@ -19,7 +19,7 @@ export default function Home() {
         }
         
         let navigate = useNavigate();
-        navigate("/" + (cachedLang ?? "en"));
+        navigate(import.meta.env.BASE_URL + (cachedLang ?? "en"));
     });
     
     return (
