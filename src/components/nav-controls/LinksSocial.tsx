@@ -4,7 +4,6 @@ import {LinkedInIcon0} from "~/components/icons/LinkedInIcon0";
 import {CodersRankIcon} from "~/components/icons/CodersRankIcon";
 import {A} from "solid-start";
 
-// TODO: link labels
 export const LinksSocial: Component = () => {
     return (
         <div class={"hidden md:block"}>
@@ -13,8 +12,8 @@ export const LinksSocial: Component = () => {
                     <A class={"cursor-pointer"} href={"https://github.com/cau777"} target={"_blank"} title={"My GitHub account"}>
                         <GitHubIcon width={"1.4rem"}></GitHubIcon>
                     </A>
-                    {/* TODO: linkedin */}
-                    <A class={"cursor-pointer"} href={""} target={"_blank"} title={"My Linkedin account"}>
+                    
+                    <A class={"cursor-pointer"} href={"https://www.linkedin.com/in/cau%C3%A3-rinaldi-618b6b259/"} target={"_blank"} title={"My Linkedin account"}>
                         <LinkedInIcon0 width={"1.1rem"}></LinkedInIcon0>
                     </A>
     
