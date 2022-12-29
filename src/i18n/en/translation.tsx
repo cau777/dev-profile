@@ -2,6 +2,8 @@ import type {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
 
 export default {
+    "headDescription":"A personal portfolio website for Cauã Rinaldi, highlighting education, courses, programming languages, and projects.",
+    
     "greeting": "Hi, I'm Cauã Rinaldi!",
     description: (adj1Tag: Component<any>, adj2Tag: Component<any>) => <>
         A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>studious</Dynamic> Web Developer

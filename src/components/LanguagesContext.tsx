@@ -1,4 +1,4 @@
-import {createContext, createEffect, ParentComponent, useContext} from "solid-js";
+import {createContext, createSignal, ParentComponent, useContext} from "solid-js";
 import EN_TRANSLATION from "~/i18n/en/translation";
 import PT_BR_TRANSLATION from "~/i18n/pt-BR/translation";
 
@@ -18,9 +18,9 @@ type Props = {
     lang: string;
 }
 
-export const LanguagesProvider: ParentComponent<Props> = (props) => {
+function buildTranslation(lang: string) {
     let translation;
-    switch (props.lang) {
+    switch (lang) {
         case "pt":
             translation = PT_BR_TRANSLATION;
             break
@@ -31,13 +31,15 @@ export const LanguagesProvider: ParentComponent<Props> = (props) => {
             translation = EN_TRANSLATION;
             break;
     }
-    
-    createEffect(() => {
-        document.documentElement.lang = props.lang;
-    });
+    return {lang: lang, t: translation};
+}
+
+export const LanguagesProvider: ParentComponent<Props> = (props) => {
+    let translation = buildTranslation(props.lang);
+    setGlobalTranslation(translation);
     
     return (
-        <LanguagesContext.Provider value={{lang: props.lang, t: translation}}>
+        <LanguagesContext.Provider value={translation}>
             {props.children}
         </LanguagesContext.Provider>
     )
@@ -48,3 +50,10 @@ export const useTranslation = () => useContext(LanguagesContext);
 export const useT = () => useTranslation()!.t;
 
 export const useLang = () => useTranslation()?.lang ?? "en";
+
+
+// Global option, used for setting the document head
+const [globalTranslation, setGlobalTranslation] = createSignal<LanguagesCtx>();
+
+export const useGlobalTranslation = () => globalTranslation() ?? buildTranslation("en");
+

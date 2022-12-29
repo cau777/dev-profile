@@ -1,5 +1,6 @@
 import {useNavigate} from "@solidjs/router";
 import {onMount} from "solid-js";
+import {A} from "solid-start";
 
 const SUPPORTED_LANGS = ["pt", "en"];
 
@@ -23,6 +24,14 @@ export default function Home() {
     });
     
     return (
-        <div></div>
+        <div>
+            <h1 class={"text-2xl"}>
+                Redirecting to translated page
+            </h1>
+            
+            <A href={import.meta.env.BASE_URL + "en"}>English page</A>
+            <br/>
+            <A href={import.meta.env.BASE_URL + "pt"}>Portuguese page</A>
+        </div>
     );
 }
