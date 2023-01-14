@@ -69,5 +69,11 @@ export const COURSES: Course[] = [
         organization: "Educative",
         date: new Date(2022, 11),
         url: "https://www.educative.io/verify-certificate/X6EJPZiGZk4yOV88vFQwKLKmYyG3TL",
-    }
+    },
+    {
+        name: "Become a Rust Web Developer",
+        organization: "Educative",
+        date: new Date(2023, 0),
+        url: "https://www.educative.io/verify-certificate/El5jyzf0K0DGjGKVxi4AMLMZ6ODmIG",
+    },
 ]
