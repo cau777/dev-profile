@@ -24,268 +24,268 @@
   "node_modules/solid-start/entry-client/StartClient.tsx": [],
   "src/entry-client.tsx": [],
   "src/routes/[...404].tsx": [
-    "/dev-profile/assets/_...404_.23c3a4e5.js"
+    "/dev-profile/assets/_...404_.65f7fead.js"
   ],
   "src/routes/index.tsx": [
-    "/dev-profile/assets/index.29c1bcbe.js"
+    "/dev-profile/assets/index.42b8ee32.js"
   ],
   "src/routes/dev-profile/[...404].tsx": [
-    "/dev-profile/assets/_...404_.a6124bf2.js"
+    "/dev-profile/assets/_...404_.840d8989.js"
   ],
   "src/routes/dev-profile/index.tsx": [
-    "/dev-profile/assets/index.f59a7123.js"
+    "/dev-profile/assets/index.9be6f99d.js"
   ],
   "src/routes/en/index.tsx": [
-    "/dev-profile/assets/index.e68ad3ad.js"
+    "/dev-profile/assets/index.35534627.js"
   ],
   "src/components/nav-controls/Header.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/GitHubIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/LinkedInIcon0.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/CodersRankIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/nav-controls/LinksSocial.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/LogoIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/nav-controls/NavControls.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/utils/intersection.ts": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/animated/AnimatedUnderline.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "img/MyPicture.jpeg": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ChevronDownIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/bio/BioSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/SectionTitle.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/animated/AnimatedSlide.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/about-me/AboutMeSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/education/Institutions.ts": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/education/EducationSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/courses/Courses.ts": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/courses/CoursesSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000commonjsHelpers.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000/home/runner/work/dev-profile/dev-profile/node_modules/axios/index.js?commonjs-module": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "\u0000/home/runner/work/dev-profile/dev-profile/node_modules/axios/lib/axios.js?commonjs-module": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/bind.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/utils.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/buildURL.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/InterceptorManager.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/normalizeHeaderName.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/enhanceError.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/createError.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/settle.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/cookies.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/combineURLs.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/buildFullPath.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/parseHeaders.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/Cancel.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/adapters/xhr.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/defaults.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/transformData.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/isCancel.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/dispatchRequest.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/mergeConfig.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/env/data.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/validator.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/core/Axios.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/cancel/CancelToken.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/spread.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/helpers/isAxiosError.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/lib/axios.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "node_modules/axios/index.js": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/projects-fetching.ts": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/ProjectDisplay.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ArrowLeftIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/ArrowRightIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/icons/FullCircleIcon.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/projects/ProjectsSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/languages/SkillChart.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/languages/LanguagesSection.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/components/Main.tsx": [
-    "/dev-profile/assets/Main.81e8400d.js",
+    "/dev-profile/assets/Main.4ec21095.js",
     "/dev-profile/assets/MyPicture.513b83cd.jpeg"
   ],
   "src/routes/pt/index.tsx": [
-    "/dev-profile/assets/index.bf200fb0.js"
+    "/dev-profile/assets/index.bf302199.js"
   ],
   "src/routes/dev-profile/en/index.tsx": [
-    "/dev-profile/assets/index.717bd52f.js"
+    "/dev-profile/assets/index.f7a3ef20.js"
   ],
   "src/routes/dev-profile/pt/index.tsx": [
-    "/dev-profile/assets/index.cf39c9ce.js"
+    "/dev-profile/assets/index.bde908a4.js"
   ],
   "node_modules/@codersrank/skills-chart/esm/shared/fetch-data.js": [
     "/dev-profile/assets/codersrank-skills-chart.337df5d2.js"
