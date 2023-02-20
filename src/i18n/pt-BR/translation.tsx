@@ -8,7 +8,7 @@ export default {
         Um Desenvolvedor Web <Dynamic component={adj1Tag}>proativo</Dynamic> e <Dynamic component={adj2Tag}>estudioso</Dynamic>
     </>,
     subtitle: (tag: Component<any>) => <>
-        Tu tenho quase 18 anos e se tem <Dynamic component={tag}>uma</Dynamic> coisa que eu sei é que amo encontrar soluções criativas para problemas.
+        Tu tenho 18 anos e se tem <Dynamic component={tag}>uma</Dynamic> coisa que eu sei é que amo encontrar soluções criativas para problemas.
         <br/>
         Além disso, gosto de construir aplicações grandes e pequenas, enquanto trabalhando no frontend e/ou backend.
     </>,

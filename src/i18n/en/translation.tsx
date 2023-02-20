@@ -9,7 +9,7 @@ export default {
         A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>studious</Dynamic> Web Developer
     </>,
     subtitle: (tag: Component<any>) => <>
-        I'm almost 18 and if there's <Dynamic component={tag}>one</Dynamic> thing I know is that I love finding creative solutions for problems.
+        I'm 18 and if there's <Dynamic component={tag}>one</Dynamic> thing I know is that I love finding creative solutions for problems.
         <br/>
         Also, I enjoy designing small and big applications, while working in the frontend and/or backend.
     </>,

@@ -1,23 +1,7 @@
 import {Component, For, Show} from "solid-js";
-import {Project} from "~/components/projects/projects-fetching";
+import {Project} from "~/components/projects/Projects";
 import {A} from "solid-start";
 import {useT} from "~/components/LanguagesContext";
-
-function nameToTranslationId(name: string) {
-    let result = "";
-    let upper = false;
-    for (const char of name.toLowerCase()) {
-        if (char === " " || char === "-") {
-            upper = true;
-        } else if (upper) {
-            result += char.toUpperCase();
-            upper = false;
-        } else {
-            result += char;
-        }
-    }
-    return result;
-}
 
 export const ProjectDisplay: Component<Project> = (props) => {
     let t = useT();
@@ -35,7 +19,7 @@ export const ProjectDisplay: Component<Project> = (props) => {
                 <h3 class={"text-xl text-primary-300 font-semibold"}>{props.project_title}</h3>
                 <p class={"text-gray-100"}>
                     {/* @ts-ignore */}
-                    {t[nameToTranslationId(props.project_title) + "Description"]}
+                    {t[props.description]}
                 </p>
                 <div class={"flex gap-2 flex-wrap mt-2"}>
                     <For each={props.highlighted_technologies}>{o => (

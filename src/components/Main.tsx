@@ -1,4 +1,4 @@
-import {Component, Suspense, SuspenseList} from "solid-js";
+import {Component, Suspense} from "solid-js";
 import {NavControls} from "~/components/nav-controls/NavControls";
 import {BioSection} from "~/components/bio/BioSection";
 import {AboutMeSection} from "~/components/about-me/AboutMeSection";
@@ -20,14 +20,11 @@ export const Main: Component<Props> = (props) => (
                 <AboutMeSection></AboutMeSection>
                 <EducationSection></EducationSection>
                 <CoursesSection></CoursesSection>
-                <SuspenseList revealOrder={"forwards"}>
-                    <Suspense>
-                        <ProjectsSection></ProjectsSection>
-                    </Suspense>
-                    <Suspense>
-                        <LanguagesSection></LanguagesSection>
-                    </Suspense>
-                </SuspenseList>
+                <ProjectsSection></ProjectsSection>
+                
+                <Suspense>
+                    <LanguagesSection></LanguagesSection>
+                </Suspense>
             </main>
         </NavControls>
     </LanguagesProvider>
