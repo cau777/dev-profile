@@ -20,7 +20,7 @@ export default function Home() {
         }
         
         let navigate = useNavigate();
-        navigate(import.meta.env.BASE_URL + (cachedLang ?? "en"));
+        navigate(import.meta.env.BASE_URL + (cachedLang ?? "en"), {replace: true});
     });
     
     return (
