@@ -18,7 +18,7 @@ export const Header: Component = () => {
                         let name = t[o];
                         return (
                             <div class={"grid-center text-gray-100 mr-4 cursor-pointer"}>
-                                <a title={name} onClick={() => document.getElementById(o)?.scrollIntoView({behavior: "smooth"})}>
+                                <a title={name} href={"#"+o}>
                                     {name}
                                 </a>
                             </div>

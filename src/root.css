@@ -10,6 +10,7 @@
 @layer base {
     html {
         font-family: Alexandria, Verdana, sans-serif;
+        scroll-behavior: smooth;
         @apply text-gray-50;
     }
 
