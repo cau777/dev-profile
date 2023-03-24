@@ -76,4 +76,10 @@ export const COURSES: Course[] = [
         date: new Date(2023, 0),
         url: "https://www.educative.io/verify-certificate/El5jyzf0K0DGjGKVxi4AMLMZ6ODmIG",
     },
+    {
+        name: "Google Cloud Computing Foundations",
+        organization: "Google Cloud Skills Boost",
+        date: new Date(2023, 2),
+        url: "https://www.cloudskillsboost.google/public_profiles/29d65f40-ef87-4c02-af1a-da6993a6b2b5",
+    },
 ]
