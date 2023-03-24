@@ -4,7 +4,7 @@
     "src": "img/MyPicture.jpeg"
   },
   "src/entry-client.tsx": {
-    "file": "assets/entry-client.9cea5671.js",
+    "file": "assets/entry-client.73934f97.js",
     "src": "src/entry-client.tsx",
     "isEntry": true,
     "dynamicImports": [
@@ -22,7 +22,7 @@
     ]
   },
   "src/routes/[...404].tsx": {
-    "file": "assets/_...404_.b58fc2ab.js",
+    "file": "assets/_...404_.337e8483.js",
     "src": "src/routes/[...404].tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -30,7 +30,7 @@
     ]
   },
   "src/routes/index.tsx": {
-    "file": "assets/index.e6297f27.js",
+    "file": "assets/index.a1147ec4.js",
     "src": "src/routes/index.tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -38,7 +38,7 @@
     ]
   },
   "src/routes/dev-profile/[...404].tsx": {
-    "file": "assets/_...404_.bc6fc9cd.js",
+    "file": "assets/_...404_.e72b7369.js",
     "src": "src/routes/dev-profile/[...404].tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -46,7 +46,7 @@
     ]
   },
   "src/routes/dev-profile/index.tsx": {
-    "file": "assets/index.cbb54676.js",
+    "file": "assets/index.c6221d57.js",
     "src": "src/routes/dev-profile/index.tsx",
     "isDynamicEntry": true,
     "imports": [
@@ -54,16 +54,16 @@
     ]
   },
   "src/routes/en/index.tsx": {
-    "file": "assets/index.c411dd9d.js",
+    "file": "assets/index.3a165d28.js",
     "src": "src/routes/en/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_Main.0a6b8bf8.js",
+      "_Main.eda054f1.js",
       "src/entry-client.tsx"
     ]
   },
-  "_Main.0a6b8bf8.js": {
-    "file": "assets/Main.0a6b8bf8.js",
+  "_Main.eda054f1.js": {
+    "file": "assets/Main.eda054f1.js",
     "imports": [
       "src/entry-client.tsx"
     ],
@@ -75,29 +75,29 @@
     ]
   },
   "src/routes/pt/index.tsx": {
-    "file": "assets/index.2b49ec4e.js",
+    "file": "assets/index.e20c099b.js",
     "src": "src/routes/pt/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_Main.0a6b8bf8.js",
+      "_Main.eda054f1.js",
       "src/entry-client.tsx"
     ]
   },
   "src/routes/dev-profile/en/index.tsx": {
-    "file": "assets/index.d5a14e7a.js",
+    "file": "assets/index.1fb67a13.js",
     "src": "src/routes/dev-profile/en/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_Main.0a6b8bf8.js",
+      "_Main.eda054f1.js",
       "src/entry-client.tsx"
     ]
   },
   "src/routes/dev-profile/pt/index.tsx": {
-    "file": "assets/index.ccf175fc.js",
+    "file": "assets/index.02d22333.js",
     "src": "src/routes/dev-profile/pt/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_Main.0a6b8bf8.js",
+      "_Main.eda054f1.js",
       "src/entry-client.tsx"
     ]
   },
