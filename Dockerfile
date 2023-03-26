@@ -20,14 +20,18 @@ http {  \
   include mime.types;  \
   sendfile on; \
   server {  \
-    listen 8080;  \
-    proxy_set_header Host \$host; \
+    listen 8080; \
     resolver 127.0.0.11;  \
     autoindex off;  \
     server_name caua-rinaldi.dev;  \
+    absolute_redirect off; \
     root /usr/share/nginx/html;  \
     server_tokens off;  \
-    gzip_static on;  \
+    gzip_static on; \
+    \
+    location / { \
+      try_files \$uri \$uri/ =404; \
+    } \
   } \
 }" > /etc/nginx/nginx.conf
 COPY --from=builder /home/dist/public /usr/share/nginx/html
