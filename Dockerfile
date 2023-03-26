@@ -21,7 +21,7 @@ http {  \
   sendfile on; \
   server {  \
     listen 8080;  \
-    listen [::]:8080;  \
+    proxy_set_header Host $host; \
     resolver 127.0.0.11;  \
     autoindex off;  \
     server_name caua-rinaldi.dev;  \
