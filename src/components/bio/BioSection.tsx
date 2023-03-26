@@ -4,11 +4,6 @@ import picture from "../../../img/MyPicture.jpeg";
 import {ChevronDownIcon} from "~/components/icons/ChevronDownIcon";
 import {useT} from "~/components/LanguagesContext";
 
-// @ts-ignore
-// While building, it kept throwing ReferenceError because window was undefined
-// Because window should never exist in the server, we just define it as a global variable
-var window: Window;
-
 // TODO: pattern to occupy space???
 
 export const BioSection: Component = () => {
@@ -16,17 +11,19 @@ export const BioSection: Component = () => {
     let t = useT();
     
     onMount(() => {
-        if (window === undefined) return;
+        if (typeof window === "undefined") return;
         window.addEventListener("scroll", onScroll);
         setVisible(window.innerWidth > 600);
     });
     onCleanup(() => {
-        window?.removeEventListener("scroll", onScroll);
+        if (typeof window === "undefined") return;
+        window.removeEventListener("scroll", onScroll);
     });
 
     const onScroll = () => {
+        if (typeof window === "undefined") return;
         setVisible(false);
-        window?.removeEventListener("scroll", onScroll);
+        window.removeEventListener("scroll", onScroll);
     };
     
     return (
