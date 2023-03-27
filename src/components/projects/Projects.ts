@@ -25,17 +25,6 @@ export const PROJECTS: Project[] = [{
     "project_title": "Sudoku Solver",
     "start_date": "2022-07"
 }, {
-    "description": "graphicalRegexDesignerDescription",
-    "end_date": "2022-01",
-    "highlighted_technologies": ["Angular", "regex", "pwa"],
-    "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/3999f0f3-ac7b-474f-b25a-e3ddf4665500",
-    "is_current": false,
-    "link_to_project": "/projects/regex-designer",
-    "link_to_source_code": "https://github.com/cau777/GraphicalRegexDesigner",
-    "other_technologies": ["typescript", "angular-material", "less"],
-    "project_title": "Graphical Regex Designer",
-    "start_date": "2021-12"
-}, {
     "description": "codeShareDescription",
     "end_date": "2022-09",
     "highlighted_technologies": ["next.js", "tailwindcss", "docker"],
@@ -46,6 +35,17 @@ export const PROJECTS: Project[] = [{
     "other_technologies": ["typescript", "asp.net core", "Flask", "i18n", "microservices", "pwa"],
     "project_title": "code-share",
     "start_date": "2022-09"
+}, {
+    "description": "graphicalRegexDesignerDescription",
+    "end_date": "2022-01",
+    "highlighted_technologies": ["Angular", "regex", "pwa"],
+    "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/3999f0f3-ac7b-474f-b25a-e3ddf4665500",
+    "is_current": false,
+    "link_to_project": "/projects/regex-designer",
+    "link_to_source_code": "https://github.com/cau777/GraphicalRegexDesigner",
+    "other_technologies": ["typescript", "angular-material", "less"],
+    "project_title": "Graphical Regex Designer",
+    "start_date": "2021-12"
 }, {
     "description": "handwrittenDigitsRecognitionDescription",
     "highlighted_technologies": ["rust", "ReactJS", "deep learning"],
