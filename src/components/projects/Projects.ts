@@ -19,8 +19,8 @@ export const PROJECTS: Project[] = [{
     "highlighted_technologies": ["rust", "wasm", "react"],
     "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/cfbaefd5-8654-44c8-a346-a7a37629a02b",
     "is_current": false,
-    "link_to_project": "http://cau777.github.io/sudoku_solver/",
-    "link_to_source_code": "/projects/sudoku-solver",
+    "link_to_project": "/projects/sudoku-solver",
+    "link_to_source_code": "https://github.com/cau777/sudoku_solver",
     "other_technologies": ["typescript"],
     "project_title": "Sudoku Solver",
     "start_date": "2022-07"
@@ -30,8 +30,8 @@ export const PROJECTS: Project[] = [{
     "highlighted_technologies": ["Angular", "regex", "pwa"],
     "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/3999f0f3-ac7b-474f-b25a-e3ddf4665500",
     "is_current": false,
-    "link_to_project": "https://cau777.github.io/GraphicalRegexDesigner/",
-    "link_to_source_code": "/projects/regex-designer",
+    "link_to_project": "/projects/regex-designer",
+    "link_to_source_code": "https://github.com/cau777/GraphicalRegexDesigner",
     "other_technologies": ["typescript", "angular-material", "less"],
     "project_title": "Graphical Regex Designer",
     "start_date": "2021-12"
@@ -41,8 +41,8 @@ export const PROJECTS: Project[] = [{
     "highlighted_technologies": ["next.js", "tailwindcss", "docker"],
     "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/e30bb61d-cdec-46ad-a93b-f32ffda2d1bc",
     "is_current": false,
-    "link_to_project": "https://cau777.github.io/code-share",
-    "link_to_source_code": "/projects/code-share",
+    "link_to_project": "/projects/code-share",
+    "link_to_source_code": "https://github.com/cau777/code-share",
     "other_technologies": ["typescript", "asp.net core", "Flask", "i18n", "microservices", "pwa"],
     "project_title": "code-share",
     "start_date": "2022-09"
