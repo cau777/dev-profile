@@ -13,7 +13,7 @@ export const BioSection: Component = () => {
     onMount(() => {
         if (typeof window === "undefined") return;
         window.addEventListener("scroll", onScroll);
-        setVisible(window.innerWidth > 600);
+        setVisible(window.innerWidth > 600 && window.scrollY <= 100);
     });
     onCleanup(() => {
         if (typeof window === "undefined") return;
