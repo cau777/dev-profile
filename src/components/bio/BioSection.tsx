@@ -40,9 +40,9 @@ export const BioSection: Component = () => {
                 <div class={"text-3xl md:text-5xl font-bold max-w-lg leading-snug"}>
                     {t.description(AnimatedUnderline, AnimatedUnderline)}
                 </div>
-                <p class={"mt-12 text-gray-100 max-w-lg"}>
+                <div class={"mt-12 text-gray-100 max-w-lg"}>
                     {t.subtitle(props => <span class={"text-secondary-200"}>{props.children}</span>)}
-                </p>
+                </div>
             </header>
             
             <button class={"fixed text-gray-50 left-1/2 bottom-5 cursor-pointer transition-all opacity-0 duration-150"}
