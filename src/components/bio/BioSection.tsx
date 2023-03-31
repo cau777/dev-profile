@@ -4,8 +4,6 @@ import picture from "../../../img/MyPicture.jpeg";
 import {ChevronDownIcon} from "~/components/icons/ChevronDownIcon";
 import {useT} from "~/components/LanguagesContext";
 
-// TODO: pattern to occupy space???
-
 export const BioSection: Component = () => {
     let [chevronVisible, setVisible] = createSignal(false);
     let t = useT();
@@ -13,8 +11,9 @@ export const BioSection: Component = () => {
     onMount(() => {
         if (typeof window === "undefined") return;
         window.addEventListener("scroll", onScroll);
-        setVisible(window.innerWidth > 600);
+        setVisible(window.innerWidth > 600 && window.scrollY <= 100);
     });
+    
     onCleanup(() => {
         if (typeof window === "undefined") return;
         window.removeEventListener("scroll", onScroll);
