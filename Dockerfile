@@ -1,17 +1,18 @@
-FROM node:18.12.1-slim AS builder
+FROM node:19.0-alpine AS builder
 WORKDIR /home
 COPY ./package.json .
 COPY ./postcss.config.cjs .
 COPY ./tailwind.config.cjs .
 COPY ./tsconfig.json .
-COPY ./vite.config.ts .
 COPY ./img ./img
 COPY ./public ./public
 RUN npm i
 
+COPY ./vite.config.ts .
 COPY ./src ./src
 RUN npm run build:release
-
+#CMD ["node", "./dist/server.js"]
+#EXPOSE 3000
 FROM nginx:1.12-alpine
 RUN echo "events {  \
   worker_connections 1024;  \

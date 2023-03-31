@@ -10,9 +10,9 @@ export const AboutMeSection: Component = () => {
             <SectionTitle title={"aboutMe"}></SectionTitle>
             <AnimatedSlide>
                 <div class={"grid-center"}>
-                    <p class={"text-center text-gray-100 max-w-3xl"}>
+                    <div class={"text-center text-gray-100 max-w-3xl"}>
                         {t.aboutMeText()}
-                    </p>
+                    </div>
                 </div>
             </AnimatedSlide>
         </section>

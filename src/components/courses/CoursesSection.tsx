@@ -19,12 +19,14 @@ export const CoursesSection: Component = () => {
                             <h5 class={"text-primary-300 mb-1"}>{o.name}</h5>
                             <h6 class={"text-sm text-gray-100 mb-2"}>{o.organization}</h6>
                             <div class={"text-xs text-gray-100"}>{fDate(o.date)}</div>
-                            <Show when={o.url !== undefined} keyed={false}>
-                                <div class={"mt-3"}>
-                                    <A class={"text-xs text-gray-200"} href={o.url!}
-                                       target={"_blank"}>{t.viewCertificate}</A>
-                                </div>
-                            </Show>
+                            <div>
+                                <Show when={o.url !== undefined} keyed={true}>
+                                    <div class={"mt-3"}>
+                                        <A class={"text-xs text-gray-200"} href={o.url!}
+                                           target={"_blank"}>{t.viewCertificate}</A>
+                                    </div>
+                                </Show>
+                            </div>
                         </div>
                     )}</For>
                 </div>

@@ -23,12 +23,14 @@ export const LanguagesSection: Component = () => {
     return (
         <section class={"mb-12"}>
             <SectionTitle title={"languages"}></SectionTitle>
-            <p class={"text-center text-gray-100"}>{t.languagesDescription}</p>
-            <Show when={ready()} keyed={false}>
-                <AnimatedSlide>
-                    <SkillChart></SkillChart>
-                </AnimatedSlide>
-            </Show>
+            <div class={"text-center text-gray-100"}>{t.languagesDescription}</div>
+            <div>
+                <Show when={ready()} keyed={false}>
+                    <AnimatedSlide>
+                        <SkillChart></SkillChart>
+                    </AnimatedSlide>
+                </Show>
+            </div>
         </section>
     )
 }
