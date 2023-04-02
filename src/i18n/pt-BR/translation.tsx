@@ -2,7 +2,7 @@ import {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
 
 export default {
-    "headDescription":"Site portifólio pessoal de Cauã Rinaldi, destacando escolaridade, cursos, linguagens de programação, e projetps.",
+    "headDescription":"Site portifólio pessoal de Cauã Rinaldi, destacando escolaridade, cursos, linguagens de programação, e projetos.",
     "greeting": "Olá, Eu sou Cauã Rinaldi!",
     description: (adj1Tag: Component<any>, adj2Tag: Component<any>) => <>
         Um Desenvolvedor Web <Dynamic component={adj1Tag}>proativo</Dynamic> e <Dynamic component={adj2Tag}>estudioso</Dynamic>

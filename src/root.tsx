@@ -21,8 +21,8 @@ export default function Root() {
     return (
         <Html lang={lang()}>
             <Head>
-                <Title>Cauã Rinaldi</Title>
                 <Meta charset="utf-8"/>
+                <Title>Cauã Rinaldi</Title>
                 <Meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <Meta name={"description"}
                       content={desc()}></Meta>
