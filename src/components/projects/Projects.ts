@@ -36,6 +36,16 @@ export const PROJECTS: Project[] = [{
     "project_title": "code-share",
     "start_date": "2022-09"
 }, {
+    "description": "aipgDescription",
+    "highlighted_technologies": ["rust", "ReactJS", "deep learning"],
+    "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/ace2225f-6cc1-430e-9a94-ec3bedb3d4e9",
+    "is_current": true,
+    "link_to_project": "https://cau777.github.io/ai_playground/",
+    "link_to_source_code": "https://github.com/cau777/ai_playground",
+    "other_technologies": ["docker", "docker compose", "glsl"],
+    "project_title": "AI Playground",
+    "start_date": "2022-09"
+}, {
     "description": "graphicalRegexDesignerDescription",
     "end_date": "2022-01",
     "highlighted_technologies": ["Angular", "regex", "pwa"],
@@ -46,14 +56,4 @@ export const PROJECTS: Project[] = [{
     "other_technologies": ["typescript", "angular-material", "less"],
     "project_title": "Graphical Regex Designer",
     "start_date": "2021-12"
-}, {
-    "description": "handwrittenDigitsRecognitionDescription",
-    "highlighted_technologies": ["rust", "ReactJS", "deep learning"],
-    "image": "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/ace2225f-6cc1-430e-9a94-ec3bedb3d4e9",
-    "is_current": true,
-    "link_to_project": "https://cau777.github.io/ai_playground/",
-    "link_to_source_code": "https://github.com/cau777/ai_playground",
-    "other_technologies": ["docker", "docker compose", "glsl"],
-    "project_title": "Handwritten Digits Recognition",
-    "start_date": "2022-09"
 }]

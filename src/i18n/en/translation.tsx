@@ -46,7 +46,7 @@ export default {
         "The project includes a simple interface made in React to visualize the algorithm step-by-step.",
     
     
-    "handwrittenDigitsRecognitionDescription": "A GPU-accelerated deep learning library built in Rust almost from scratch. " +
+    "aipgDescription": "A GPU-accelerated deep learning library built in Rust almost from scratch. " +
         "Plus an online playground to use it to recognize digits (MNIST dataset).",
     
     "graphicalRegexDesignerDescription": "A website made in Angular to help you create regular expressions using colored blocks. " +

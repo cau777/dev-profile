@@ -44,7 +44,7 @@ export default {
         "Ele é implementado em Rust e roda no navegador usando Web Assembly. " +
         "O projeto inclui uma interface simples feita com React para visualizar o algoritmo passo a passo.",
     
-    "handwrittenDigitsRecognitionDescription": "Uma biblioteca de Deep Learning acelerada por GPU, feita em Rust praticamente do zero. " +
+    "aipgDescription": "Uma biblioteca de Deep Learning acelerada por GPU, feita em Rust praticamente do zero. " +
         "Além de um playground online para usá-la para reconhecer dígitos escritos manualmente (dataset MNIST).",
     
     "graphicalRegexDesignerDescription": "Um site feito com Angular que permite criar Regex usando blocos coloridos. " +
