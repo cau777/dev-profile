@@ -15,7 +15,6 @@ type EventDetails = {
 export const SkillChart: Component = () => {
     onMount(() => {
         document.querySelector("codersrank-skills-chart")!.addEventListener("data", e => {
-            console.log(e);
             let target = e.target as HTMLElement;
             let details = (e as unknown as EventDetails).detail;
             let scores = details.scores[details.scores.length - 1].languages;
@@ -29,8 +28,7 @@ export const SkillChart: Component = () => {
             <div class={"absolute z-10 top-4 left-5 text-sm text-gray-100"}>Powered by <A
                 href={"https://codersrank.io/"} target={"_blank"}>CodersRank</A></div>
             {/* @ts-ignore */}
-            <codersrank-skills-chart username={"cau777"} labels={true} tooltip={true} legend={true} branding={false}
-                                     skills={"unset"}></codersrank-skills-chart>
+            <codersrank-skills-chart username={"cau777"} labels={true} tooltip={true} legend={true} branding={false} skills={"unset"}></codersrank-skills-chart>
         </>
     )
 }
