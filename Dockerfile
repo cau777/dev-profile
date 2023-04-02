@@ -1,6 +1,7 @@
 FROM node:19.0-alpine AS builder
 WORKDIR /home
 COPY ./package.json .
+COPY ./package-lock.json .
 COPY ./postcss.config.cjs .
 COPY ./tailwind.config.cjs .
 COPY ./tsconfig.json .
