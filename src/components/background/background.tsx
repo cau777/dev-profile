@@ -6,7 +6,6 @@ const randomDelay = () => {
 }
 
 export const Background: Component = () => {
-
   return (
     // https://colorhunt.co/palette/0c134f1d267d5c469cd4adfc
     <div class='absolute h-screen w-screen bg-gradient-to-b from-[#0C134F] via-[#1D267D] to-[#5C469C]'>

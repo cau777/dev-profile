@@ -20,4 +20,10 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
+
+    .grid-center {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
 }
