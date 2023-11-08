@@ -1,32 +1,26 @@
 {
-  "name": "sl",
+  "name": "dev-profile",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
-    "start": "solid-start start",
-    "build:release": "solid-start build"
+    "start": "solid-start start"
   },
   "type": "module",
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "autoprefixer": "^10.4.12",
+    "@types/node": "^18.17.5",
     "esbuild": "^0.14.54",
-    "postcss": "^8.4.18",
-    "solid-start-node": "^0.2.0",
-    "tailwindcss": "^3.2.0",
-    "typescript": "^4.8.4",
-    "vite": "^4.1.4"
+    "postcss": "^8.4.28",
+    "solid-start-node": "^0.3.10",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.9"
   },
   "dependencies": {
-    "@codersrank/skills-chart": "0.9.21",
-    "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.8.0",
-    "solid-js": "^1.6.2",
-    "solid-start": "0.2.24",
-    "solid-start-static": "0.2.24",
-    "undici": "^5.11.0"
+    "@solidjs/meta": "^0.29.1",
+    "@solidjs/router": "^0.8.3",
+    "solid-js": "^1.8.5",
+    "solid-start": "^0.3.10"
   },
   "engines": {
-    "node": ">=16.8"
+    "node": ">=18"
   }
 }

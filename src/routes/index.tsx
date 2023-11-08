@@ -1,37 +1,19 @@
-import {useNavigate} from "@solidjs/router";
-import {onMount} from "solid-js";
-import {A} from "solid-start";
-
-const SUPPORTED_LANGS = ["pt", "en"];
+import { Title } from "solid-start";
+import Counter from "~/components/Counter";
 
 export default function Home() {
-    onMount(() => {
-        let cachedLang = localStorage.getItem("preferredLang");
-        if (cachedLang === null) {
-            console.log(navigator.languages);
-            for (let language of navigator.languages ?? [navigator.language]) {
-                let [lang, _] = language.split("-");
-                if (SUPPORTED_LANGS.includes(lang)) {
-                    cachedLang = lang;
-                    localStorage.setItem("preferredLang", cachedLang);
-                    break;
-                }
-            }
-        }
-        
-        let navigate = useNavigate();
-        navigate(import.meta.env.BASE_URL + (cachedLang ?? "en"), {replace: true});
-    });
-    
-    return (
-        <div>
-            <h1 class={"text-2xl"}>
-                Redirecting to translated page
-            </h1>
-            
-            <A href={import.meta.env.BASE_URL + "en"}>English page</A>
-            <br/>
-            <A href={import.meta.env.BASE_URL + "pt"}>Portuguese page</A>
-        </div>
-    );
+  return (
+    <main>
+      <Title>Hello World</Title>
+      <h1>Hello world!</h1>
+      <Counter />
+      <p>
+        Visit{" "}
+        <a href="https://start.solidjs.com" target="_blank">
+          start.solidjs.com
+        </a>{" "}
+        to learn how to build SolidStart apps.
+      </p>
+    </main>
+  );
 }
