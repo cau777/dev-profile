@@ -1,9 +1,9 @@
-import {Background} from "~/components/background/background";
+import {IntroductionSection} from "~/components/introduction/introduction-section";
 
 export default function Home() {
   return (
     <main>
-      <Background/>
+      <IntroductionSection/>
     </main>
   );
 }

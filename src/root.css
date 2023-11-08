@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+    font-family: 'Red Hat Display', Alexandria, Verdana, sans-serif;
+        @apply text-gray-50;
+    }
+}
 
 @layer utilities {
     @keyframes star-shine-animation {
@@ -13,7 +22,7 @@
     }
 
     .star-shine {
-        @apply text-gray-50;
+        @apply text-gray-200;
         animation: star-shine-animation;
         animation-duration: 1.5s;
         animation-direction: alternate-reverse;
