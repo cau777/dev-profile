@@ -30,34 +30,6 @@
         animation-timing-function: ease-in-out;
     }
 
-    @keyframes rocket-trajectory-x {
-        from {
-            left: 0
-        }
-        to {
-            left: 100%
-        }
-    }
-
-    @keyframes rocket-trajectory-y {
-        from {
-            bottom: 0
-        }
-        to {
-            bottom: 100%;
-        }
-    }
-
-    .rocket-trajectory {
-        left: 0;
-        bottom: 0
-    }
-
-    .rocket-trajectory.visible {
-        animation: rocket-trajectory-x 10s linear,
-                rocket-trajectory-y 10s cubic-bezier(1, 0.15, 1, 1);
-    }
-
     .grid-center {
         display: grid;
         justify-items: center;
