@@ -18,15 +18,21 @@ module.exports = {
                     900: "#0d1017",
                 },
 
-                primary: {
-                },
+                primary: {},
 
-                secondary: {
-                },
+                secondary: {},
+
+                // https://colorhunt.co/palette/0c134f1d267d5c469cd4adfc
+                atm: {
+                    1: "#0C134F",
+                    2: "#1D267D",
+                    3: "#5C469C",
+                    4: "#D4ADFC"
+                }
             },
             container: {
                 padding: {
-                    DEFAULT :"1rem",
+                    DEFAULT: "1rem",
                     sm: "2rem",
                     md: "3rem",
                     lg: "10rem",

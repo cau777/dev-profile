@@ -7,8 +7,7 @@ const randomDelay = () => {
 
 export const Background: Component = () => {
   return (
-    // https://colorhunt.co/palette/0c134f1d267d5c469cd4adfc
-    <div class='absolute h-screen w-screen bg-gradient-to-b from-[#0C134F] via-[#1D267D] to-[#5C469C]'>
+    <div class='absolute h-screen w-screen bg-gradient-to-b from-atm-1 via-atm-2 to-atm-3'>
       <PointStarIcon {...randomDelay()} width='2rem' class='absolute star-shine top-[8%] left-[5%]' />
       <PointStarIcon {...randomDelay()} width='4rem' class='absolute star-shine top-[80%] left-[18%]' />
       <PointStarIcon {...randomDelay()} width='3rem' class='absolute star-shine top-[62%] left-[88%]' />

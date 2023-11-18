@@ -1,11 +1,25 @@
 import {Component, createEffect, createSignal, onCleanup} from "solid-js";
 import {ShuttleIcon} from "~/icons/shuttle";
 
-const trajectoryFn = (t: number) => Math.exp(1 / (2 * Math.PI) * t) - 1
+const trajectoryFn = (t: number) => Math.exp(1 / (2 * Math.PI) * t)
 
 const velocity = (t: number) => Math.exp(1 / (2 * Math.PI) * t) * (1 / (2 * Math.PI))
 
 const angle = (t: number) => Math.atan(velocity(t))
+
+
+const svgWidth = 300
+const svgHeight = 150
+
+const graphXStart = -2
+const graphXEnd = 28
+const graphWidth = graphXEnd - graphXStart
+
+const graphYStart = trajectoryFn(graphXStart)
+const graphYEnd = 15+  trajectoryFn(graphXStart)
+const graphHeight = graphYEnd - graphYStart
+
+const animationDuration = 10_000
 
 export const CareerSection: Component = () => {
   const [visible, setVisible] = createSignal(false)
@@ -15,18 +29,20 @@ export const CareerSection: Component = () => {
 
   createEffect(() => {
     if (!visible()) return
+    const animationInterval = 10
 
     let time = 0
     const handler = setInterval(() => {
-      const t = time / 10_000
+      const t = time / animationDuration
+      const x = t * graphWidth
 
-      setRocketX(t * 100)
-      setRocketY(trajectoryFn(t * 15) / trajectoryFn(15) * 100)
-      setRocketAngle(angle(t * 15))
+      setRocketX(x / graphWidth * 100)
+      setRocketY((trajectoryFn(x + graphXStart) - graphYStart) / graphHeight * 100)
+      setRocketAngle(angle(x))
 
-      time += 100
-      if (time >= 10_000) clearInterval(handler)
-    }, 100)
+      time += animationInterval
+      if (time >= animationDuration) clearInterval(handler)
+    }, animationInterval)
 
     onCleanup(() => clearInterval(handler))
   })
@@ -38,16 +54,14 @@ export const CareerSection: Component = () => {
         <button onClick={() => setVisible(false)}>Not visible</button>
       </div>
 
-      <section class={'relative w-screen h-screen bg-red-200 grid-center py-36 px-36'}>
-        <div class={'relative w-full h-full'}>
-          <div class={'absolute top-0 left-0 w-full max-h-full aspect-[150/100] mx-auto'}>
-            <div class={'absolute -translate-x-1/2 translate-y-1/2'}
-                 style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
-              <ShuttleIcon width={'4rem'} style={{rotate: `${-rocketAngle()}rad`}}/>
-            </div>
-            <svg width={'100%'} height={'100%'} viewBox={'0 0 150 100'}>
-              <path d="M 0 100 C 70 87, 110 68, 150 1" stroke="white" fill="transparent"/>
-            </svg>
+      <section class={'relative w-screen h-screen bg-red-200 p-0 bg-gradient-to-b from-atm-3 to-atm-4 overflow-hidden'}>
+        <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
+          <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
+            <path d={`M 0 ${svgHeight-1} C 130 ${svgHeight - 12}, 162 ${svgHeight - 80}, 193 0`} stroke="white" fill="transparent"/>
+          </svg>
+          <div class={'absolute -translate-x-1/2 translate-y-1/2'}
+               style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
+            <ShuttleIcon width={'6rem'} style={{rotate: `${-rocketAngle()}rad`}}/>
           </div>
         </div>
       </section>
