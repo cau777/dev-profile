@@ -69,10 +69,7 @@ export const CareerSection: Component = () => {
       setRocketX(x / graphWidth * 100)
       setRocketY((fn.apply(x + graphXStart) - graphYStart) / graphHeight * 100)
       setRocketAngle(fn.angleAt(x))
-      setLineLength(fn.integral(-2, x+ graphXStart) * 10)
-      console.log(x)
-      console.log(-2, x, fn.integral(-2, x + graphXStart ) * 10)
-      console.log(fn.integral(-2, graphXEnd) / graphWidth * svgWidth)
+      setLineLength(fn.integral(-2, x + graphXStart) * 10)
 
       time += animationInterval
       if (time >= animationDuration) clearInterval(handler)
@@ -90,9 +87,10 @@ export const CareerSection: Component = () => {
 
       <section class={'relative w-screen h-screen bg-red-200 p-0 bg-gradient-to-b from-atm-3 to-atm-4 overflow-hidden'}>
         <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
-          <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
-            <path d={`M 0 ${svgHeight - 1} C 130 ${svgHeight - 12}, 162 ${svgHeight - 80}, 193 0`} stroke="white"
-                  fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000-lineLength()+10} />
+          <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+          >
+            <path d={`M 0 ${svgHeight - 1} C 132 ${svgHeight - 12}, 162 ${svgHeight - 83}, 193 0`} stroke="white"
+                  fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000-lineLength()} />
             <circle cx={10} cy={svgHeight - 2} r={2}/>
             <circle cx={50} cy={svgHeight - 9} r={2}/>
           </svg>
