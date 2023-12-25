@@ -89,14 +89,13 @@ export const CareerSection: Component = () => {
         <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
           <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 ${svgWidth} ${svgHeight}`}
           >
+            {/* TODO: optimize path */}
             <path d={`M 0 ${svgHeight - 1} C 132 ${svgHeight - 12}, 162 ${svgHeight - 83}, 193 0`} stroke="white"
                   fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000-lineLength()} />
-            <circle cx={10} cy={svgHeight - 2} r={2}/>
-            <circle cx={50} cy={svgHeight - 9} r={2}/>
           </svg>
           <div class={'absolute -translate-x-1/2 translate-y-1/2'}
                style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
-            <ShuttleIcon width={'6rem'} style={{rotate: `${-rocketAngle()}rad`}}/>
+            <ShuttleIcon width={'6rem'} style={{rotate: `${-rocketAngle()}rad`}} class='translate-x-4'/>
           </div>
         </div>
       </section>
