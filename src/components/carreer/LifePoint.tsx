@@ -17,6 +17,7 @@ const AnimatedLine: Component<JSX.LineSVGAttributes<SVGLineElement> & {
 type Props = {
   title: string
   time: string
+  description: string
   x: number
   y: number
   visible: boolean
@@ -27,7 +28,7 @@ type Props = {
 
 export const LifePoint: Component<Props> = (props) => {
   return (
-    <g>
+    <g class='cursor-default' classList={{'hidden': !props.visible}}>
       <Switch>
         <Match when={props.direction === 'up'}>
           <AnimatedLine x1={props.x} y1={props.y} x2={props.x} y2={props.y - props.height} stroke={'white'}
@@ -38,6 +39,7 @@ export const LifePoint: Component<Props> = (props) => {
           <AnimatedLine x1={props.x} y1={props.y - props.height} x2={props.x + 5} y2={props.y - props.height - 5}
                         stroke={'white'} stroke-width={1}
                         class={'transition-all delay-700 duration-200'} visible={props.visible}/>
+
 
           <text x={props.x + 5} y={props.y - props.height - 2.5} font-size={10}
                 class={'font-bold transition-all delay-[900ms] duration-300'}
@@ -52,6 +54,9 @@ export const LifePoint: Component<Props> = (props) => {
                 class={'font-semibold transition-all delay-[900ms] duration-300'}
                 fill={'white'} opacity={props.visible ? 100 : 0}>{props.time}</text>
 
+          <foreignObject x={props.x + 10} y={props.y - props.height} width="40" height="160">
+            <div class={'text-[3px]'}>{props.description}</div>
+          </foreignObject>
         </Match>
       </Switch>
 

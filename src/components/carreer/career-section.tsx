@@ -46,7 +46,7 @@ const graphYStart = fn.apply(graphXStart)
 const graphYEnd = 15 + fn.apply(graphXStart)
 const graphHeight = graphYEnd - graphYStart
 
-const animationDuration = 10_000
+const animationDuration = 30_000
 
 export const CareerSection: Component = () => {
   const [visible, setVisible] = createSignal(false)
@@ -93,8 +93,10 @@ export const CareerSection: Component = () => {
         {/* TODO: optimize path */}
         <path d={`M 0 149 C 132 138, 162 67, 193 0`} stroke="white"
               fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
-        <LifePoint visible={lineLength() > 12} title='First line of code' time={'2018'} direction={'up'} x={18} y={147}
-                   height={50}/>
+        <LifePoint visible={lineLength() > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18} y={147}
+                   height={80} description={"I wanted to create a high-tech Minecraft mod, but that was way too difficult with no coding experience (but that didn't stop me)"}/>
+        <LifePoint visible={lineLength() > 28} title='Started learning Python' time={'Middle of 2018'} direction={'up'} x={31} y={145}
+                   height={40} description={"I decided to start learning Python (because it's more beginner friendly) with some free tutorials online"}/>
       </svg>
       <div class={'absolute -translate-x-1/2 translate-y-1/2'}
            style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
