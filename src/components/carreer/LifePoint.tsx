@@ -21,44 +21,48 @@ type Props = {
   x: number
   y: number
   visible: boolean
-} & ({
-  direction: 'up'
-  height: number
-})
+  length: number
+  direction: 'up' | 'right'
+}
 
 export const LifePoint: Component<Props> = (props) => {
+  const jointX = () => props.direction === 'up' ? props.x : props.x + props.length
+  const jointY = () => props.direction === 'up' ? props.y - props.length : props.y
+  const armEndX = () => jointX() + 5
+  const armEndY = () => props.direction === 'up' ? jointY() - 5 : jointY() + 5
+
   return (
     <g class='cursor-default' classList={{'hidden': !props.visible}}>
-      <Switch>
-        <Match when={props.direction === 'up'}>
-          <AnimatedLine x1={props.x} y1={props.y} x2={props.x} y2={props.y - props.height} stroke={'white'}
+          <AnimatedLine x1={props.x} y1={props.y} x2={jointX()} y2={jointY()}
+                        stroke={'white'}
                         stroke-width={1}
-                        class={'transition-all delay-500 duration-200'} visible={props.visible}/>
-          <circle r={0.5} fill={props.visible ? 'white' : 'transparent'} cx={props.x} cy={props.y - props.height}
+                        class={'transition-all delay-500 duration-200'}
+                        visible={props.visible}/>
+          <circle r={0.5} fill={props.visible ? 'white' : 'transparent'}
+                  cx={jointX()} cy={jointY()}
                   class={'transition-all delay-700 duration-200'}/>
-          <AnimatedLine x1={props.x} y1={props.y - props.height} x2={props.x + 5} y2={props.y - props.height - 5}
+          <AnimatedLine x1={jointX()} y1={jointY()} x2={armEndX()} y2={armEndY()}
                         stroke={'white'} stroke-width={1}
                         class={'transition-all delay-700 duration-200'} visible={props.visible}/>
 
 
-          <text x={props.x + 5} y={props.y - props.height - 2.5} font-size={10}
+          <text x={armEndX()} y={armEndY() + 2.5} font-size={10}
                 class={'font-bold transition-all delay-[900ms] duration-300'}
                 fill={'white'} opacity={props.visible ? 100 : 0}>{'{'}</text>
-          <circle r={0.5} fill={'white'} opacity={props.visible ? 100 : 0} cx={props.x + 5}
-                  cy={props.y - props.height - 5}
+          <circle r={0.5} fill={'white'} opacity={props.visible ? 100 : 0}
+                  cx={armEndX()} cy={armEndY()}
                   class={'transition-all delay-[900ms] duration-300'}/>
-          <text x={props.x + 10} y={props.y - props.height - 6} font-size={4}
+
+          <text x={armEndX() + 5} y={armEndY() - 1} font-size={4}
                 class={'font-bold transition-all delay-[900ms] duration-300'}
                 fill={'white'} opacity={props.visible ? 100 : 0}>{props.title}</text>
-          <text x={props.x + 10} y={props.y - props.height - 2} font-size={3}
+          <text x={armEndX() + 5} y={armEndY() + 3} font-size={3}
                 class={'font-semibold transition-all delay-[900ms] duration-300'}
                 fill={'white'} opacity={props.visible ? 100 : 0}>{props.time}</text>
 
-          <foreignObject x={props.x + 10} y={props.y - props.height} width="40" height="160">
+          <foreignObject x={armEndX() + 5} y={armEndY() + 5} width="40" height="160">
             <div class={'text-[3px]'}>{props.description}</div>
           </foreignObject>
-        </Match>
-      </Switch>
 
       <circle cx={props.x} cy={props.y} r={2} fill={'transparent'} stroke-dasharray={2 * Math.PI * 2}
               stroke-dashoffset={props.visible ? 0 : 2 * Math.PI * 2} stroke-width={1} stroke={'white'}

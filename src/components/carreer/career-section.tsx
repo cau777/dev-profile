@@ -94,9 +94,9 @@ export const CareerSection: Component = () => {
         <path d={`M 0 149 C 132 138, 162 67, 193 0`} stroke="white"
               fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
         <LifePoint visible={lineLength() > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18} y={147}
-                   height={80} description={"I wanted to create a high-tech Minecraft mod, but that was way too difficult with no coding experience (but that didn't stop me)"}/>
+                   length={80} description={"I wanted to create a high-tech Minecraft mod, but that was way too difficult with no coding experience (but that didn't stop me)"}/>
         <LifePoint visible={lineLength() > 28} title='Started learning Python' time={'Middle of 2018'} direction={'up'} x={31} y={145}
-                   height={40} description={"I decided to start learning Python (because it's more beginner friendly) with some free tutorials online"}/>
+                   length={40} description={"I decided to start learning Python (because it's more beginner friendly) with some free tutorials online"}/>
       </svg>
       <div class={'absolute -translate-x-1/2 translate-y-1/2'}
            style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
@@ -112,7 +112,6 @@ export const CareerSection: Component = () => {
       class={'relative w-screen h-screen bg-red-200 p-0 bg-gradient-to-b from-atm-3 to-atm-4 overflow-hidden snap-center'}>
       <div class={'absolute top-0 left-0 m-12'}>
         <h1 class={'font-bold text-4xl'}>My Timeline</h1>
-        <h5 class={'text-lg mb-2'}>Hover for more info</h5>
       </div>
       {animationFrame}
     </section>
