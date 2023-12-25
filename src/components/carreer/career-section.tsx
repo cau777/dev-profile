@@ -1,5 +1,7 @@
 import {Component, createEffect, createSignal, onCleanup} from "solid-js";
 import {ShuttleIcon} from "~/icons/shuttle";
+import {SnapSectionVisible} from "~/components/util/SnapSectionVisible";
+import {LifePoint} from "~/components/carreer/LifePoint";
 
 
 class ExponentialFunction {
@@ -23,7 +25,7 @@ class ExponentialFunction {
     return Math.atan(this.derivative(x))
   }
 
-  public integral(a:number, b: number) {
+  public integral(a: number, b: number) {
     const l1 = Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * b)) + 1)
     const l2 = -Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * b)) - 1)
     const l3 = -Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * a)) + 1)
@@ -35,10 +37,6 @@ class ExponentialFunction {
 }
 
 const fn = new ExponentialFunction(1 / (2 * Math.PI))
-
-
-const svgWidth = 300
-const svgHeight = 150
 
 const graphXStart = -2
 const graphXEnd = 28
@@ -56,6 +54,10 @@ export const CareerSection: Component = () => {
   const [rocketY, setRocketY] = createSignal(0)
   const [lineLength, setLineLength] = createSignal(0)
   const [rocketAngle, setRocketAngle] = createSignal(0)
+
+  const observer = new IntersectionObserver((entries) => {
+    setVisible(entries[0].isIntersecting)
+  }, {root: null, threshold: 0.9})
 
   createEffect(() => {
     if (!visible()) return
@@ -75,30 +77,42 @@ export const CareerSection: Component = () => {
       if (time >= animationDuration) clearInterval(handler)
     }, animationInterval)
 
-    onCleanup(() => clearInterval(handler))
+    onCleanup(() => {
+      setRocketX(0)
+      setRocketY(0)
+      setLineLength(0)
+      setRocketAngle(0)
+      clearInterval(handler);
+    })
   })
 
-  return (
-    <>
-      <div class={'bg-black'}>
-        <button onClick={() => setVisible(true)}>Visible</button>
-        <button onClick={() => setVisible(false)}>Not visible</button>
+  const animationFrame = (
+    <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
+      <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 300 150`}
+      >
+        {/* TODO: optimize path */}
+        <path d={`M 0 149 C 132 138, 162 67, 193 0`} stroke="white"
+              fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
+        <LifePoint visible={lineLength() > 12} title='First line of code' time={'2018'} direction={'up'} x={18} y={147}
+                   height={50}/>
+      </svg>
+      <div class={'absolute -translate-x-1/2 translate-y-1/2'}
+           style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
+        <ShuttleIcon width={'6rem'} style={{rotate: `${-rocketAngle()}rad`}} class='translate-x-4'/>
       </div>
+    </div>
+  ) as HTMLDivElement
 
-      <section class={'relative w-screen h-screen bg-red-200 p-0 bg-gradient-to-b from-atm-3 to-atm-4 overflow-hidden'}>
-        <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
-          <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 ${svgWidth} ${svgHeight}`}
-          >
-            {/* TODO: optimize path */}
-            <path d={`M 0 ${svgHeight - 1} C 132 ${svgHeight - 12}, 162 ${svgHeight - 83}, 193 0`} stroke="white"
-                  fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000-lineLength()} />
-          </svg>
-          <div class={'absolute -translate-x-1/2 translate-y-1/2'}
-               style={{bottom: `${rocketY()}%`, left: `${rocketX()}%`}}>
-            <ShuttleIcon width={'6rem'} style={{rotate: `${-rocketAngle()}rad`}} class='translate-x-4'/>
-          </div>
-        </div>
-      </section>
-    </>
+  observer.observe(animationFrame)
+
+  return (
+    <section
+      class={'relative w-screen h-screen bg-red-200 p-0 bg-gradient-to-b from-atm-3 to-atm-4 overflow-hidden snap-center'}>
+      <div class={'absolute top-0 left-0 m-12'}>
+        <h1 class={'font-bold text-4xl'}>My Timeline</h1>
+        <h5 class={'text-lg mb-2'}>Hover for more info</h5>
+      </div>
+      {animationFrame}
+    </section>
   )
 }

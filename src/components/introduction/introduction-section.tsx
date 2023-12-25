@@ -3,7 +3,7 @@ import {Background} from "~/components/introduction/background";
 
 export const IntroductionSection: Component = () => {
   return (
-    <section class={'relative h-screen w-screen'}>
+    <section class={'relative h-screen w-screen snap-center'}>
       <Background/>
       <div class={'absolute h-screen w-screen grid-center'}>
         <div class={'flex gap-4'}>

@@ -3,7 +3,7 @@ import {CareerSection} from "~/components/carreer/career-section";
 
 export default function Home() {
   return (
-    <main>
+    <main class={'snap-y snap-proximity max-h-screen overflow-y-scroll overflow-x-hidden'}>
       <IntroductionSection/>
       <CareerSection/>
     </main>
