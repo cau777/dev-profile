@@ -27,7 +27,7 @@ module.exports = {
                     1: "#0C134F",
                     2: "#1D267D",
                     3: "#5C469C",
-                    4: "#D4ADFC"
+                    4: "#cca7f3"
                 }
             },
             container: {

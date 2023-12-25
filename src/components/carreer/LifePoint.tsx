@@ -1,4 +1,4 @@
-import {Component, JSX, Match, Switch} from "solid-js";
+import {Component, JSX, Match, ParentComponent, Switch} from "solid-js";
 
 const AnimatedLine: Component<JSX.LineSVGAttributes<SVGLineElement> & {
   visible: boolean;
@@ -17,19 +17,27 @@ const AnimatedLine: Component<JSX.LineSVGAttributes<SVGLineElement> & {
 type Props = {
   title: string
   time: string
-  description: string
   x: number
   y: number
   visible: boolean
   length: number
-  direction: 'up' | 'right'
+  direction: 'up' | 'right' | 'left'
 }
 
-export const LifePoint: Component<Props> = (props) => {
-  const jointX = () => props.direction === 'up' ? props.x : props.x + props.length
+export const LifePoint: ParentComponent<Props> = (props) => {
+  const jointX = () => {
+    switch (props.direction) {
+      case "up":
+        return props.x
+      case 'right':
+        return props.x + props.length
+      case "left":
+        return props.x - props.length
+    }
+  }
   const jointY = () => props.direction === 'up' ? props.y - props.length : props.y
-  const armEndX = () => jointX() + 5
-  const armEndY = () => props.direction === 'up' ? jointY() - 5 : jointY() + 5
+  const armEndX = () => props.direction === 'left' ? jointX() : jointX() + 5
+  const armEndY = () => props.direction === 'left' ? jointY() + 7 :jointY() - 5
 
   return (
     <g class='cursor-default' classList={{'hidden': !props.visible}}>
@@ -60,8 +68,8 @@ export const LifePoint: Component<Props> = (props) => {
                 class={'font-semibold transition-all delay-[900ms] duration-300'}
                 fill={'white'} opacity={props.visible ? 100 : 0}>{props.time}</text>
 
-          <foreignObject x={armEndX() + 5} y={armEndY() + 5} width="40" height="160">
-            <div class={'text-[3px]'}>{props.description}</div>
+          <foreignObject x={armEndX() + 5} y={armEndY() + 5} width={props.direction === 'up' ? 40 : 90} height="160">
+            <p class={'text-[3px] transition-all delay-[900ms] duration-300'}  style={{opacity: props.visible ? 100 : 0}}>{props.children}</p>
           </foreignObject>
 
       <circle cx={props.x} cy={props.y} r={2} fill={'transparent'} stroke-dasharray={2 * Math.PI * 2}
