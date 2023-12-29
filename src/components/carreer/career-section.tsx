@@ -3,41 +3,8 @@ import {ShuttleIcon} from "~/icons/shuttle";
 import {SnapSectionVisible} from "~/components/util/SnapSectionVisible";
 import {LifePoint} from "~/components/carreer/LifePoint";
 import {Link} from "~/components/util/Link";
+import {ExponentialPath, fn} from "~/components/util/exponential-path";
 
-
-class ExponentialFunction {
-
-  public constructor(private readonly factor: number) {
-  }
-
-  public apply(x: number) {
-    return Math.exp(this.factor * x)
-  }
-
-  public reverse(y: number) {
-    return Math.log(y / this.factor)
-  }
-
-  public derivative(x: number) {
-    return Math.exp(this.factor * x) * this.factor
-  }
-
-  public angleAt(x: number) {
-    return Math.atan(this.derivative(x))
-  }
-
-  public integral(a: number, b: number) {
-    const l1 = Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * b)) + 1)
-    const l2 = -Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * b)) - 1)
-    const l3 = -Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * a)) + 1)
-    const l4 = Math.log(Math.sqrt(1 + this.factor * Math.exp(this.factor * a)) - 1)
-    const l5 = -2 * Math.sqrt(1 + this.factor * Math.exp(this.factor * b))
-    const l6 = 2 * Math.sqrt(1 + this.factor * Math.exp(this.factor * a))
-    return -(l1 + l2 + l3 + l4 + l5 + l6) / this.factor
-  }
-}
-
-const fn = new ExponentialFunction(1 / (2 * Math.PI))
 
 const graphXStart = -2
 const graphXEnd = 28
@@ -83,15 +50,13 @@ export const CareerSection: Component = () => {
     })
   })
 
-  const offset = graphYStart * 10
 
   const animationFrame = (
     <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
       <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 300 150`}
       >
         {/* TODO: fix line */}
-        <path d={`M 0 150 C 92.658 ${150 - (18.037 - offset)}, 149.240 ${150 - (47.848 - offset)}, 193 0`} stroke="white"
-              fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
+        <ExponentialPath stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
         <LifePoint visible={lineLength() > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18}
                    y={147}
                    length={80}>
