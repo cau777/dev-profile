@@ -56,8 +56,8 @@ export const CareerSection: Component = () => {
   const [lineLength, setLineLength] = createSignal(0)
   const [rocketAngle, setRocketAngle] = createSignal(0)
 
-  const observer = new IntersectionObserver((entries) => {
-    setVisible(entries[0].isIntersecting)
+  const animationStartObserver = new IntersectionObserver((entries) => {
+    entries[0].isIntersecting && setVisible(true)
   }, {root: null, threshold: 0.9})
 
   createEffect(() => {
@@ -79,10 +79,6 @@ export const CareerSection: Component = () => {
     }, animationInterval)
 
     onCleanup(() => {
-      setRocketX(0)
-      setRocketY(0)
-      setLineLength(0)
-      setRocketAngle(0)
       clearInterval(handler);
     })
   })
@@ -94,7 +90,7 @@ export const CareerSection: Component = () => {
       <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 300 150`}
       >
         {/* TODO: fix line */}
-        <path d={`M 0 150 C 98.9 ${150-(18.6-offset)}, 150 ${150-(52.7-offset)}, 193 0`} stroke="white"
+        <path d={`M 0 150 C 92.658 ${150 - (18.037 - offset)}, 149.240 ${150 - (47.848 - offset)}, 193 0`} stroke="white"
               fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
         <LifePoint visible={lineLength() > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18}
                    y={147}
@@ -137,7 +133,7 @@ export const CareerSection: Component = () => {
           After the internship period was over, I joined Aerial as a Full-Stack Developer
         </LifePoint>
         <LifePoint visible={lineLength() > 235} title='Full-Stack Developer' time={'October 2023'} direction={'right'}
-                   x={184} y={25} length={10}>
+                   x={182} y={25} length={10}>
           I got promoted and got more responsibilities, like ML in Python and code reviews
         </LifePoint>
       </svg>
@@ -148,7 +144,7 @@ export const CareerSection: Component = () => {
     </div>
   ) as HTMLDivElement
 
-  observer.observe(animationFrame)
+  animationStartObserver.observe(animationFrame)
 
   return (
     <section
