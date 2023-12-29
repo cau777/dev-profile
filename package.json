@@ -8,6 +8,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@types/katex": "^0.16.7",
     "@types/node": "^18.17.5",
     "autoprefixer": "^10.4.16",
     "esbuild": "^0.14.54",
