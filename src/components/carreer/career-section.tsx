@@ -47,7 +47,7 @@ const graphYStart = fn.apply(graphXStart)
 const graphYEnd = 15 + fn.apply(graphXStart)
 const graphHeight = graphYEnd - graphYStart
 
-const animationDuration = 30_000
+const animationDuration = 10_000
 
 export const CareerSection: Component = () => {
   const [visible, setVisible] = createSignal(false)
@@ -87,12 +87,14 @@ export const CareerSection: Component = () => {
     })
   })
 
+  const offset = graphYStart * 10
+
   const animationFrame = (
     <div class={'relative aspect-[2/1] max-h-full mx-auto'}>
       <svg class={'absolute top-0'} width={'100%'} height={'100%'} viewBox={`0 0 300 150`}
       >
-        {/* TODO: optimize path (# 19505707,8.177216,1.6273605,13.126582,4.198741,0.3671018,3.784196,3.7828925) */}
-        <path d={`M 0 149 C 138 138, 160 68, 194 0`} stroke="white"
+        {/* TODO: fix line */}
+        <path d={`M 0 150 C 98.9 ${150-(18.6-offset)}, 150 ${150-(52.7-offset)}, 193 0`} stroke="white"
               fill="transparent" stroke-dasharray={1000} stroke-dashoffset={-1000 - lineLength()}/>
         <LifePoint visible={lineLength() > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18}
                    y={147}
