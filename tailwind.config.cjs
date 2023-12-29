@@ -37,6 +37,9 @@ module.exports = {
                     md: "3rem",
                     lg: "10rem",
                 }
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             }
         }
     },
