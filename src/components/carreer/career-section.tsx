@@ -31,6 +31,7 @@ export const CareerSection: Component = () => {
     if (!visible()) return
     const animationInterval = 10
 
+    // TODO: compile CSS keyframes
     let time = 0
     const handler = setInterval(() => {
       const t = time / animationDuration

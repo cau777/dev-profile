@@ -2,7 +2,8 @@ import {Component, createEffect, createSignal, For, Index, ParentComponent} from
 import {ExponentialPath} from "~/components/util/exponential-path";
 import katex from 'katex'
 
-const Equation: Component<{ title: string, tex: string }> = (props) => {
+const Equation: ParentComponent<{ title: string, tex: string }> = (props) => {
+  const [opened, setOpened] = createSignal(false)
   const core = <div/> as HTMLDivElement
 
   createEffect(() => {
@@ -12,14 +13,22 @@ const Equation: Component<{ title: string, tex: string }> = (props) => {
   })
 
   return (
-    <div class={'flex'}>
-      <div class={'border-2 rounded p-2'}>
-        <h5 class={'font-semibold font-lg mb-2'}>{props.title}</h5>
-        <p class={'text-xl'}>
-          {core}
-        </p>
+    <>
+      <div class={'flex'}>
+        <div class={'border-2 rounded p-2'}>
+          <h5 class={'font-semibold font-lg mb-2'}>{props.title}</h5>
+          <p class={'text-xl'}>
+            {core}
+          </p>
+        </div>
       </div>
-    </div>
+      <p class={'overflow-y-hidden transition-all duration-1000 max-w-xl text-justify'}
+         style={{'opacity': opened() ? '1' : '0', 'height': opened() ? 'auto' : '0'}}
+      >{props.children}</p>
+      <button class={'mt-0.5 mb-3 text-sm cursor-pointer text-left'}
+              onClick={() => setOpened(v => !v)}>{opened() ? '-' : '+'} Explanation
+      </button>
+    </>
   )
 }
 
@@ -62,27 +71,44 @@ const Graph: Component = () => {
 }
 
 export const MathSection: Component = () => {
+  // TODO: dobra papel
   return (
     <section class={'bg-gradient-radial via-blue-900 from-blue-800 to-blue-950 w-screen h-screen snap-center'}>
       <div class={'p-8 h-full'}>
         <div class={'border-gray-100 border-2 p-8 h-full'}>
-          <header class={''}>
+          <header class={'mb-6'}>
             <h1 class={'font-bold text-4xl'}>I also love math and engineering</h1>
-            <p class={'text-lg'}>The animation you just saw was made entirely with math</p>
-
-
+            <p class={'text-lg'}>The animation you just saw was made entirely with Calculus</p>
           </header>
 
           <div class={'flex flex-wrap gap-4'}>
-            <div class={'max-w-xl grow'}>
+            <div class={'max-w-xl grow mb-auto'}>
               <Graph/>
             </div>
 
-            <div class={'flex gap-2 flex-col'}>
-              <Equation title={'Rocket Position'} tex={"f(x) = {e}^{x/{\\tau}}"}/>
-              <Equation title={'Rocket Angle'} tex={"{tan}^{-1}({f}'(x))"}/>
+            <div class={'flex flex-col'}>
+              <Equation title={'Rocket Position'} tex={"f(x) = {e}^{x/{\\tau}}"}>
+                This function is an exponential of x divided by tau (2 * pi). I don't remember exactly where I saw it
+                but I chose it mainly because this function looked nice as an ascending trajectory. Also, exponentials
+                are easy to derive/integrate.
+              </Equation>
+              <Equation title={'Rocket Angle'} tex={"{tan}^{-1}({f}'(x))"}>
+                Since a derivative is, by definition, the inclination of a tangent line at any point of a function, it's
+                possible to get the angle of that tangent line with arctan. It also makes sense on the way that a
+                derivative is the "rate of change" so, pointing the rocket in the angle of change makes it look like
+                it's surfing on the curve.
+              </Equation>
               <Equation title={'Trajectory Line Length'}
-                        tex={"\\sum_{i=1}^{\\infty }\\sqrt{{\\Delta x_{i}}^{2}+{\\Delta y_{i}}^{2}} = \\int_{a}^{b}\\sqrt{1+{{f}'(x)}^2}"}/>
+                        tex={"\\sum_{i=1}^{\\infty }\\sqrt{{\\Delta x_{i}}^{2}+{\\Delta y_{i}}^{2}} = \\int_{a}^{b}\\sqrt{1+{{f}'(x)}^2}"}>
+                This one is more complicated and took some time to get right. Basically, to animate the rocket
+                trajectory
+                like as an svg path, we need the traveled line length at any time. If this graph was linear, this would
+                as simple as applying the Pythagorean Theorem. However, we can think of that complex curve as many
+                straight lines that, when summed up, makes for an approximation of the curve. Integrals then help
+                solving
+                this "sum of infinite infinitely small things" problem. Although there are some examples of similar
+                problems out there, I'm proud that I came up with this solution on my own.
+              </Equation>
 
             </div>
           </div>
