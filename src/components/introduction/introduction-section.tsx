@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
-import { Background } from "~/components/introduction/background";
+import { Component } from "solid-js"
+import { Background } from "~/components/introduction/background"
 
 export const IntroductionSection: Component = () => {
   return (
@@ -16,5 +16,5 @@ export const IntroductionSection: Component = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

@@ -1,18 +1,18 @@
-import { Component, JSX, Match, ParentComponent, Switch } from "solid-js";
+import { Component, JSX, Match, ParentComponent, Switch } from "solid-js"
 
 const AnimatedLine: Component<
   JSX.LineSVGAttributes<SVGLineElement> & {
-    visible: boolean;
-    x1: number;
-    x2: number;
-    y1: number;
-    y2: number;
+    visible: boolean
+    x1: number
+    x2: number
+    y1: number
+    y2: number
   }
 > = (props) => {
   const length = () =>
     Math.sqrt(
       Math.pow(props.x1 - props.x2, 2) + Math.pow(props.y1 - props.y2, 2),
-    );
+    )
 
   return (
     <line
@@ -20,35 +20,35 @@ const AnimatedLine: Component<
       stroke-dasharray={length()}
       stroke-dashoffset={props.visible ? 0 : length()}
     />
-  );
-};
+  )
+}
 
 type Props = {
-  title: string;
-  time: string;
-  x: number;
-  y: number;
-  visible: boolean;
-  length: number;
-  direction: "up" | "right" | "left";
-};
+  title: string
+  time: string
+  x: number
+  y: number
+  visible: boolean
+  length: number
+  direction: "up" | "right" | "left"
+}
 
 export const LifePoint: ParentComponent<Props> = (props) => {
   const jointX = () => {
     switch (props.direction) {
       case "up":
-        return props.x;
+        return props.x
       case "right":
-        return props.x + props.length;
+        return props.x + props.length
       case "left":
-        return props.x - props.length;
+        return props.x - props.length
     }
-  };
+  }
   const jointY = () =>
-    props.direction === "up" ? props.y - props.length : props.y;
-  const armEndX = () => (props.direction === "left" ? jointX() : jointX() + 5);
+    props.direction === "up" ? props.y - props.length : props.y
+  const armEndX = () => (props.direction === "left" ? jointX() : jointX() + 5)
   const armEndY = () =>
-    props.direction === "left" ? jointY() + 7 : jointY() - 5;
+    props.direction === "left" ? jointY() + 7 : jointY() - 5
 
   return (
     <g class="cursor-default" classList={{ hidden: !props.visible }}>
@@ -146,5 +146,5 @@ export const LifePoint: ParentComponent<Props> = (props) => {
         class={"transition-all duration-500"}
       />
     </g>
-  );
-};
+  )
+}

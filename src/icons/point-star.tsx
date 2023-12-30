@@ -1,4 +1,4 @@
-import { IconComponent } from "~/icons/base";
+import { IconComponent } from "~/icons/base"
 
 export const PointStarIcon: IconComponent = (props) => (
   <svg
@@ -19,4 +19,4 @@ export const PointStarIcon: IconComponent = (props) => (
       />
     </g>
   </svg>
-);
+)

@@ -4,54 +4,54 @@ import {
   createSignal,
   onCleanup,
   ParentComponent,
-} from "solid-js";
-import { ShuttleIcon } from "~/icons/shuttle";
-import { LifePoint } from "~/components/carreer/life-point";
-import { Link } from "~/components/util/link";
-import { ExponentialPath, fn } from "~/components/util/exponential-path";
-import { RocketSectionProps } from "~/components/rocket-super-section/rocket-super-section";
+} from "solid-js"
+import { ShuttleIcon } from "~/icons/shuttle"
+import { LifePoint } from "~/components/carreer/life-point"
+import { Link } from "~/components/util/link"
+import { ExponentialPath, fn } from "~/components/util/exponential-path"
+import { RocketSectionProps } from "~/components/rocket-super-section/rocket-super-section"
 
-const graphXStart = -2;
-const graphXEnd = 28;
-const graphWidth = graphXEnd - graphXStart;
+const graphXStart = -2
+const graphXEnd = 28
+const graphWidth = graphXEnd - graphXStart
 
-const graphYStart = fn.apply(graphXStart);
-const graphYEnd = 15 + fn.apply(graphXStart);
-const graphHeight = graphYEnd - graphYStart;
+const graphYStart = fn.apply(graphXStart)
+const graphYEnd = 15 + fn.apply(graphXStart)
+const graphHeight = graphYEnd - graphYStart
 
-const animationDelay = 800;
-const animationDuration = 10_000;
+const animationDelay = 800
+const animationDuration = 10_000
 
 export const CareerSection: ParentComponent<RocketSectionProps> = (props) => {
-  const [rocketX, setRocketX] = createSignal(0);
-  const [rocketY, setRocketY] = createSignal(0);
-  const [rocketAngle, setRocketAngle] = createSignal(0);
+  const [rocketX, setRocketX] = createSignal(0)
+  const [rocketY, setRocketY] = createSignal(0)
+  const [rocketAngle, setRocketAngle] = createSignal(0)
 
   createEffect(() => {
-    if (!props.visible) return;
-    const animationInterval = 10;
+    if (!props.visible) return
+    const animationInterval = 10
 
     // TODO: compile CSS keyframes
-    let time = -animationDelay;
+    let time = -animationDelay
     const handler = setInterval(() => {
-      const t = Math.max(0, time / animationDuration);
-      const x = t * graphWidth;
+      const t = Math.max(0, time / animationDuration)
+      const x = t * graphWidth
 
-      setRocketX((x / graphWidth) * 100);
+      setRocketX((x / graphWidth) * 100)
       setRocketY(
         ((fn.apply(x + graphXStart) - graphYStart) / graphHeight) * 100,
-      );
-      setRocketAngle(fn.angleAt(x));
-      props.setLineLength(fn.integral(-2, x + graphXStart) * 10);
+      )
+      setRocketAngle(fn.angleAt(x))
+      props.setLineLength(fn.integral(-2, x + graphXStart) * 10)
 
-      time += animationInterval;
-      if (time >= animationDuration) clearInterval(handler);
-    }, animationInterval);
+      time += animationInterval
+      if (time >= animationDuration) clearInterval(handler)
+    }, animationInterval)
 
     onCleanup(() => {
-      clearInterval(handler);
-    });
-  });
+      clearInterval(handler)
+    })
+  })
 
   return (
     <section
@@ -76,5 +76,5 @@ export const CareerSection: ParentComponent<RocketSectionProps> = (props) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

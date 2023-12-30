@@ -1,9 +1,9 @@
-import { Component } from "solid-js";
-import { PointStarIcon } from "~/icons/point-star";
+import { Component } from "solid-js"
+import { PointStarIcon } from "~/icons/point-star"
 
 const randomDelay = () => {
-  return { style: { "animation-delay": `${Math.random() * 2}s` } };
-};
+  return { style: { "animation-delay": `${Math.random() * 2}s` } }
+}
 
 export const Background: Component = () => {
   return (
@@ -49,5 +49,5 @@ export const Background: Component = () => {
         class="absolute star-shine top-[27%] left-[10%]"
       />
     </div>
-  );
-};
+  )
+}

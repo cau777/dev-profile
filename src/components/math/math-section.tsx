@@ -5,20 +5,20 @@ import {
   For,
   Index,
   ParentComponent,
-} from "solid-js";
-import { ExponentialPath } from "~/components/util/exponential-path";
-import katex from "katex";
-import { RocketSectionProps } from "~/components/rocket-super-section/rocket-super-section";
+} from "solid-js"
+import { ExponentialPath } from "~/components/util/exponential-path"
+import katex from "katex"
+import { RocketSectionProps } from "~/components/rocket-super-section/rocket-super-section"
 
 const Equation: ParentComponent<{ title: string; tex: string }> = (props) => {
-  const [opened, setOpened] = createSignal(false);
-  const core = (<div />) as HTMLDivElement;
+  const [opened, setOpened] = createSignal(false)
+  const core = (<div />) as HTMLDivElement
 
   createEffect(() => {
     katex.render(props.tex, core, {
       output: "html",
-    });
-  });
+    })
+  })
 
   return (
     <>
@@ -46,8 +46,8 @@ const Equation: ParentComponent<{ title: string; tex: string }> = (props) => {
         {opened() ? "-" : "+"} Explanation
       </button>
     </>
-  );
-};
+  )
+}
 
 export const Graph: Component = () => {
   return (
@@ -76,7 +76,7 @@ export const Graph: Component = () => {
       <g>
         <Index each={Array.from({ length: 15 })}>
           {(_, index) => {
-            const y = 10 * index;
+            const y = 10 * index
             return (
               <line
                 x1={0}
@@ -86,13 +86,13 @@ export const Graph: Component = () => {
                 stroke={"currentcolor"}
                 opacity={0.1}
               />
-            );
+            )
           }}
         </Index>
 
         <Index each={Array.from({ length: 20 })}>
           {(_, index) => {
-            const x = 10 * (index + 1);
+            const x = 10 * (index + 1)
             return (
               <line
                 x1={x}
@@ -102,13 +102,13 @@ export const Graph: Component = () => {
                 stroke={"currentcolor"}
                 opacity={0.05}
               />
-            );
+            )
           }}
         </Index>
       </g>
     </>
-  );
-};
+  )
+}
 
 export const MathSection: ParentComponent<RocketSectionProps> = (props) => {
   // TODO: dobra papel
@@ -172,5 +172,5 @@ export const MathSection: ParentComponent<RocketSectionProps> = (props) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

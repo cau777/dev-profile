@@ -1,8 +1,8 @@
-import { Component } from "solid-js";
-import { LifePoint } from "~/components/carreer/life-point";
-import { Link } from "~/components/util/link";
-import { RocketSvgContentProps } from "~/components/rocket-super-section/rocket-super-section";
-import { ExponentialPath } from "~/components/util/exponential-path";
+import { Component } from "solid-js"
+import { LifePoint } from "~/components/carreer/life-point"
+import { Link } from "~/components/util/link"
+import { RocketSvgContentProps } from "~/components/rocket-super-section/rocket-super-section"
+import { ExponentialPath } from "~/components/util/exponential-path"
 
 export const CareerSvgContents: Component<RocketSvgContentProps> = (props) => {
   return (
@@ -131,5 +131,5 @@ export const CareerSvgContents: Component<RocketSvgContentProps> = (props) => {
         reviews
       </LifePoint>
     </>
-  );
-};
+  )
+}

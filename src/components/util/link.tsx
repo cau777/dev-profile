@@ -1,4 +1,4 @@
-import { JSX, ParentComponent } from "solid-js";
+import { JSX, ParentComponent } from "solid-js"
 
 export const Link: ParentComponent<
   JSX.AnchorHTMLAttributes<HTMLAnchorElement>
@@ -7,5 +7,5 @@ export const Link: ParentComponent<
     <a {...props} class={"font-semibold"}>
       {props.children}
     </a>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import { IconComponent } from "~/icons/base";
+import { IconComponent } from "~/icons/base"
 
 export const ShuttleIcon: IconComponent = (props) => (
   <svg
@@ -345,4 +345,4 @@ export const ShuttleIcon: IconComponent = (props) => (
       id="path3443"
     />
   </svg>
-);
+)
