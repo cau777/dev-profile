@@ -1,8 +1,7 @@
 import {Component, createEffect, createSignal, onCleanup} from "solid-js";
 import {ShuttleIcon} from "~/icons/shuttle";
-import {SnapSectionVisible} from "~/components/util/SnapSectionVisible";
-import {LifePoint} from "~/components/carreer/LifePoint";
-import {Link} from "~/components/util/Link";
+import {LifePoint} from "~/components/carreer/life-point";
+import {Link} from "~/components/util/link";
 import {ExponentialPath, fn} from "~/components/util/exponential-path";
 
 
