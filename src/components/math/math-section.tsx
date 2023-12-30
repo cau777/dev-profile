@@ -1,6 +1,7 @@
 import {Component, createEffect, createSignal, For, Index, ParentComponent} from "solid-js";
 import {ExponentialPath} from "~/components/util/exponential-path";
 import katex from 'katex'
+import {RocketSectionProps} from "~/components/rocket-super-section/rocket-super-section";
 
 const Equation: ParentComponent<{ title: string, tex: string }> = (props) => {
   const [opened, setOpened] = createSignal(false)
@@ -32,16 +33,10 @@ const Equation: ParentComponent<{ title: string, tex: string }> = (props) => {
   )
 }
 
-const Graph: Component = () => {
-  const [visible, setVisible] = createSignal(false)
-  const observer = new IntersectionObserver((entries) => entries[0].isIntersecting && setVisible(true), {
-    root: null,
-    threshold: 0.95
-  })
-
-  const element = (
-    <svg class={'text-gray-100 max-w-xl'} width={'100%'} height={'100%'} viewBox={'0 0 200 150'}>
-      <ExponentialPath stroke-dasharray={3} stroke-dashoffset={-1000 - 1000}/>
+export const Graph: Component = () => {
+  return (
+    <>
+      <ExponentialPath stroke-dasharray={3} stroke-dashoffset={-1000 - 1000} stroke-width='0.8'/>
       <line x1={0} y1={150} x2={200} y2={150} stroke={'currentcolor'} stroke-width={2}/>
       <line x1={0} y1={150} x2={0} y2={0} stroke={'currentcolor'} stroke-width={2}/>
       <g>
@@ -63,14 +58,11 @@ const Graph: Component = () => {
           }}
         </Index>
       </g>
-    </svg>
+    </>
   )
-
-  observer.observe(element as SVGElement)
-  return element
 }
 
-export const MathSection: Component = () => {
+export const MathSection: ParentComponent<RocketSectionProps> = (props) => {
   // TODO: dobra papel
   return (
     <section class={'bg-gradient-radial via-blue-900 from-blue-800 to-blue-950 w-screen h-screen snap-center'}>
@@ -81,9 +73,9 @@ export const MathSection: Component = () => {
             <p class={'text-lg'}>The animation you just saw was made entirely with Calculus</p>
           </header>
 
-          <div class={'flex flex-wrap gap-4'}>
+          <div class={'flex flex-wrap'}>
             <div class={'max-w-xl grow mb-auto'}>
-              <Graph/>
+              {props.children}
             </div>
 
             <div class={'flex flex-col'}>
