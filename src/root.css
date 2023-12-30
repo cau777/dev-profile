@@ -1,60 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap");
-@import url('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css');
+@import url("https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Red Hat Display', Alexandria, Verdana, sans-serif;
-        @apply text-gray-50;
-    }
+  html {
+    font-family: "Red Hat Display", Alexandria, Verdana, sans-serif;
+    @apply text-gray-50;
+  }
 
-    body {
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-    ::-webkit-scrollbar-track {
-        @apply bg-gray-700
-    }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-700;
+  }
 
-    ::-webkit-scrollbar-corner {
-        @apply bg-gray-700
-    }
+  ::-webkit-scrollbar-corner {
+    @apply bg-gray-700;
+  }
 
-    ::-webkit-scrollbar-thumb {
-        @apply rounded-2xl bg-gray-500
-    }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-2xl bg-gray-500;
+  }
 }
 
 @layer utilities {
-    @keyframes star-shine-animation {
-        from {
-            @apply text-gray-50;
-        }
-        to {
-            @apply text-gray-200;
-        }
+  @keyframes star-shine-animation {
+    from {
+      @apply text-gray-50;
     }
+    to {
+      @apply text-gray-200;
+    }
+  }
 
-    .star-shine {
-        @apply text-gray-200;
-        animation: star-shine-animation;
-        animation-duration: 1.5s;
-        animation-direction: alternate-reverse;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
+  .star-shine {
+    @apply text-gray-200;
+    animation: star-shine-animation;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
-    .grid-center {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    }
+  .grid-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
 }
