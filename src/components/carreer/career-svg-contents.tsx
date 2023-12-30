@@ -2,10 +2,12 @@ import {Component} from "solid-js";
 import {LifePoint} from "~/components/carreer/life-point";
 import {Link} from "~/components/util/link";
 import {RocketSvgContentProps} from "~/components/rocket-super-section/rocket-super-section";
+import {ExponentialPath} from "~/components/util/exponential-path";
 
 export const CareerSvgContents: Component<RocketSvgContentProps> = (props) => {
   return (
     <>
+      <ExponentialPath stroke-dasharray={1} stroke-width='0.8' opacity={0.3}/>
       <LifePoint visible={props.visible && props.lineLength > 12} title='First line of code' time={'Start of 2018'} direction={'up'} x={18}
                  y={147}
                  length={80}>

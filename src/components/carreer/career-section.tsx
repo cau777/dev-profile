@@ -14,6 +14,7 @@ const graphYStart = fn.apply(graphXStart)
 const graphYEnd = 15 + fn.apply(graphXStart)
 const graphHeight = graphYEnd - graphYStart
 
+const animationDelay = 800
 const animationDuration = 10_000
 
 export const CareerSection: ParentComponent<RocketSectionProps> = (props) => {
@@ -26,9 +27,9 @@ export const CareerSection: ParentComponent<RocketSectionProps> = (props) => {
     const animationInterval = 10
 
     // TODO: compile CSS keyframes
-    let time = 0
+    let time = -animationDelay
     const handler = setInterval(() => {
-      const t = time / animationDuration
+      const t = Math.max(0, time / animationDuration)
       const x = t * graphWidth
 
       setRocketX(x / graphWidth * 100)

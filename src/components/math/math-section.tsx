@@ -101,7 +101,6 @@ export const MathSection: ParentComponent<RocketSectionProps> = (props) => {
                 this "sum of infinite infinitely small things" problem. Although there are some examples of similar
                 problems out there, I'm proud that I came up with this solution on my own.
               </Equation>
-
             </div>
           </div>
         </div>

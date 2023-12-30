@@ -48,7 +48,7 @@ export const RocketSuperSection: Component<Props> = (props) => {
     <Graph/>
   </svg>
   const mathSection = <section>
-    <MathSection>
+    <MathSection visible={mathVisible()} setLineLength={setLineLength}>
       {mathSvg}
     </MathSection>
   </section>
