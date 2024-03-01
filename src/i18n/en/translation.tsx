@@ -50,6 +50,8 @@ export default {
 
     "checkDemo": "Check Demo",
     "checkSource": "Check Code",
+    "checkVideo": "Check Video Demo",
+    "checkWebsite": "Check Website",
     "prev": "Previous",
     "next": "Next",
     "scrollDown": "Scroll down",

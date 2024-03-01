@@ -49,6 +49,8 @@ export default {
 
     "checkDemo": "Ver Demo",
     "checkSource": "Ver Código",
+    "checkVideo": "Ver Demo em Vídeo",
+    "checkWebsite": "Ver Website",
     "prev": "Anterior",
     "next": "Próximo",
     "scrollDown": "Ir para baixo",

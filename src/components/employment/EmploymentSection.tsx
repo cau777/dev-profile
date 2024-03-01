@@ -4,6 +4,7 @@ import { AnimatedSlide } from "~/components/animated/AnimatedSlide"
 import picture from "../../../img/aerial.png"
 import { CustomLink } from "~/components/CustomLink"
 import { useLang, useT } from "~/components/LanguagesContext"
+import { A } from "solid-start"
 
 export const EmploymentSection: Component = () => {
   const lang = useLang()
@@ -43,6 +44,13 @@ export const EmploymentSection: Component = () => {
             <p class={"text-gray-100"}>
               <b class={"capitalize"}>{formatter().format(new Date(2023, 8))}</b> - {t.aerialFullStack}
             </p>
+
+            <div class={"mt-4 flex gap-2 text-primary-300"}>
+              <A class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
+                 href={"https://www.youtube.com/watch?v=8ohroaGTPCs"}>{t.checkVideo}</A>
+              <A class={"border-2 border-primary-400 px-2 py-1 rounded bg-gray-700"} target={"_blank"}
+                 href={"https://aerialops.io/"}>{t.checkWebsite}</A>
+            </div>
           </div>
         </div>
       </AnimatedSlide>
