@@ -11,7 +11,7 @@ export const SectionTitle: Component<Props> = (props) => {
     let t = useT();
     
     return (
-        <h3 id={props.title} class={"text-center capitalize font-semibold text-2xl text-primary-300 mb-4 animate-fade"} ref={ref} classList={{visible: visible()}}>
+        <h3 id={props.title} class={"text-center capitalize font-semibold text-3xl text-primary-300 mb-4 animate-fade"} ref={ref} classList={{visible: visible()}}>
             {/* @ts-ignore */}
             {t[props.title]}
         </h3>
