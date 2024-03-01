@@ -1,5 +1,6 @@
 import {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
+import { getMyAge } from "~/utils/dates"
 
 export default {
     "headDescription":"Site portifólio pessoal de Cauã Rinaldi, destacando escolaridade, cursos, linguagens de programação, e projetos.",
@@ -8,7 +9,7 @@ export default {
         Um Desenvolvedor Web <Dynamic component={adj1Tag}>proativo</Dynamic> e <Dynamic component={adj2Tag}>estudioso</Dynamic>
     </>,
     subtitle: (tag: Component<any>) => <>
-        Tu tenho 18 anos e se tem <Dynamic component={tag}>uma</Dynamic> coisa que eu sei é que amo encontrar soluções criativas para problemas.
+        Tu tenho {getMyAge()} anos e se tem <Dynamic component={tag}>uma</Dynamic> coisa que eu sei é que amo encontrar soluções criativas para problemas.
         <br/>
         Além disso, gosto de construir aplicações grandes e pequenas, enquanto trabalhando no frontend e/ou backend.
     </>,
