@@ -1,13 +1,14 @@
 import type {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
 import { getMyAge } from "~/utils/dates"
+import { A } from "solid-start"
 
 export default {
     "headDescription":"A personal portfolio website for Cauã Rinaldi, highlighting education, courses, programming languages, and projects.",
     
     "greeting": "Hi, I'm Cauã Rinaldi!",
     description: (adj1Tag: Component<any>, adj2Tag: Component<any>) => <>
-        A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>studious</Dynamic> Web Developer
+        A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>creative</Dynamic> Web Developer
     </>,
     subtitle: (tag: Component<any>) => <>
         I'm {getMyAge()} and if there's <Dynamic component={tag}>one</Dynamic> thing I know is that I love finding creative solutions for problems.
@@ -18,7 +19,7 @@ export default {
         I'm from Brazil and Portuguese is my native language, but I'm also fluent in English (C1). <br/>
         I started programming in 2017 as a hobby, but began learning seriously in the start of 2021. <br/>
         In this time, I took various courses and made a lot of open-source projects in my GitHub account, exploring different technologies. <br/>
-        Now, I'll be studying Software Engineering in Unijuí from 2023 to 2028. <br/>
+        Now, I'm working as a full time developer at <A href="https://aerialops.io/">Aerial</A> <br/>
     </>,
     
     "elementarySchool": "Elementary School",

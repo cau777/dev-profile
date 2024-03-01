@@ -1,6 +1,7 @@
 import {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
 import { getMyAge } from "~/utils/dates"
+import { A } from "solid-start"
 
 export default {
     "headDescription":"Site portifólio pessoal de Cauã Rinaldi, destacando escolaridade, cursos, linguagens de programação, e projetos.",
@@ -17,7 +18,7 @@ export default {
         Eu sou brasileiro e Português é minha língua nativa, mas eu também sou fluente em inglês (C1). <br/>
         Eu comecei a programar em 2017 como um hobby, mas começei a aprender seriamente em 2021. <br/>
         Nesse tempo, eu fiz vários cursos e criei vários projetos open-source no meu GitHub, explorando tecnologias diversas. <br/>
-        Agora, eu estarei estudando Engenharia de Software na Unijuí de 2023 a 2028. <br/>
+        Agora, estou trabalhando como desenvolvedor Full-Stack na <A href="https://aerialops.io/">Aerial</A> <br/>
     </>,
     
     "elementarySchool": "Ensino Fundamental",
