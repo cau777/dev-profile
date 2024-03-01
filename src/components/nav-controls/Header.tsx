@@ -2,7 +2,7 @@ import {Component, For} from "solid-js";
 import {A} from "solid-start";
 import {useT} from "~/components/LanguagesContext";
 
-const SECTIONS = ["aboutMe", "education", "courses", "projects", "languages"];
+const SECTIONS = ["aboutMe", "career", "courses", "projects", "languages"];
 
 export const Header: Component = () => {
     let t = useT();
