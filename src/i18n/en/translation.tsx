@@ -2,6 +2,7 @@ import type {Component} from "solid-js";
 import {Dynamic} from "solid-js/web";
 import { getMyAge } from "~/utils/dates"
 import { A } from "solid-start"
+import { CustomLink } from "~/components/CustomLink"
 
 export default {
     "headDescription":"A personal portfolio website for Cauã Rinaldi, highlighting education, courses, programming languages, and projects.",
@@ -19,7 +20,7 @@ export default {
         I'm from Brazil and Portuguese is my native language, but I'm also fluent in English (C1). <br/>
         I started programming in 2017 as a hobby, but began learning seriously in the start of 2021. <br/>
         In this time, I took various courses and made a lot of open-source projects in my GitHub account, exploring different technologies. <br/>
-        Now, I'm working as a full time developer at <A href="https://aerialops.io/">Aerial</A> <br/>
+        Now, I'm working as a full time developer at <CustomLink href="https://aerialops.io/">Aerial</CustomLink> <br/>
     </>,
     
     "elementarySchool": "Elementary School",

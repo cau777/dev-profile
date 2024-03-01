@@ -7,6 +7,7 @@ import {CoursesSection} from "~/components/courses/CoursesSection";
 import {ProjectsSection} from "~/components/projects/ProjectsSection";
 import {LanguagesSection} from "~/components/languages/LanguagesSection";
 import {LanguagesProvider} from "~/components/LanguagesContext";
+import { EmploymentSection } from "~/components/employment/EmploymentSection"
 
 type Props = {
     lang: string;
@@ -18,7 +19,7 @@ export const Main: Component<Props> = (props) => (
             <main class="mx-auto py-5 container">
                 <BioSection></BioSection>
                 <AboutMeSection></AboutMeSection>
-                <EducationSection></EducationSection>
+                <EmploymentSection></EmploymentSection>
                 <CoursesSection></CoursesSection>
                 <ProjectsSection></ProjectsSection>
                 
