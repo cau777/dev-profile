@@ -8,7 +8,7 @@ export default {
     
     "greeting": "Hi, I'm Cauã Rinaldi!",
     description: (adj1Tag: Component<any>, adj2Tag: Component<any>) => <>
-        A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>creative</Dynamic> Web Developer
+        A <Dynamic component={adj1Tag}>proactive</Dynamic> and <Dynamic component={adj2Tag}>creative</Dynamic> Full-Stack Developer
     </>,
     subtitle: (tag: Component<any>) => <>
         I'm {getMyAge()} and if there's <Dynamic component={tag}>one</Dynamic> thing I know is that I love finding creative solutions for problems.
@@ -29,6 +29,8 @@ export default {
     "presentTime": "Present",
     
     "viewCertificate": "View Certificate",
+
+    "career": "Career",
     
     "checkDemo": "Check Demo",
     "checkSource": "Check Code",
