@@ -31,6 +31,21 @@ export default {
     "viewCertificate": "Ver Certificado",
 
     "career": "Carreira",
+    "aerialPeriod": "Aerial (Abril de 2023 - Presente)",
+    "aerialDescription": "Aerial é uma plataforma que auxilia startups a coletar, organizar e referenciar " +
+      "as informações e documentos essenciais para administrar e obter investimentos em suas empresas.",
+    "aerialMlDescription": "Aerial aproveita o poder de Machine Learning para automaticamente organizar documentos, para que estejam prontos " +
+      "para o processo de 'due diligence' a qualquer momento.",
+    "aerialRedFlagsDescription": "A plataforma também identifica e reporta 'bandeiras vermelhas', problemas com os documentos que podem atrapalhar" +
+      "captação de recursos ou aquisição.",
+    "aerialIntern": () => <>
+        Eu iniciei como estagiário em tempo integral quando <CustomLink href={"https://www.linkedin.com/in/tianhuili/"}>Michael Li</CustomLink> viu
+        potencial em meu trabalho, apesar da minha falta de experiência profissional.
+        Nesse momento, Eu foquei principalmente em desenvolver a aplicação web com NextJS, TS e tRPC.
+    </>,
+    "aerialFullStack": "Depois do período de estágio, eu fui promovido para desenvolvedor Full-Stack em tempo integral. " +
+        "Minhas responsabilidades aumentaram: além de trabalhar no front-end, eu comecei a revisar código e desenvolver " +
+        "a parte de IA da empresa, usando Python, sklearn, e OpenAI.",
 
     "checkDemo": "Ver Demo",
     "checkSource": "Ver Código",
