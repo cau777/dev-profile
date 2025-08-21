@@ -16,11 +16,6 @@ import { ExperienceSection } from "./sections/experience.tsx";
 import { AwardsSection } from "./sections/awards.tsx";
 import { EducationSection } from "./sections/education.tsx";
 import { ProjectsSection } from "./sections/projects.tsx";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail,
-} from "@tabler/icons-react";
 import { Contacts } from "./components/contacts.tsx";
 
 const HEADER_HEIGHT = 60;

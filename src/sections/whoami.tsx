@@ -1,6 +1,6 @@
-import { Text, Title } from "@mantine/core";
+import { Text } from "@mantine/core";
 import { SectionWrapper } from "../components/section-wrapper.tsx";
-import { IconUser, IconUserCode } from "@tabler/icons-react";
+import { IconUserCode } from "@tabler/icons-react";
 
 export const WhoAmISection: React.FC = () => {
   return (

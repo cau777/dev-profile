@@ -9,12 +9,11 @@ import {
   ModalProps,
   Modal,
   Image,
-  List,
   Card,
   ImageProps,
   Title,
 } from "@mantine/core";
-import { IconBriefcase, IconBriefcase2 } from "@tabler/icons-react";
+import { IconBriefcase2 } from "@tabler/icons-react";
 import { theme } from "../theme.ts";
 import React from "react";
 

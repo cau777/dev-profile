@@ -1,12 +1,4 @@
-import {
-  Container,
-  Group,
-  Image,
-  Stack,
-  Title,
-  useMatches,
-  Text,
-} from "@mantine/core";
+import { Group, Image, Stack, Title, useMatches, Text } from "@mantine/core";
 import { imageBorderGradientStyle, textGradientStyle } from "../style-utils.ts";
 
 export const Hero: React.FC = () => {
