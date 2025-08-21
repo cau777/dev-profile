@@ -1,7 +1,7 @@
 import "@mantine/core/styles.css"
 import "@mantine/carousel/styles.css"
-import { AppShell, MantineProvider, Divider, Container, Stack } from "@mantine/core"
-import { theme } from "./theme"
+import { AppShell, MantineProvider, Divider, Container, Stack, useMantineTheme } from "@mantine/core"
+import { theme, themeOverride } from "./theme"
 import { Hero } from "./sections/hero.tsx"
 import { WhoAmISection } from "./sections/whoami.tsx"
 import { ExperienceSection } from "./sections/experience.tsx"
@@ -10,7 +10,7 @@ import { EducationSection } from "./sections/education.tsx"
 import { ProjectsSection } from "./sections/projects.tsx"
 
 export default function App() {
-    return <MantineProvider theme={theme}>
+    return <MantineProvider theme={themeOverride}>
         <AppShell
             padding="md"
             header={{ height: 60 }}

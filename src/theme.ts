@@ -1,6 +1,6 @@
-import { createTheme, virtualColor } from "@mantine/core"
+import { createTheme, DEFAULT_THEME, mergeMantineTheme, virtualColor } from "@mantine/core"
 
-export const theme = createTheme({
+export const themeOverride = createTheme({
   /* Put your mantine theme override here */
     fontFamily: 'poppins, sans-serif',
     colors: {
@@ -11,3 +11,5 @@ export const theme = createTheme({
         })
     }
 });
+
+export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)
