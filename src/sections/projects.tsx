@@ -115,8 +115,9 @@ const ProjectDisplay: React.FC<Project> = ({
           <Text>{description}</Text>
           <Group gap="xs">
             {highlighted_technologies.map((tech) => (
-              // TODO: highlight
-              <Pill key={tech}>{tech}</Pill>
+              <Pill key={tech} c={"primary"}>
+                {tech}
+              </Pill>
             ))}
             {other_technologies.map((tech) => (
               <Pill key={tech}>{tech}</Pill>
@@ -142,7 +143,12 @@ const ProjectDisplay: React.FC<Project> = ({
 
 export const ProjectsSection: React.FC = () => {
   return (
-    <SectionWrapper size="md" title={"Projects"} Icon={IconCode}>
+    <SectionWrapper
+      size="md"
+      title={"Projects"}
+      Icon={IconCode}
+      id={"projects"}
+    >
       <Carousel
         withIndicators={true}
         emblaOptions={{

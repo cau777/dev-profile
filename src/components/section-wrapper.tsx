@@ -7,9 +7,10 @@ export const SectionWrapper: React.FC<
     title: React.ReactNode;
     size: MantineSize;
     Icon: React.FC;
+    id: string;
   }>
-> = ({ title, children, size, Icon = IconAB }) => (
-  <section>
+> = ({ title, children, size, Icon = IconAB, id }) => (
+  <section id={id}>
     <Divider
       label={
         <Group mb={3} c={"gray.3"}>

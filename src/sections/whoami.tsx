@@ -4,7 +4,12 @@ import { IconUser, IconUserCode } from "@tabler/icons-react";
 
 export const WhoAmISection: React.FC = () => {
   return (
-    <SectionWrapper title={"Who Am I"} size="sm" Icon={IconUserCode}>
+    <SectionWrapper
+      title={"Who Am I"}
+      size="sm"
+      Icon={IconUserCode}
+      id={"whoami"}
+    >
       <Text size="lg" ta="center">
         I'm a Brazilian Software Engineer with 3 years of experience in
         Full-Stack development. I discovered my deep passion for coding when I

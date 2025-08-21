@@ -109,10 +109,12 @@ const EducationCard: React.FC<{
   return (
     <Card withBorder={true} radius="md" w="100%">
       <Title order={4}>{title}</Title>
-      <Text size={'sm'} c={'dimmed'} mb='sm'>{range}</Text>
+      <Text size={"sm"} c={"dimmed"} mb="sm">
+        {range}
+      </Text>
       <Text>{descr}</Text>
       {certifications?.length && (
-        <Group mt='sm'>
+        <Group mt="sm">
           {certifications.map((node, i) => (
             <Text key={i} c={"dimmed"} size={"sm"}>
               {node}
@@ -128,7 +130,12 @@ export const EducationSection: React.FC = () => {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <SectionWrapper title={"Education"} size={"md"} Icon={IconSchool}>
+    <SectionWrapper
+      title={"Education"}
+      size={"md"}
+      Icon={IconSchool}
+      id={"education"}
+    >
       <Stack gap="lg" align="start">
         <EducationCard
           title={"English as second language (C1 level) - Fisk"}

@@ -11,7 +11,12 @@ export const AwardsSection: React.FC = () => {
   } as const);
 
   return (
-    <SectionWrapper title={"Math Award"} size="md" Icon={IconTrophy}>
+    <SectionWrapper
+      title={"Math Award"}
+      size="md"
+      Icon={IconTrophy}
+      id={"awards"}
+    >
       <Group wrap={wrap} gap="xl">
         <Image src={"/medal.jpg"} w={400} style={imageBorderGradientStyle} />
         <Stack>

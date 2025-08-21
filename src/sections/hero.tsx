@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
   } as const);
 
   return (
-    <Group gap={70} mx="lg" wrap={wrap} mt={60}>
+    <Group gap={70} mx="lg" wrap={wrap} mt={60} mb={60}>
       <Image src={"/full-body.jpg"} w={250} style={imageBorderGradientStyle} />
       <Stack gap={5}>
         <Title order={1}>Hey! I'm Cauã Rinaldi</Title>

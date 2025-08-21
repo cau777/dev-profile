@@ -95,7 +95,12 @@ export const ExperienceSection: React.FC = () => {
   } as const);
 
   return (
-    <SectionWrapper title={"Work Experience"} size={"md"} Icon={IconBriefcase2}>
+    <SectionWrapper
+      title={"Work Experience"}
+      size={"md"}
+      Icon={IconBriefcase2}
+      id={"work"}
+    >
       <Group wrap={wrap}>
         <Timeline
           active={4}
@@ -180,7 +185,10 @@ export const ExperienceSection: React.FC = () => {
           <Timeline.Item
             title={
               <Text size="lg" fw={600}>
-                Available for hire. Contact me!
+                Available for hire.{" "}
+                <Anchor fw={600} href={"mailto:cauarinaldi451@gmail.com"}>
+                  Contact me!
+                </Anchor>
               </Text>
             }
           />
