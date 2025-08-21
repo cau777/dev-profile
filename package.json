@@ -1,32 +1,29 @@
 {
-  "name": "sl",
-  "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start",
-    "build:release": "solid-start build"
-  },
+  "name": "vite-min-template",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "autoprefixer": "^10.4.12",
-    "esbuild": "^0.14.54",
-    "postcss": "^8.4.18",
-    "solid-start-node": "^0.2.0",
-    "tailwindcss": "^3.2.0",
-    "typescript": "^4.8.4",
-    "vite": "^4.1.4"
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@codersrank/skills-chart": "0.9.21",
-    "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.8.0",
-    "solid-js": "^1.6.2",
-    "solid-start": "0.2.24",
-    "solid-start-static": "0.2.24",
-    "undici": "^5.11.0"
+    "@mantine/core": "8.2.5",
+    "@mantine/hooks": "8.2.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "engines": {
-    "node": ">=16.8"
-  }
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "postcss": "^8.5.5",
+    "postcss-preset-mantine": "1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "packageManager": "yarn@4.9.3"
 }
