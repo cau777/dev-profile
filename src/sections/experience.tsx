@@ -1,6 +1,7 @@
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 import { Timeline, Text, Group, Stack, useMatches } from "@mantine/core"
 import { CardImage } from "../components/card-image.tsx"
+import { IconBriefcase, IconBriefcase2 } from "@tabler/icons-react"
 
 const Item: React.FC<React.PropsWithChildren<{ title: string, range?: string }>> = ({ title, children, range }) => {
     return (
@@ -20,7 +21,7 @@ export const ExperienceSection: React.FC = () => {
     } as const)
 
     return (
-        <SectionWrapper title={"Work Experience"} size={'md'}>
+        <SectionWrapper title={"Work Experience"} size={'md'} Icon={IconBriefcase2}>
             <Group wrap={wrap}>
                 <Timeline active={1} bulletSize={24} lineWidth={2} styles={{ item: { size: "lg" } }}>
                     <Item title="Mentored Internship - Aerial" range={"April/2023 - September/2023"}>

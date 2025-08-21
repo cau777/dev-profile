@@ -2,6 +2,7 @@ import React from "react"
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 import { Card, Stack, Title, Text, Group, Anchor, Image, SimpleGrid, Collapse } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
+import { IconChevronDown, IconChevronUp, IconSchool } from "@tabler/icons-react"
 
 type Org = "Educative" | "Google Cloud Skills Boost"
 type Course = {
@@ -109,10 +110,10 @@ const EducationCard: React.FC<{
 }
 
 export const EducationSection: React.FC = () => {
-    const [opened, { toggle }] = useDisclosure(false);
+    const [opened, { toggle }] = useDisclosure(false)
 
     return (
-        <SectionWrapper title={"Education"} size={"md"}>
+        <SectionWrapper title={"Education"} size={"md"} Icon={IconSchool}>
             <Stack gap="lg" align="start">
                 <EducationCard title={"English as second language (C1 level) - Fisk"}
                                range={"January/2014 - January/2022"}
@@ -164,7 +165,11 @@ export const EducationSection: React.FC = () => {
                         ))}
                     </SimpleGrid>
                 </Collapse>
-                <Text onClick={() => toggle()} c='primary' ta={'center'} w='100%' style={{ cursor: 'pointer'}} fw={600}>{opened? 'Collapse' : 'See'} courses</Text>
+                <Group onClick={() => toggle()} w="100%" justify={"center"} c="primary" gap="xs"
+                       style={{ cursor: "pointer" }} py='sm'>
+                    {opened ? <IconChevronUp /> : <IconChevronDown />}
+                    <Text fw={600}>{opened ? "Collapse" : "See"} courses</Text>
+                </Group>
             </Stack>
         </SectionWrapper>
     )

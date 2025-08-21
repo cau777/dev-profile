@@ -1,5 +1,5 @@
 import "@mantine/core/styles.css"
-import '@mantine/carousel/styles.css'
+import "@mantine/carousel/styles.css"
 import { AppShell, MantineProvider, Divider, Container, Stack } from "@mantine/core"
 import { theme } from "./theme"
 import { Hero } from "./sections/hero.tsx"
@@ -22,16 +22,15 @@ export default function App() {
 
             <AppShell.Main>
                 <Container size={"md"} component={"section"}>
-                    <Hero />
-                    <Divider my="xl" />
+                    <Stack gap={100}>
+                        <Hero />
+                        <WhoAmISection />
+                        <ExperienceSection />
+                        <EducationSection />
+                        <AwardsSection />
+                        <ProjectsSection />
+                    </Stack>
                 </Container>
-                <Stack gap={100}>
-                    <WhoAmISection />
-                    <ExperienceSection />
-                    <EducationSection/>
-                    <AwardsSection/>
-                    <ProjectsSection/>
-                </Stack>
             </AppShell.Main>
         </AppShell>
 

@@ -1,6 +1,7 @@
 import React from "react"
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 import { Group, Image, useMatches, Text, Stack, Anchor } from "@mantine/core"
+import { IconTrophy } from "@tabler/icons-react"
 
 export const AwardsSection: React.FC = () => {
     const wrap = useMatches({
@@ -9,7 +10,7 @@ export const AwardsSection: React.FC = () => {
     } as const)
 
     return (
-        <SectionWrapper title={"Math Award"} size="md">
+        <SectionWrapper title={"Math Award"} size="md" Icon={IconTrophy}>
             <Group wrap={wrap}>
                 <Image src={"/medal.jpg"} w={400} />
                 <Stack>

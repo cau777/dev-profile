@@ -1,6 +1,7 @@
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 import { Carousel } from "@mantine/carousel"
 import { Group, Image, Stack, Title, useMatches, Text, Pill, Button } from "@mantine/core"
+import { IconCode } from "@tabler/icons-react"
 
 type Project = {
     "image"?: string,
@@ -101,7 +102,7 @@ const ProjectDisplay: React.FC<Project> = ({
 
 export const ProjectsSection: React.FC = () => {
     return (
-        <SectionWrapper size="md" title={"Projects"}>
+        <SectionWrapper size="md" title={"Projects"} Icon={IconCode}>
             <Carousel withIndicators={true}
                       emblaOptions={{
                           loop: true,
