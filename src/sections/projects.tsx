@@ -83,6 +83,7 @@ const ProjectDisplay: React.FC<Project> = ({
                 <Text>{description}</Text>
                 <Group>
                     {highlighted_technologies.map(tech => (
+                        // TODO: highlight
                         <Pill key={tech}>{tech}</Pill>
                     ))}
                     {other_technologies.map(tech => (
