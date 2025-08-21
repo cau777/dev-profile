@@ -1,19 +1,18 @@
-FROM node:19.0-alpine AS builder
+FROM node:22.0-alpine AS builder
 WORKDIR /home
 COPY ./package.json .
 COPY ./package-lock.json .
 COPY ./postcss.config.cjs .
-COPY ./tailwind.config.cjs .
+COPY ./index.html .
 COPY ./tsconfig.json .
-COPY ./img ./img
+COPY ./tsconfig.node.json .
 COPY ./public ./public
 RUN npm i
 
 COPY ./vite.config.ts .
 COPY ./src ./src
-RUN npm run build:release
-#CMD ["node", "./dist/server.js"]
-#EXPOSE 3000
+RUN npm run build
+
 FROM nginx:1.12-alpine
 RUN echo "events {  \
   worker_connections 1024;  \
@@ -36,5 +35,5 @@ http {  \
     } \
   } \
 }" > /etc/nginx/nginx.conf
-COPY --from=builder /home/dist/public /usr/share/nginx/html
+COPY --from=builder /home/dist /usr/share/nginx/html
 EXPOSE 8080

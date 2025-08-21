@@ -1,10 +1,7 @@
-import solid from "solid-start/vite";
 import { defineConfig } from "vite";
-// @ts-ignore
-import ssg from "solid-start-static";
+import react from "@vitejs/plugin-react";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [solid({
-    adapter: ssg({})
-  })],
+  plugins: [react()],
 });
