@@ -12,7 +12,7 @@ export const SectionWrapper: React.FC<
   <section>
     <Divider
       label={
-        <Group mb={3}>
+        <Group mb={3} c={"gray.3"}>
           <Icon size={36} />
           <Title ta="center" order={3} mt={3}>
             {title}

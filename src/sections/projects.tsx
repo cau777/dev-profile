@@ -9,6 +9,7 @@ import {
   Text,
   Pill,
   Button,
+  Card,
 } from "@mantine/core";
 import { IconCode } from "@tabler/icons-react";
 
@@ -106,26 +107,36 @@ const ProjectDisplay: React.FC<Project> = ({
   } as const);
 
   return (
-    <Group wrap={wrap}>
-      <Image src={image} alt="Project screenshot" w={400} />
-      <Stack>
-        <Title order={4}>{project_title}</Title>
-        <Text>{description}</Text>
-        <Group>
-          {highlighted_technologies.map((tech) => (
-            // TODO: highlight
-            <Pill key={tech}>{tech}</Pill>
-          ))}
-          {other_technologies.map((tech) => (
-            <Pill key={tech}>{tech}</Pill>
-          ))}
-        </Group>
-        <Group>
-          {link_to_project && <Button>Check Demo</Button>}
-          {link_to_source_code && <Button>Check Code</Button>}
-        </Group>
-      </Stack>
-    </Group>
+    <Card withBorder={true} radius="lg">
+      <Group wrap={wrap}>
+        <Image src={image} alt="Project screenshot" h={300} />
+        <Stack>
+          <Title order={4}>{project_title}</Title>
+          <Text>{description}</Text>
+          <Group gap="xs">
+            {highlighted_technologies.map((tech) => (
+              // TODO: highlight
+              <Pill key={tech}>{tech}</Pill>
+            ))}
+            {other_technologies.map((tech) => (
+              <Pill key={tech}>{tech}</Pill>
+            ))}
+          </Group>
+          <Group>
+            {link_to_project && (
+              <a href={link_to_project} target={"_blank"}>
+                <Button>Check Demo</Button>
+              </a>
+            )}
+            {link_to_source_code && (
+              <a href={link_to_source_code} target={"_blank"}>
+                <Button>Check Code</Button>
+              </a>
+            )}
+          </Group>
+        </Stack>
+      </Group>
+    </Card>
   );
 };
 
@@ -137,6 +148,10 @@ export const ProjectsSection: React.FC = () => {
         emblaOptions={{
           loop: true,
         }}
+        slideSize="90%"
+        slideGap="md"
+        h={380}
+        controlSize={36}
       >
         {PROJECTS.map((project) => (
           <Carousel.Slide key={project.project_title}>

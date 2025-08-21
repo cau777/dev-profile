@@ -2,6 +2,7 @@ import React from "react";
 import { SectionWrapper } from "../components/section-wrapper.tsx";
 import { Group, Image, useMatches, Text, Stack, Anchor } from "@mantine/core";
 import { IconTrophy } from "@tabler/icons-react";
+import { imageBorderGradientStyle } from "../style-utils.ts";
 
 export const AwardsSection: React.FC = () => {
   const wrap = useMatches({
@@ -11,8 +12,8 @@ export const AwardsSection: React.FC = () => {
 
   return (
     <SectionWrapper title={"Math Award"} size="md" Icon={IconTrophy}>
-      <Group wrap={wrap}>
-        <Image src={"/medal.jpg"} w={400} />
+      <Group wrap={wrap} gap="xl">
+        <Image src={"/medal.jpg"} w={400} style={imageBorderGradientStyle} />
         <Stack>
           <Text>
             I won a silver medal in the{" "}
@@ -20,6 +21,7 @@ export const AwardsSection: React.FC = () => {
               href={
                 "https://pt-m-wikipedia-org.translate.goog/wiki/Olimp%C3%ADada_Brasileira_de_Matem%C3%A1tica_das_Escolas_P%C3%BAblicas?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp"
               }
+              target="_blank"
             >
               Brazilian National Math Olympiad (OBMEP)
             </Anchor>

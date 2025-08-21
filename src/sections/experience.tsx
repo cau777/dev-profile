@@ -192,20 +192,16 @@ export const ExperienceSection: React.FC = () => {
             shadow="xs"
             style={{ cursor: "pointer" }}
             w={350}
+            onClick={() => setModalOpened(true)}
           >
-            <Image
-              w="100%"
-              src={"/aerial-logo.png"}
-              onClick={() => setModalOpened(true)}
-              p="sm"
-            />
-            <Text py="xs" px="sm" size="sm" c={"dimmed"}>
+            <Image w="100%" src={"/aerial-logo.png"} p="sm" />
+            <Text py="xs" px="sm" size="sm">
               More info about Aerial
             </Text>
           </Card>
           <Card withBorder={true} p={0} shadow="xs" w={350}>
             <Image w="100%" src={"/aerial-team.jpg"} />
-            <Text py="xs" px="sm" size="sm" c={"dimmed"}>
+            <Text py="xs" px="sm" size="sm">
               Aerial Team
             </Text>
           </Card>

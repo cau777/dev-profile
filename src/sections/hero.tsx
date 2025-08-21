@@ -5,8 +5,9 @@ import {
   Stack,
   Title,
   useMatches,
+  Text,
 } from "@mantine/core";
-import { theme } from "../theme.ts";
+import { imageBorderGradientStyle, textGradientStyle } from "../style-utils.ts";
 
 export const Hero: React.FC = () => {
   const wrap = useMatches({
@@ -15,25 +16,20 @@ export const Hero: React.FC = () => {
   } as const);
 
   return (
-    <Group gap={70} mx="lg" wrap={wrap}>
-      <Image
-        src={"/full-body.jpg"}
-        w={250}
-        style={{
-          borderImage: `linear-gradient(to bottom right, ${theme.colors.red[6]} 0%, ${theme.colors.orange[6]} 100%) 1`,
-          borderWidth: 4,
-          borderStyle: "solid",
-          padding: 5,
-        }}
-      />
+    <Group gap={70} mx="lg" wrap={wrap} mt={60}>
+      <Image src={"/full-body.jpg"} w={250} style={imageBorderGradientStyle} />
       <Stack gap={5}>
         <Title order={1}>Hey! I'm Cauã Rinaldi</Title>
-        {/*TODO link*/}
         <Title order={2} fw={600}>
           I'm a full-stack developer, AI enthusiast, former Aerial employee, and
           Math nerd
         </Title>
-        {/*<Title order={3} fw={500} mt={100}>Welcome to my website!</Title>*/}
+        <Text fw={500} mt={60}>
+          I'm currently:{" "}
+          <Text span style={textGradientStyle} fw={800}>
+            OPEN FOR WORK
+          </Text>
+        </Text>
       </Stack>
     </Group>
   );

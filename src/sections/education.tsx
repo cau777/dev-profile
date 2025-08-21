@@ -109,10 +109,10 @@ const EducationCard: React.FC<{
   return (
     <Card withBorder={true} radius="md" w="100%">
       <Title order={4}>{title}</Title>
-      <Text>{range}</Text>
+      <Text size={'sm'} c={'dimmed'} mb='sm'>{range}</Text>
       <Text>{descr}</Text>
       {certifications?.length && (
-        <Group>
+        <Group mt='sm'>
           {certifications.map((node, i) => (
             <Text key={i} c={"dimmed"} size={"sm"}>
               {node}
