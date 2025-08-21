@@ -13,7 +13,6 @@ export const AwardsSection: React.FC = () => {
             <Group wrap={wrap}>
                 <Image src={"/medal.jpg"} w={400} />
                 <Stack>
-
                 <Text>
                     I won a silver medal in the <Anchor
                     href={"https://pt-m-wikipedia-org.translate.goog/wiki/Olimp%C3%ADada_Brasileira_de_Matem%C3%A1tica_das_Escolas_P%C3%BAblicas?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=pt-BR&_x_tr_pto=wapp"}>
