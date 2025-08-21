@@ -1,6 +1,6 @@
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 import { Timeline, Text, Group, Stack, useMatches } from "@mantine/core"
-import { CaptionImage } from "../components/caption-image.tsx"
+import { CardImage } from "../components/card-image.tsx"
 
 const Item: React.FC<React.PropsWithChildren<{ title: string, range?: string }>> = ({ title, children, range }) => {
     return (
@@ -43,7 +43,7 @@ export const ExperienceSection: React.FC = () => {
                         Biggest project: Redesigned dashboard and other main pages
                     </Item>
 
-                    <Item title="Product Engineer">
+                    <Item title="Product Engineer" range={"November/2024 - August/2025"}>
                         Earned a more active role in the company, dealing with not only the code, but the
                         product as a whole. I continued with my full-stack developer role, but also:
                         • Had meetings with the CEO to discuss the next steps for the product.
@@ -56,8 +56,8 @@ export const ExperienceSection: React.FC = () => {
                     <Item title="Available for hire. Contact me!"/>
                 </Timeline>
                 <Stack gap='xl'>
-                    <CaptionImage caption={"Our product"} src={"aerial-product.png"}/>
-                    <CaptionImage caption={"Our team"} src={"aerial-team.jpg"}/>
+                    <CardImage caption={"Our product"} src={"aerial-product.png"} w={350}/>
+                    <CardImage caption={"Our team"} src={"aerial-team.jpg"} w={350}/>
                 </Stack>
             </Group>
         </SectionWrapper>

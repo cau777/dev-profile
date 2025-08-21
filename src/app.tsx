@@ -2,8 +2,10 @@ import "@mantine/core/styles.css"
 import { AppShell, MantineProvider, Divider, Container, Stack } from "@mantine/core"
 import { theme } from "./theme"
 import { Hero } from "./sections/hero.tsx"
-import { WhoAmI } from "./sections/whoami.tsx"
+import { WhoAmISection } from "./sections/whoami.tsx"
 import { ExperienceSection } from "./sections/experience.tsx"
+import { AwardsSection } from "./sections/awards.tsx"
+import { EducationSection } from "./sections/education.tsx"
 
 export default function App() {
     return <MantineProvider theme={theme}>
@@ -21,9 +23,11 @@ export default function App() {
                     <Hero />
                     <Divider my="xl" />
                 </Container>
-                <Stack>
-                    <WhoAmI />
+                <Stack gap={100}>
+                    <WhoAmISection />
                     <ExperienceSection />
+                    <EducationSection/>
+                    <AwardsSection/>
                 </Stack>
             </AppShell.Main>
         </AppShell>

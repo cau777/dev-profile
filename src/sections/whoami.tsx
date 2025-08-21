@@ -1,7 +1,7 @@
 import { Text, Title } from "@mantine/core"
 import { SectionWrapper } from "../components/section-wrapper.tsx"
 
-export const WhoAmI: React.FC = () => {
+export const WhoAmISection: React.FC = () => {
     return (
         <SectionWrapper title={"Who Am I"} size='sm'>
             <Text size='lg' ta='center'>
