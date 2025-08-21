@@ -1,4 +1,5 @@
 import { Container, Group, Image, Stack, Title, useMatches } from "@mantine/core"
+import { theme } from "../theme.ts"
 
 export const Hero: React.FC = () => {
     const wrap = useMatches({
@@ -8,7 +9,12 @@ export const Hero: React.FC = () => {
 
     return (
         <Group gap={70} mx='lg' wrap={wrap}>
-            <Image src={"/full-body.jpg"} w={250} />
+            <Image src={"/full-body.jpg"} w={250} style={{
+                borderImage: `linear-gradient(to bottom right, ${theme.colors.red[6]} 0%, ${theme.colors.orange[6]} 100%) 1`,
+                borderWidth: 4,
+                borderStyle: 'solid',
+                padding: 5,
+            }} />
             <Stack gap={5}>
                 <Title order={1}>Hey! I'm Cauã Rinaldi</Title>
                 {/*TODO link*/}

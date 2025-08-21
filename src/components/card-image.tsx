@@ -7,7 +7,7 @@ export const CardImage: React.FC<{ caption: string } & ImageProps> = ({ caption,
     return (
         <>
             <Card withBorder={true} p={0} shadow='xs'>
-                <Card.Section withBorder={true}>
+                <Card.Section withBorder={true} inheritPadding={true}>
                     <Image {...imageProps} onClick={() => setOpen(true)} style={{ cursor: "zoom-in" }} />
                 </Card.Section>
                 <Text py='xs' px='sm' size="sm" c={"dimmed"}>{caption}</Text>

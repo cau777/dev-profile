@@ -3,13 +3,15 @@ import { createTheme, DEFAULT_THEME, mergeMantineTheme, virtualColor } from "@ma
 export const themeOverride = createTheme({
   /* Put your mantine theme override here */
     fontFamily: 'poppins, sans-serif',
+    // Red can be associated with errors
+    primaryColor: 'orange',
     colors: {
         primary: virtualColor({
             name: 'primary',
-            dark: 'blue',
-            light: 'blue'
+            dark: 'orange',
+            light: 'orange'
         })
-    }
+    },
 });
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)

@@ -1,6 +1,6 @@
 import React from "react"
 import { SectionWrapper } from "../components/section-wrapper.tsx"
-import { Card, Stack, Title, Text, Group, Anchor, Image, SimpleGrid, Collapse } from "@mantine/core"
+import { Card, Stack, Title, Text, Group, Anchor, Image, SimpleGrid, Collapse, Button } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import { IconChevronDown, IconChevronUp, IconSchool } from "@tabler/icons-react"
 
@@ -153,7 +153,7 @@ export const EducationSection: React.FC = () => {
                                     <Title order={6} ta="center">{course.name}</Title>
                                     <Group mt="auto">
                                         <Text size="sm"
-                                              c="dimmed">{course.date.getMonth() + 1}/{course.date.getFullYear()}</Text>
+                                              c="dimmed">{course.date.getMonth() + 1}/{course.date.getFullYear()-2000}</Text>
                                         <Text size="sm" c="dimmed">
                                             <Anchor href={course.url} target="_blank" c={"dimmed"}>
                                                 View certificate
@@ -165,11 +165,9 @@ export const EducationSection: React.FC = () => {
                         ))}
                     </SimpleGrid>
                 </Collapse>
-                <Group onClick={() => toggle()} w="100%" justify={"center"} c="primary" gap="xs"
-                       style={{ cursor: "pointer" }} py='sm'>
-                    {opened ? <IconChevronUp /> : <IconChevronDown />}
-                    <Text fw={600}>{opened ? "Collapse" : "See"} courses</Text>
-                </Group>
+                <Button onClick={() => toggle()} variant='subtle' w='100%'>
+                    {opened ? <IconChevronUp /> : <IconChevronDown />} {opened ? "Collapse" : "See"} courses
+                </Button>
             </Stack>
         </SectionWrapper>
     )

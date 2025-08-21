@@ -10,7 +10,7 @@ import { EducationSection } from "./sections/education.tsx"
 import { ProjectsSection } from "./sections/projects.tsx"
 
 export default function App() {
-    return <MantineProvider theme={themeOverride}>
+    return <MantineProvider theme={themeOverride} forceColorScheme='dark'>
         <AppShell
             padding="md"
             header={{ height: 60 }}
@@ -33,6 +33,5 @@ export default function App() {
                 </Container>
             </AppShell.Main>
         </AppShell>
-
     </MantineProvider>
 }
