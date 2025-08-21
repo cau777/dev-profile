@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
         <Text fw={500} mt={60}>
           I'm currently:{" "}
           <Text span style={textGradientStyle} fw={800}>
-            OPEN FOR WORK
+            OPEN TO WORK
           </Text>
         </Text>
       </Stack>
