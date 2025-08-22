@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <title>Gradient Circle Favicon with C</title>
+    <defs>
+        <!-- Gradient similar to: linear-gradient(to right bottom, rgb(250,82,82) 0%, rgb(253,126,20) 100%) -->
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgb(250, 82, 82)" />
+            <stop offset="100%" stop-color="rgb(253, 126, 20)" />
+        </linearGradient>
+    </defs>
+
+    <!-- Base circle with gradient fill -->
+    <circle cx="32" cy="32" r="28" fill="url(#grad)"/>
+
+    <!-- White "C" made from a stroked circle with a gap on the right -->
+    <!-- r=22 => circumference ≈ 138.2; we draw ~106.2 visible and ~32 gap -->
+    <circle
+            cx="32" cy="32" r="14"
+            fill="none"
+            stroke="white"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-dasharray="60 40"
+            stroke-dashoffset="-13"
+    />
+</svg>
