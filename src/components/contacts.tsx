@@ -7,18 +7,17 @@ import {
 
 export const Contacts = () => (
   <>
-    <Anchor href={"https://github.com/cau777"} lh={0}>
+    <Anchor href={"https://github.com/cau777"} lh={0} target={"_blank"}>
       <IconBrandGithub />
     </Anchor>
     <Anchor
-      href={
-        "https://www.linkedin.com/in/cau%C3%A3-rinaldi-618b6b259/?locale=en_US"
-      }
+      href={"https://www.linkedin.com/in/caua-rinaldi"}
       lh={0}
+      target={"_blank"}
     >
       <IconBrandLinkedin />
     </Anchor>
-    <Anchor href={"mailto:cauarinaldi451@gmail.com"} lh={0}>
+    <Anchor href={"mailto:cauarinaldi451@gmail.com"} lh={0} target={"_blank"}>
       <IconMail />
     </Anchor>
   </>
