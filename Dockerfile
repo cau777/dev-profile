@@ -36,4 +36,4 @@ http {  \
   } \
 }" > /etc/nginx/nginx.conf
 COPY --from=builder /home/dist /usr/share/nginx/html
-EXPOSE 8080
+EXPOSE 80
