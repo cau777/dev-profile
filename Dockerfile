@@ -21,7 +21,7 @@ http {  \
   include mime.types;  \
   sendfile on; \
   server {  \
-    listen 8080; \
+    listen 80; \
     resolver 127.0.0.11;  \
     autoindex off;  \
     server_name caua-rinaldi.dev;  \
