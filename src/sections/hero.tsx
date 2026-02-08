@@ -13,13 +13,13 @@ export const Hero: React.FC = () => {
       <Stack gap={5}>
         <Title order={1}>Hey! I'm Cauã Rinaldi</Title>
         <Title order={2} fw={600}>
-          I'm a full-stack developer, AI enthusiast, former Aerial employee, and
+          I'm a full-stack developer, AI enthusiast, startup lover, and
           Math nerd
         </Title>
         <Text fw={500} mt={60}>
           I'm currently:{" "}
           <Text span style={textGradientStyle} fw={800}>
-            OPEN TO WORK
+            OPEN TO OFFERS
           </Text>
         </Text>
       </Stack>

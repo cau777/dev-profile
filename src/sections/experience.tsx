@@ -180,17 +180,32 @@ export const ExperienceSection: React.FC = () => {
             </Text>
           </Timeline.Item>
 
-          {/* TODO: emphasis*/}
           <Timeline.Item
             title={
               <Text size="lg" fw={600}>
-                Available for hire.{" "}
-                <Anchor fw={600} href={"mailto:cauarinaldi451@gmail.com"}>
-                  Contact me!
-                </Anchor>
+                Software Developer - Global Underdog
               </Text>
             }
-          />
+          >
+            After taking a small break to focus on securing a Canadian student visa, I
+            got hired by Global Underdog, a small and vibrant software studio based in Arlington, VA. I
+            mainly worked on using AI to automate fraud detection in patient co-pay relief
+            programs for <Anchor target='_blank' href='https://www.connectiverx.com/' referrerPolicy={'no-referrer'}>ConnectiveRx</Anchor>.
+            <Text c="dimmed" size="sm" mt={4}>
+              December/2025 - PRESENT
+            </Text>
+          </Timeline.Item>
+
+          {/*<Timeline.Item*/}
+          {/*  title={*/}
+          {/*    <Text size="lg" fw={600}>*/}
+          {/*      Available for hire.{" "}*/}
+          {/*      <Anchor fw={600} href={"mailto:cauarinaldi451@gmail.com"}>*/}
+          {/*        Contact me!*/}
+          {/*      </Anchor>*/}
+          {/*    </Text>*/}
+          {/*  }*/}
+          {/*/>*/}
         </Timeline>
         <Stack gap="xl">
           <Card
