@@ -71,7 +71,8 @@ const PROJECTS: Project[] = [
     highlighted_technologies: ["rust", "ReactJS", "deep learning"],
     image:
       "https://codersrankpublic.blob.core.windows.net/userdata/630a3a7b2557bf00019c1eee/portfolio/ace2225f-6cc1-430e-9a94-ec3bedb3d4e9",
-    link_to_project: "ai-playground.caua-rinaldi.dev",
+    // Removed: UX is not the focus and feels incomplete
+    // link_to_project: "ai-playground.caua-rinaldi.dev",
     link_to_source_code: "https://github.com/cau777/ai_playground",
     other_technologies: ["docker", "docker compose", "glsl"],
     project_title: "AI Playground",
