@@ -186,6 +186,18 @@ export const EducationSection: React.FC = () => {
             </Anchor>,
           ]}
         />
+        <EducationCard
+          title={"Associate of Science: Mathematics - Langara College"}
+          range={"May/2026 - May/2028 (planned)"}
+          descr={
+            <>
+              2-year industry-focused program that focuses on college-level mathematics,
+              as well as computer science and statistics.
+              With this course, I intend to improve my skills in data analysis,
+              machine learning, statistics and complex algorithms.
+            </>
+          }
+        />
         <Collapse in={opened}>
           <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }}>
             {COURSES.map((course, i) => (

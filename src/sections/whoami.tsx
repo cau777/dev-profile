@@ -13,13 +13,13 @@ export const WhoAmISection: React.FC = () => {
       <Text size="lg" ta="center">
         I'm a Brazilian Software Engineer with 3 years of experience in
         Full-Stack development. I discovered my deep passion for coding when I
-        was 14 and haven't stopped ever since. My favorite part is finding the
+        was 14 and haven't sto pped ever since. My favorite part is finding the
         optimal solutions for complex challenges. From working, coding
         open-source side-projects, taking courses and reading articles, I have
         built a big baggage of knowledge in the field.
         <br />
-        I'm comfortable with both frontend (NextJS, TS, React) and backend
-        (Node, Python, MongoDB, SQL). I also like writing performant code in
+        I'm comfortable with frontend (NextJS, TS, React), backend (Node, Python, MongoDB, SQL),
+        and AI/ML (Pandas, PyTorch, fine-tuning). I also like writing performant code in
         Rust.
       </Text>
     </SectionWrapper>

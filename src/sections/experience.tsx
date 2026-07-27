@@ -147,11 +147,8 @@ export const ExperienceSection: React.FC = () => {
           >
             Finished my internship and got a permanent role in the company.
             Besides the previous full-stack responsibilities, I was also trusted
-            with{" "}
-            <Text span c={"primary"}>
-              code reviews
-            </Text>
-            , design and implementation of full UX workflows, and integrations.
+            with code reviews, design and implementation of full UX workflows,
+            and integrations.
             <Text c="dimmed" size="sm" mt={4}>
               October/2023 - November/2024
             </Text>
@@ -188,9 +185,11 @@ export const ExperienceSection: React.FC = () => {
             }
           >
             After taking a small break to focus on securing a Canadian student visa, I
-            got hired by Global Underdog, a small and vibrant software studio based in Arlington, VA. I
+            got hired by Global Underdog, a small and fast-moving software studio based in Arlington, VA. I
             mainly worked on using AI to automate fraud detection in patient co-pay relief
             programs for <Anchor target='_blank' href='https://www.connectiverx.com/' referrerPolicy={'no-referrer'}>ConnectiveRx</Anchor>.
+            A big aspect of my work was the strict HIPAA and SOC-2 compliance required by the client,
+            which helped me solidify my knowledge of securing infrastructure and data.
             <Text c="dimmed" size="sm" mt={4}>
               December/2025 - PRESENT
             </Text>

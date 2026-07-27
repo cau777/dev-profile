@@ -17,6 +17,13 @@ export const themeOverride = createTheme({
       light: "orange",
     }),
   },
+  // components: {
+  //   Anchor: {
+  //     defaultProps: {
+  //       underline: 'always'
+  //     }
+  //   }
+  // }
 });
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride);
